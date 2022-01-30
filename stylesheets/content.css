@@ -1,0 +1,51 @@
+/* Content Section */
+.iris__container {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    outline: 2px solid;
+  }
+
+  .iris__bg__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 2.5rem;
+    padding: 2.5rem;
+    border-radius: 64px;
+    outline: 2px solid;
+    height: 360px;
+  }
+  .wrapper__text {
+    padding: 2.5rem 0rem;
+    max-width: 32rem;
+    min-height: 14.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    outline: 2px solid;
+  }
+  .iris__desc__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 2.5rem;
+    padding: 0rem 2.5rem;
+    outline: 2px solid red;
+  }
+
+  .component__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 64rem;
+    min-height: 18.75rem;
+    border-radius: 2px;
+    outline: 2px solid;
+    margin: 3rem 0rem;
+  }
+
+  .subtitle .header {
+    margin-bottom: 2rem;
+  }

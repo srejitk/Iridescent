@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+.header h1 {
+    font-size: 48px;
+    line-height: 64px;
+    font-weight: bold;
+}
+
+.header h2 {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.header h3 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: bold;
+}
+
+.header h4 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.header h5 {
+    font-size: 8px;
+    line-height: 16px;
+    font-weight: bold;
+}
+
+.body h1 {
+    font-size: 48px;
+    line-height: 64px;
+
+}
+
+.body  h2 {
+    font-size: 32px;
+    line-height: 40px;
+
+}
+
+.body  h3 {
+    font-size: 24px;
+    line-height: 32px;
+
+}
+
+.body  h4 {
+    font-size: 16px;
+    line-height: 24px;
+
+}
+
+.body h5 {
+    font-size: 8px;
+    line-height: 16px;
+
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+  body{
+      font-family: "Roboto";
+  }
+
