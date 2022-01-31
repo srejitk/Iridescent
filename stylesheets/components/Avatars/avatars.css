@@ -5,15 +5,15 @@
     border: 5px solid var(--material-color-grey-50);
   }
   
-  .avatar .--small {
+  .avatar .avatar--small {
     width: 48px;
     height: 48px;
   }
-  .avatar .--medium {
+  .avatar .avatar--medium {
     width: 64px;
     height: 64px;
   }
-  .avatar .--large {
+  .avatar .avatar--large {
     width: 96px;
     height: 96px;
   }
