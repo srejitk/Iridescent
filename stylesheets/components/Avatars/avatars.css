@@ -1,0 +1,26 @@
+/* Avatars */
+.avatar {
+    border-radius: 50%;
+    position: relative;
+    border: 5px solid var(--material-color-grey-50);
+  }
+  
+  .avatar .avatar--small {
+    width: 48px;
+    height: 48px;
+  }
+  .avatar .avatar--medium {
+    width: 64px;
+    height: 64px;
+  }
+  .avatar .avatar--large {
+    width: 96px;
+    height: 96px;
+  }
+  .avatar .--squircle {
+    border-radius: 16px;
+  }
+  
+  .avatar .--shadow {
+    box-shadow: 1px 8px 10px grey;
+  }
