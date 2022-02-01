@@ -1,69 +1,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 .header h1 {
-    font-size: 48px;
-    line-height: 64px;
+    font-size: 4rem;
+    line-height: 4.5rem;
     font-weight: bold;
 }
 
 .header h2 {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 2.8125rem;
+    line-height: 3.25rem;
     font-weight: bold;
 }
 
 .header h3 {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 1.5rem;
+    line-height: 2rem;
     font-weight: bold;
 }
 
 .header h4 {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1rem;
+    line-height: 1.5rem;
     font-weight: bold;
 }
 
 .header h5 {
-    font-size: 8px;
-    line-height: 16px;
+    font-size: 0.5rem;
+    line-height: 1rem;
     font-weight: bold;
 }
 
-.body h1 {
-    font-size: 48px;
-    line-height: 64px;
 
+.text {
+    font-size:1rem;
+    line-height: 1.5rem;
 }
 
-.body  h2 {
-    font-size: 32px;
-    line-height: 40px;
-
-}
-
-.body  h3 {
-    font-size: 24px;
-    line-height: 32px;
-
-}
-
-.body  h4 {
-    font-size: 16px;
-    line-height: 24px;
-
-}
-
-.body h5 {
-    font-size: 8px;
-    line-height: 16px;
-
-}
-
-.desc{
-    font-size:16px;
-    line-height: 24px;
-
+.text-large{
+    font-size: 1.5rem;
+    line-height: 2rem;
 }
 
 .material-icons {
