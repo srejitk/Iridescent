@@ -1,0 +1,170 @@
+/* Alerts CSS */
+.alert {
+    min-height: 56px;
+    min-width: 700px;
+    justify-content: space-between;
+    border-radius: 12px;
+    box-shadow: 0px 2px 4px var(--component-grey-hover),
+      0px 4px 8px var(--component-grey-hover);
+  }
+
+  .alert .material-icons {
+    font-size: 18px;
+    outline: 0px;
+    font-weight: 500;
+    color: var(--component-grey-04);
+    padding: 0rem 1rem;
+  }
+
+  .alert__desc {
+    font-weight: 400;
+  }
+
+  .alert__desc__keyword {
+    padding-right: 4px;
+  }
+
+  /* Success Alert Shaded */
+
+  .alert--success--shaded {
+    box-shadow: 0px 8px 16px var(--component-green-hover),
+      0px 4px 8px var(--component-green-hover);
+    background-color: var(--component-green-06);
+    color: white;
+  }
+
+  .alert--success--shaded .material-icons {
+    color: var(--component-green-02);
+  }
+
+  .alert--success--shaded .alert__desc__keyword {
+    color: var(--component-green-02);
+    font-weight: 600;
+  }
+
+  /* Alert Warning Shaded*/
+  .alert--warning--shaded {
+    box-shadow: 0px 8px 16px var(--component-orange-hover),
+      0px 4px 8px var(--component-orange-hover);
+    background-color: var(--component-orange-06);
+    color: white;
+  }
+
+  .alert--warning--shaded .material-icons {
+    color: var(--component-orange-02);
+  }
+
+  .alert--warning--shaded .alert__desc__keyword {
+    color: var(--component-orange-02);
+    font-weight: 600;
+  }
+  /* Failure Alert Shaded */
+  .alert--failure--shaded {
+    box-shadow: 0px 8px 16px var(--component-red-hover),
+      0px 4px 8px var(--component-red-hover);
+    background-color: var(--component-red-06);
+    color: white;
+  }
+
+  .alert--failure--shaded .material-icons {
+    color: var(--component-red-02);
+  }
+
+  .alert--failure--shaded .alert__desc__keyword {
+    color: var(--component-red-02);
+    font-weight: 600;
+  }
+
+  /* Primary Alert Shaded*/
+  .alert--primary--shaded {
+    box-shadow: 0px 8px 16px var(--component-blue-hover),
+      0px 4px 8px var(--component-blue-hover);
+    background-color: var(--component-blue-06);
+    color: white;
+  }
+
+  .alert--primary--shaded .material-icons {
+    color: var(--component-blue-02);
+  }
+
+  .alert--primary--shaded .alert__desc__keyword {
+    color: var(--component-blue-02);
+    font-weight: 600;
+  }
+
+  /* Secondary Alert Shaded*/
+
+  .alert--secondary--shaded {
+    box-shadow: 0px 8px 16px var(--component-green-hover),
+      0px 4px 8px var(--component-green-hover);
+    background-color: var(--component-grey-06);
+    color: white;
+  }
+
+  .alert--secondary--shaded .material-icons {
+    color: var(--component-grey-02);
+  }
+
+  .alert--secondary--shaded .alert__desc__keyword {
+    color: var(--component-grey-02);
+    font-weight: 600;
+  }
+
+/* Success Alert */
+.alert--success {
+    box-shadow: 0px 2px 4px var(--component-green-hover),
+      0px 4px 8px var(--component-green-hover);
+  }
+
+  .alert--success .material-icons {
+    color: var(--success-color);
+  }
+
+  .alert--success .alert__desc__keyword {
+    color: var(--component-green-05);
+    font-weight: 600;
+  }
+
+  /* Alert Warning */
+  .alert--warning {
+    box-shadow: 0px 2px 4px var(--component-orange-hover),
+      0px 4px 8px var(--component-orange-hover);
+  }
+
+  .alert--warning .material-icons {
+    color: var(--warning-color);
+  }
+
+  .alert--warning .alert__desc__keyword {
+    color: var(--component-orange-05);
+    font-weight: 600;
+  }
+  /* Failure Alert */
+  .alert--failure {
+    box-shadow: 0px 2px 4px var(--component-red-hover),
+      0px 4px 8px var(--component-red-hover);
+  }
+
+  .alert--failure .material-icons {
+    color: var(--failure-color);
+  }
+
+  .alert--failure .alert__desc__keyword {
+    color: var(--component-red-05);
+    font-weight: 600;
+  }
+
+  /* Primary Alert */
+  .alert--primary {
+    box-shadow: 0px 2px 4px var(--component-blue-hover),
+      0px 4px 8px var(--component-blue-hover);
+  }
+
+  .alert--primary .material-icons {
+    color: var(--primary-color);
+  }
+
+  .alert--primary .alert__desc__keyword {
+    color: var(--component-blue-05);
+    font-weight: 600;
+  }
