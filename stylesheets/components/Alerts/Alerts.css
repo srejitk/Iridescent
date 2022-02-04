@@ -3,6 +3,7 @@
     min-height: 56px;
     min-width: 700px;
     justify-content: space-between;
+    align-items: center;
     border-radius: 12px;
     box-shadow: 0px 2px 4px var(--component-grey-hover),
       0px 4px 8px var(--component-grey-hover);
@@ -14,6 +15,10 @@
     font-weight: 500;
     color: var(--component-grey-04);
     padding: 0rem 1rem;
+  }
+
+  .alert__desc__keyword{
+    font-weight: 600;
   }
 
   .alert__desc {
@@ -39,7 +44,6 @@
 
   .alert--success--shaded .alert__desc__keyword {
     color: var(--component-green-02);
-    font-weight: 600;
   }
 
   /* Alert Warning Shaded*/
@@ -56,7 +60,7 @@
 
   .alert--warning--shaded .alert__desc__keyword {
     color: var(--component-orange-02);
-    font-weight: 600;
+    
   }
   /* Failure Alert Shaded */
   .alert--failure--shaded {
@@ -72,7 +76,7 @@
 
   .alert--failure--shaded .alert__desc__keyword {
     color: var(--component-red-02);
-    font-weight: 600;
+    
   }
 
   /* Primary Alert Shaded*/
@@ -89,7 +93,7 @@
 
   .alert--primary--shaded .alert__desc__keyword {
     color: var(--component-blue-02);
-    font-weight: 600;
+    
   }
 
   /* Secondary Alert Shaded*/
@@ -107,7 +111,7 @@
 
   .alert--secondary--shaded .alert__desc__keyword {
     color: var(--component-grey-02);
-    font-weight: 600;
+    
   }
 
 /* Success Alert */
@@ -122,7 +126,7 @@
 
   .alert--success .alert__desc__keyword {
     color: var(--component-green-05);
-    font-weight: 600;
+    
   }
 
   /* Alert Warning */
@@ -137,7 +141,7 @@
 
   .alert--warning .alert__desc__keyword {
     color: var(--component-orange-05);
-    font-weight: 600;
+    
   }
   /* Failure Alert */
   .alert--failure {
@@ -151,7 +155,7 @@
 
   .alert--failure .alert__desc__keyword {
     color: var(--component-red-05);
-    font-weight: 600;
+    
   }
 
   /* Primary Alert */
@@ -166,5 +170,5 @@
 
   .alert--primary .alert__desc__keyword {
     color: var(--component-blue-05);
-    font-weight: 600;
+    
   }
