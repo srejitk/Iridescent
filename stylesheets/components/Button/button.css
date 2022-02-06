@@ -1,3 +1,14 @@
+/* Add to color Variables */
+:root{
+  --success-shadow :rgba(31, 139, 36, 0.2);
+  --warning-shadow:rgba(191, 113, 15, 0.2);
+  --critical-shadow:rgba(218, 16, 11, 0.2);
+  --primary-shadow:rgba(197, 220, 250, 0.502);
+  --white:#ffffff;
+  --black:#000000;
+}
+
+
 /* Button Component Styling */
 .btn {
     display: flex;
@@ -8,7 +19,7 @@
     font-weight: 500;
     padding: 0.75rem 1rem;
     border-radius: 8px;
-    color: white;
+    color: var(--white);
     border: 2px solid transparent;
     background-color: var(--component-grey-01);
     color: var(--component-grey-05);
@@ -28,18 +39,18 @@
   /* Primary Button */
   .btn--primary {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--white);
   }
   .btn--primary:hover {
     color: var(--component-blue-04);
-    background-color: white;
+    background-color: var(--white);
     border: 3px solid var(--component-blue-04);
   }
 
   /* Success Button */
 
   .btn--success {
-    background-color: white;
+    background-color: var(--white);
     border: 3px solid var(--success-color);
     color: var(--success-color);
   }
@@ -47,14 +58,14 @@
     background-color: var(--success-color);
     color: var(--component-green-01);
     border: 3px solid transparent;
-    box-shadow: 0px 1px 2px rgba(31, 139, 36, 0.2),
-      0px 2px 4px rgba(31, 139, 36, 0.2);
+    box-shadow: 0px 1px 2px var(--success-shadow),
+      0px 2px 4px var(--success-shadow);
   }
 
   /* Warning Button */
 
   .btn--warning {
-    background-color: white;
+    background-color: var(--white);
     border: 3px solid var(--warning-color);
     color: var(--warning-color);
   }
@@ -62,14 +73,14 @@
     background-color: var(--warning-color);
     color: var(--component-orange-01);
     border: 3px solid transparent;
-    box-shadow: 0px 1px 2px rgba(191, 113, 15, 0.2),
-      0px 2px 4px rgba(191, 113, 15, 0.2);
+    box-shadow: 0px 1px 2px var(--warning-shadow),
+      0px 2px 4px var(--warning-shadow);
   }
 
   /* Critical Button */
 
   .btn--critical {
-    background-color: white;
+    background-color: var(--white);
     border: 3px solid var(--failure-color);
     color: var(--failure-color);
   }
@@ -77,14 +88,14 @@
     background-color: var(--failure-color);
     color: var(--component-red-01);
     border: 3px solid transparent;
-    box-shadow: 0px 1px 2px rgba(218, 16, 11, 0.2),
-      0px 2px 4px rgba(218, 16, 11, 0.2);
+    box-shadow: 0px 1px 2px var(--critical-shadow),
+      0px 2px 4px var(--critical-shadow);
   }
 
   /* Link Buttons */
 
   .btn--link {
-    background-color: white;
+    background-color: var(--white);
   }
 
   .btn--link:hover {
@@ -93,7 +104,7 @@
 
   /* Link Buttons Outline */
   .btn--link--outline {
-    background-color: white;
+    background-color: var(--white);
     border: 3px solid var(--component-grey-04);
   }
 
@@ -103,10 +114,10 @@
   }
 
   .btn--rtl {
-    flex-direction: row-reverse;
+    flex-flow: row-reverse nowrap;
   }
   .btn--ltr {
-    flex-direction: row;
+    flex-flow: row nowrap;
   }
 
   /* Icon Buttons */
@@ -117,22 +128,22 @@
   }
   /* Icon Button Tonal */
   .btn--icon--tonal {
-    background-color: #c5dcfa80;
+    background-color: var(--primary-shadow);
     color: var(--component-indigo-05);
   }
   .btn--icon--tonal:hover {
     background-color: var(--component-blue-05);
-    color: white;
+    color: var(--white);
   }
   /* Icon Button Outline */
   .btn--icon--outline {
-    background-color: #c5dcfa80;
+    background-color: var(--primary-shadow);
     color: var(--component-indigo-05);
     border: 3px solid var(--primary-color);
   }
   .btn--icon--outline:hover {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--white);
     border: 3px solid transparent;
   }
 
@@ -140,12 +151,12 @@
   .btn--fab {
     position: absolute;
     border-radius: 50%;
-    width: 56px;
-    height: 56px;
+    width: 3.5rem;
+    height: 3.5rem;
     background-color: var(--primary-color);
     box-shadow: 0px 4px 8px rgba(15, 86, 179, 0.14),
       0px 8px 16px rgba(15, 86, 179, 0.14);
-    color: white;
+    color: var(--white);
     z-index: 5;
   }
   .btn--fab:hover {
