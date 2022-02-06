@@ -1,4 +1,4 @@
-+/* Button Component Styling */
+/* Button Component Styling */
 .btn {
     display: flex;
     align-items: center;
@@ -28,6 +28,7 @@
   /* Primary Button */
   .btn--primary {
     background-color: var(--primary-color);
+    color: white;
   }
   .btn--primary:hover {
     color: var(--component-blue-04);
@@ -150,4 +151,39 @@
   .btn--fab:hover {
     background-color: var(--component-grey-01);
     color: var(--primary-color);
+  }
+
+
+  .fab--topright {
+    top: 25px;
+    right: 25px;
+  }
+
+  .fab--bottomleft {
+    bottom: 25px;
+    left: 25px;
+  }
+
+  .fab--bottomright {
+    bottom: 25px;
+    right: 25px;
+  }
+  .fab--topleft {
+    top: 25px;
+    left: 25px;
+  }
+
+  /* Fab Extended */
+  .fab--extend {
+    width: 141px;
+    border-radius: 50px;
+  }
+  .fab--extend:hover {
+    background-color: var(--component-grey-01);
+    color: var(--primary-color);
+  }
+  /* Squircle FAB */
+  .fab--squircle {
+    border-radius: 16px;
+    border: 3px solid var(--primary-color);
   }
