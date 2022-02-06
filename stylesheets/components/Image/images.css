@@ -1,0 +1,22 @@
+    /* Responsive Image */
+    .image--responsive {
+        max-width: 100%;
+        object-fit: cover;
+      }
+  
+      .image--round img {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+      }
+  
+      .image--square img {
+        width: 200px;
+        height: 200px;
+      }
+  
+      .image--squircle img {
+        width: 200px;
+        height: 200px;
+        border-radius: 28px;
+      }
