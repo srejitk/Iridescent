@@ -1,0 +1,153 @@
++/* Button Component Styling */
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    width: fit-content;
+    font-weight: 500;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    color: white;
+    border: 2px solid transparent;
+    background-color: var(--component-grey-01);
+    color: var(--component-grey-05);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .btn:hover {
+    background-color: var(--component-grey-01);
+    color: #000;
+  }
+  /* Button Icons */
+  .btn .material-icons {
+    font-size: 1rem;
+    outline: 0px solid;
+  }
+
+  /* Primary Button */
+  .btn--primary {
+    background-color: var(--primary-color);
+  }
+  .btn--primary:hover {
+    color: var(--component-blue-04);
+    background-color: white;
+    border: 3px solid var(--component-blue-04);
+  }
+
+  /* Success Button */
+
+  .btn--success {
+    background-color: white;
+    border: 3px solid var(--success-color);
+    color: var(--success-color);
+  }
+  .btn--success:hover {
+    background-color: var(--success-color);
+    color: var(--component-green-01);
+    border: 3px solid transparent;
+    box-shadow: 0px 1px 2px rgba(31, 139, 36, 0.2),
+      0px 2px 4px rgba(31, 139, 36, 0.2);
+  }
+
+  /* Warning Button */
+
+  .btn--warning {
+    background-color: white;
+    border: 3px solid var(--warning-color);
+    color: var(--warning-color);
+  }
+  .btn--warning:hover {
+    background-color: var(--warning-color);
+    color: var(--component-orange-01);
+    border: 3px solid transparent;
+    box-shadow: 0px 1px 2px rgba(191, 113, 15, 0.2),
+      0px 2px 4px rgba(191, 113, 15, 0.2);
+  }
+
+  /* Critical Button */
+
+  .btn--critical {
+    background-color: white;
+    border: 3px solid var(--failure-color);
+    color: var(--failure-color);
+  }
+  .btn--critical:hover {
+    background-color: var(--failure-color);
+    color: var(--component-red-01);
+    border: 3px solid transparent;
+    box-shadow: 0px 1px 2px rgba(218, 16, 11, 0.2),
+      0px 2px 4px rgba(218, 16, 11, 0.2);
+  }
+
+  /* Link Buttons */
+
+  .btn--link {
+    background-color: white;
+  }
+
+  .btn--link:hover {
+    background-color: var(--component-grey-01);
+  }
+
+  /* Link Buttons Outline */
+  .btn--link--outline {
+    background-color: white;
+    border: 3px solid var(--component-grey-04);
+  }
+
+  .btn--link--outline:hover {
+    background-color: var(--component-grey-01);
+    border: 3px solid transparent;
+  }
+
+  .btn--rtl {
+    flex-direction: row-reverse;
+  }
+  .btn--ltr {
+    flex-direction: row;
+  }
+
+  /* Icon Buttons */
+  .btn--icon {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Icon Button Tonal */
+  .btn--icon--tonal {
+    background-color: #c5dcfa80;
+    color: var(--component-indigo-05);
+  }
+  .btn--icon--tonal:hover {
+    background-color: var(--component-blue-05);
+    color: white;
+  }
+  /* Icon Button Outline */
+  .btn--icon--outline {
+    background-color: #c5dcfa80;
+    color: var(--component-indigo-05);
+    border: 3px solid var(--primary-color);
+  }
+  .btn--icon--outline:hover {
+    background-color: var(--primary-color);
+    color: white;
+    border: 3px solid transparent;
+  }
+
+  /* FAB Btn */
+  .btn--fab {
+    position: absolute;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    background-color: var(--primary-color);
+    box-shadow: 0px 4px 8px rgba(15, 86, 179, 0.14),
+      0px 8px 16px rgba(15, 86, 179, 0.14);
+    color: white;
+    z-index: 5;
+  }
+  .btn--fab:hover {
+    background-color: var(--component-grey-01);
+    color: var(--primary-color);
+  }
