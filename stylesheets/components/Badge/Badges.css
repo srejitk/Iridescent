@@ -18,18 +18,15 @@
       border-radius: 6px;
   }
 
-  /* Badge on Icon */
   .badge--icon {
       top: -10px;
       right: -10px;
   }
 
-  /* Rounded Badge */
   .badge--round {
       border-radius: 50%;
   }
 
-  /* Tag Badge */
   .badge--tag {
     position: absolute;
     top: -12px;
@@ -40,8 +37,6 @@
     font-size: 0.875rem;
     text-transform: capitalize;
 }
-
-  /* Avatar Badge */
   .badge--avatar {
     background-color: var(--primary-color);
     top: 0px;
@@ -51,7 +46,6 @@
 
 
   /* Badge Sizes */
-  /* Badge Large */
   .badge--large {
       min-width: 32px;
       min-height: 32px;
@@ -61,7 +55,6 @@
       font-weight: 800;
   }
 
-  /* Badge Small */
   .badge--small {
       min-width: 16px;
       min-height: 16px;
@@ -72,7 +65,6 @@
   }
 
   /* Tag Badges Sizes */
-  /* Tag Badge Large */
   .badge--tag--lg {
       border-radius: 4px;
       font-size: 1rem;
@@ -83,12 +75,11 @@
       color: var(--primary-text);
   }
 
-  /* Tag Badge Small */
   .badge--tag--sm {
       top: -10px;
       right: -9px;
       border-radius: 6px;
-      text-decoration: uppercase;
+      text-transform: capitalize;
       font-size: 10px;
       padding: 0px 4px;
       background-color: var(--primary-color);
