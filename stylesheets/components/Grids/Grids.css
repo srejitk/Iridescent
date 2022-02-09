@@ -1,0 +1,14 @@
+   /* Grids Styling */
+   .grid {
+    display: grid;
+}
+
+.col2x2 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+}
+
+.col3x3 {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+}
