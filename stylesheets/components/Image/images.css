@@ -6,17 +6,17 @@
   
       .image--round img {
         border-radius: 50%;
-        width: 200px;
-        height: 200px;
+        width: 12.5rem;
+        height: 12.5rem;
       }
   
       .image--square img {
-        width: 200px;
-        height: 200px;
+        width: 12.5rem;
+        height: 12.5rem;
       }
   
       .image--squircle img {
-        width: 200px;
-        height: 200px;
+        width: 12.5rem;
+        height: 12.5rem;
         border-radius: 28px;
       }
