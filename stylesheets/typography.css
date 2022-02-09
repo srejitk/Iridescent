@@ -1,51 +1,96 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 
-.header h1 {
-    font-size: 4rem;
-    line-height: 4.5rem;
-    font-weight: bold;
+
+.comp-font {
+    font-family: 'Manrope', sans-serif;
 }
 
-.header h2 {
-    font-size: 2.8125rem;
-    line-height: 3.25rem;
+.header-1 {
     font-weight: bold;
+    font-size: 6rem;
+    line-height: 125%;
 }
 
-.header h3 {
+.header-2 {
+    font-weight: bold;
+    font-size: 3.75rem;
+    line-height: 133%;
+}
+
+.header-3 {
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 133%;
+}
+
+.header-4 {
+    font-weight: 600;
+    font-size: 2.125rem;
+    line-height: 130%;
+}
+
+.header-5 {
+    font-weight: 600;
     font-size: 1.5rem;
-    line-height: 2rem;
-    font-weight: bold;
+    line-height: 132%;
 }
 
-.header h4 {
+.header-6 {
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 138%;
+}
+
+
+.subtitle-1 {
+    font-weight: bold;
     font-size: 1rem;
-    line-height: 1.5rem;
+    line-height: 150%;
+}
+
+.subtitle-2 {
     font-weight: bold;
+    font-size: 0.875rem;
+    line-height: 142%;
 }
 
-.header h5 {
-    font-size: 0.5rem;
-    line-height: 1rem;
+.body-1 {
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 150%;
+}
+
+.body-2 {
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 142%;
+}
+
+.btn-text {
     font-weight: bold;
+    font-size: 1rem;
+    line-height: 150%;
 }
 
-
-.text {
-    font-size:1rem;
-    line-height: 1.5rem;
+.caption {
+    font-weight: normal;
+    font-size: 0.75rem;
+    line-height: 130%;
 }
 
-.text-large{
-    font-size: 1.5rem;
-    line-height: 2rem;
+.overline {
+    font-weight: 800;
+    font-size: 0.625rem;
+    line-height: 158%;
 }
+
 
 .material-icons {
     font-family: 'Material Icons';
     font-weight: normal;
     font-style: normal;
-    font-size: 24px;  /* Preferred icon size */
+    font-size: 24px;
+    /* Preferred icon size */
     display: inline-block;
     line-height: 1;
     text-transform: none;
@@ -53,20 +98,15 @@
     word-wrap: normal;
     white-space: nowrap;
     direction: ltr;
-  
+
     /* Support for all WebKit browsers. */
     -webkit-font-smoothing: antialiased;
     /* Support for Safari and Chrome. */
     text-rendering: optimizeLegibility;
-  
+
     /* Support for Firefox. */
     -moz-osx-font-smoothing: grayscale;
-  
+
     /* Support for IE. */
     font-feature-settings: 'liga';
-  }
-
-  body{
-      font-family: "Roboto";
-  }
-
+}
