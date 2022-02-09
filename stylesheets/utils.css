@@ -1,3 +1,22 @@
+:root{
+    /* Font weights */
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+    --fw-black: 900;
+
+    /* Font sizes */
+    --fs-sm: 0.5rem;
+    --fs-label: 0.8rem;
+    --fs-md: 1rem;
+    --fs-lg: 1.5rem;
+    --fs-xlg: 2rem;
+    --fs-xxlg: 3.5rem;
+
+}
+
+
 .center-children{
     display: flex;
     justify-content: center;
@@ -5,27 +24,118 @@
 }
 
 .border-2d{
-    border: 2px solid;
+    border: 2px solid var(--accent);
 }
 
 .border-4d{
-    border: 4px solid;
+    border: 4px solid var(--accent);
 }
 
 .border-8d{
-    border: 8px solid;
+    border: 8px solid var(--accent);
 }
 
 .border-16d{
-    border: 16px solid;
+    border: 16px solid var(--accent);
 }
 
 .border-24d{
-    border: 24px solid;
+    border: 24px solid var(--accent);
 }
-
 .border-32d{
-    border: 32px solid;
+    border: 32px solid var(--accent);
 }
 
 
+.flex-row-wrap{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.flex-row-nowrap{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.flex-column-wrap{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.flex-column-nowrap{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+
+.padding-2{
+    border: 2px solid;
+}
+
+.padding-4{
+    border: 4px solid;
+}
+
+.padding-8{
+    padding: 8px;
+}
+
+.padding-12{
+    padding: 12px;
+}
+.padding-16{
+   padding: 16px;
+}
+
+.padding-24{
+    padding: 24px;
+}
+
+.padding-32{
+    padding: 24px;
+}
+
+.text--center{
+    text-align: center;
+}
+
+.text--left{
+    text-align: left;
+}
+
+.text--right{
+    text-align: right;
+}
+
+.text--justify{
+    text-align:justify;
+}
+
+
+.gap20{
+    gap: 20px;
+}
+
+.gap30{
+    gap: 30px;
+}
+
+.align--center{
+    align-items: center;
+    justify-content: center;
+}
+
+.align--topleft{
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.align--midleft{
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.align--bottomleft{
+    align-items: flex-end;
+    justify-content: flex-start;
+}
