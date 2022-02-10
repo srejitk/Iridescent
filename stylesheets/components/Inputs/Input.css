@@ -1,9 +1,9 @@
 
-
 /* Input Field */
-.input--field {
-  height: 56px;
-  width: 344px;
+.input__field {
+  position: relative;
+  padding: 20px 0px;
+  min-width: 344px;
   padding: 12px;
   border-radius: 8px;
   border: 3px solid var(--component-grey-01--hover);
@@ -11,41 +11,41 @@
   color: var(--component-grey-05);
 }
 
-.input--field::placeholder {
+.input__field::placeholder {
   color: var(--component-grey-03);
 }
 
 .input__container {
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
 /* Input Sizes */
 /* Keep the width fixed */
-.input--field--small {
-  width: 240px;
+.input__field--small {
+  min-width: 240px;
 }
 
 /* Keep the width fixed */
-.input--field--large {
-  width: 496px;
+.input__field--large {
+  min-width: 496px;
 }
 
 /* Outline Input Styling */
 
-.input--field--outline {
+.input__field--outline {
   background-color: var(--white);
   border: 3px solid var(--component-grey-05);
   color: black;
 }
 
-.input--field--outline:focus {
+.input__field--outline:focus {
   border: 3px solid var(--component-grey-03);
 }
 
-.input--field--outline::placeholder {
+.input__field--outline::placeholder {
   color: black;
 }
 
@@ -68,6 +68,10 @@
   align-items: center;
 }
 
+
+.input--sidelabel ~ .input--msg{
+  left: 98px;
+}
 /* Input Top Label */
 
 .input--toplabel {
@@ -90,48 +94,48 @@
   left: 12px;
 }
 
-.--warning {
+.text--warning {
   color: var(--failure-color);
 }
 
-.--success {
+.text--success {
   color: var(--success-color);
 }
 
-.--primary {
+.text--primary {
   color: var(--component-blue-05);
 }
 
 /* Warning Input */
-.input--field--warning {
+.input__field--warning {
   border: 3px solid var(--failure-color);
   background-color: var(--white);
   color: var(--black)
 }
 
-.input--field--warning::placeholder {
+.input__field--warning::placeholder {
   color: var(--black)
 }
 
 /* Success Input */
-.input--field--success {
+.input__field--success {
   border: 3px solid var(--success-color);
   background-color: var(--white);
   color: var(--black)
 }
 
-.input--field--success::placeholder {
+.input__field--success::placeholder {
   color: var(--black)
 }
 
 /* Primary Input */
-.input--field--primary {
+.input__field--primary {
   border: 3px solid var(--component-blue-05);
   background-color: var(--white);
   color: var(--black)
 }
 
-.input--field--primary::placeholder {
+.input__field--primary::placeholder {
   color: var(--black)
 }
 
@@ -149,23 +153,23 @@
 }
 
 /* Input Checkbox Styling */
-.input--field--checkbox {
+.input__field--checkbox {
   width: 22px;
   height: 22px;
 }
 
-.input__container .input--field--checkbox:checked {
+.input__container .input__field--checkbox:checked {
   border-radius: 8px;
   outline: 4px solid var(--component-blue-01--hover);
 }
 
 /* Input Radio Styling */
-.input--field--radio {
+.input__field--radio {
   width: 22px;
   height: 22px;
 }
 
-.input__container .input--field--radio:checked {
+.input__container .input__field--radio:checked {
   border-radius: 50%;
   border: 4px solid var(--component-blue-01--hover);
 }
