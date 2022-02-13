@@ -1,0 +1,214 @@
+
+    /* Card CSS */
+    .card {
+        position: relative;
+        min-width: 10.625rem;
+        max-width: 35rem;
+        min-height: 9.375rem;
+        max-height: 400px;
+        background-color: white;
+        border-radius: 12px;
+        box-shadow: var(--box-shadow);
+    }
+
+    .card--small {
+        width: min-content;
+        height: min-content;
+    }
+
+    .card__img--small {
+        width: 10.625rem;
+        height: 10.625rem;
+    }
+
+    .card__img--small img {
+        border-radius: 12px;
+    }
+
+    .card__content--column {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 12px;
+    }
+
+    .card__content--row {
+        display: flex;
+        flex-direction: row;
+        padding: 10px 12px;
+    }
+
+    .card__icon {
+        position: absolute;
+        outline: 0px;
+        top: 8px;
+        right: 8px;
+        background-color: rgba(230, 230, 230, 0.5);
+        font-size: 1rem;
+    }
+
+    .card__icon:hover {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        color: var(--component-red-05);
+        background-color: var(--component-red-01);
+        font-size: 1rem;
+    }
+
+    /* Mini Card */
+    .card--mini {
+        width: min-content;
+        height: max-content;
+    }
+
+    .card__img--mini img {
+        border-radius: 12px;
+    }
+
+    .mini--content {
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+        background: rgba(197, 220, 250, 0.5);
+        border-radius: 0px 0px 12px 12px;
+    }
+
+    .card__tag {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        padding: 2px 6px;
+        border-radius: 4px;
+        background: var(--component-yellow-03);
+        ;
+    }
+
+    .card--horizontal {
+        display: flex;
+        flex-direction: row;
+        max-width: 560px;
+    }
+
+    .card--horizontal>.card__content--column {
+        width: 70%;
+
+    }
+
+    .card--horizontal>.card__image--small {
+        width: 30%;
+    }
+
+    .card__img--square {
+        width: 11rem;
+        height: 11.5rem;
+        object-fit: contain;
+        padding: 1.5rem 1rem;
+    }
+
+    .card__contents {
+        height: 13rem;
+        width: 25.5rem;
+    }
+
+    .card__text {
+        height: 8rem;
+        padding: 1.5rem;
+    }
+
+    .card__footer {
+        height: 5rem
+    }
+
+    .card__cover {
+        /* Refactor : Use Utils here */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 13rem;
+        width: 30%;
+    }
+
+    .card__cover img {
+        position: relative;
+        height: 8rem;
+        width: 8rem;
+        border-radius: 8px;
+    }
+    .card--vertical {
+        max-width: 21.5rem;
+        min-height: 24.75rem;
+    }
+
+    .cover--vertical {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+
+
+
+    }
+
+    .cover--vertical img {
+        width: 21.5rem;
+        height: 12.5rem;
+        border-radius: 12px;
+    }
+
+    .card--vertical>.card__content--column {
+        width: 70%;
+
+    }
+
+    .card--vertical>.card__image--small {
+        width: 30%;
+    }
+
+    .card__text--vertical {
+        height: 8rem;
+        padding: 0.75rem 1.5rem;
+    }
+    .text--overlay {
+        position: absolute;
+        bottom: 0px;
+        /* Convert color code to HSL to use var here */
+        background: rgba(197, 220, 250, 0.5);
+        border-radius: 12px;
+    }
+
+    .text--overlay~.card__cover img {
+        border-radius: 8px;
+    }
+
+    .card--text--overlay {
+        min-height: fit-content;
+    }    .item--price {
+        text-decoration: line-through;
+    }
+
+    .btn--outline--secondary:hover>.icon--secondary {
+        color: var(--component-grey-03);
+    }
+
+    .icon--secondary:hover {
+        color: var(--component-red-03);
+    }
+
+    .text--secondary {
+        color: var(--component-grey-05);
+    }
+
+    .text--secondary:hover {
+        color: var(--component-red-05);
+    }
+
+    
+    .text--primary {
+        color: var(--component-blue-05);
+    }
+
+    .text--grey {
+        color: var(--coponent-grey-03);
+    }
