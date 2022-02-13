@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+    <link rel="stylesheet" href="/stylesheets/index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/path/to/styles/default.min.css" />
+    <script src="/path/to/highlight.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
+        integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        hljs.highlightAll();
+    </script>
+</head>
+<style>
+    :root {
+        --color: #a8c7fa;
+        --mio-theme-color-primary: #0b57d0;
+        --mio-theme-color-primary-200: #a8c7fa;
+        --mio-theme-color-primary-700: #0842a0;
+        --mio-theme-color-primary-800: #062e6f;
+        --page-green: #d9e8cb;
+        --page-green-light: #f3f7ee;
+        --page-red: #FFDAD9;
+        --page-red-light: #FFECEB;
+        --page-blue: #7ECEFF;
+        --page-blue-light: #C3E7FF;
+
+    }
+
+    .iris__bg__wrapper {
+        background-image: url("https://lh3.googleusercontent.com/DRYibnTX0WxqlggQpV0O8e3B1WdcQ2YEjGpwfxod_OPxEPawG62kfqEpjvoqBMJYPyu3kuKUEB0txqTI0S4PidvcAISePvUexmU8uq-HcUfTjnKQ5A=w1200-rj")
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .bg-green {
+        background-color: var(--page-green-light);
+    }
+
+    .bg-red {
+        background-color: var(--page-red-light);
+    }
+
+    .bg-blue {
+        background-color: var(--page-blue-light);
+    }
+
+    .bg-blue-light {
+        background-color: var(--page-blue-light);
+    }
+
+    .code--red {
+        background-color: var(--page-red);
+        font-style: normal;
+        font-weight: bolder;
+    }
+
+    .code--blue {
+        background-color: var(--page-blue);
+        font-style: normal;
+        font-weight: bolder;
+    }
+
+    .code--green {
+        background-color: var(--page-green);
+        font-style: normal;
+        font-weight: bolder;
+    }
+
+    .demo--input {
+        background-color: white;
+    }
+
+    .position-absolute {
+        position: absolute;
+    }
+
+    .position-relative {
+        position: relative;
+    }
+
+    .position-static {
+        position: relative;
+    }
+</style>
+
+
+<body>
+    <div class="main-container">
+        <!-- Header HTML -->
+        <header id="header" class="iris__header">
+            <nav class="iris__navbar">
+                <div class="iris__navbar__logo__section">
+                    <a class="home__section">
+                        <span id="hamburger_open" class="material-icons icon--sidebar">menu</span>
+                        <span id="hamburger_close" class="material-icons icon--sidebar">
+                            menu_open
+                        </span>
+                        <h3 class="iris__logo__title">Iridescent</h3>
+                    </a>
+                </div>
+                <div class="nav__links__container">
+                    <ul class="nav__links__ul">
+                        <a href="/docs/Introduction.html" class="header nav__links hoverOn--round">Docs</a>
+                        <a href="https://www.github.com/srejitk" class="header nav__links hoverOn--round">Github</a>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- Side bar HTML -->
+        <section id="sidebar" class="iris__sidebar">
+            <div class="section__title">Getting Started</div>
+            <a href="./Introduction.html" class="iris__categories title hoverOn ">Introduction</a>
+            <a href="./Colors.html" class="iris__categories title hoverOn">Colors</a>
+            <a href="./Typography.html" class="iris__categories title hoverOn">Typography</a>
+            <a href="./Contribution" class="iris__categories title hoverOn">Conclusion</a>
+            <div class="section__title">Components</div>
+            <a href="./Avatars.html" class="iris__categories title hoverOn ">Avatars</a>
+            <a href="./Alerts.html" class="iris__categories title hoverOn ">Alert</a>
+            <a href="./Badge.html" class="iris__categories title hoverOn">Badge</a>
+            <a href="./Buttons.html" class="iris__categories title hoverOn selectedOn">Button</a>
+            <a href="./Cards.html" class="iris__categories title hoverOn">Card</a>
+            <a href="./Images.html" class="iris__categories title hoverOn">Image</a>
+            <a href="./Inputs.html" class="iris__categories title hoverOn ">Input</a>
+            <a href="./Ratings.html" class="iris__categories title hoverOn">Ratings</a>
+            <a href="./Grids.html" class="iris__categories title hoverOn">Grids</a>
+        </section>
+        <!-- Content HTML -->
+        <div class="iris__container" id="content">
+            <!-- Component BG Header Section -->
+            <div class="iris__bg__wrapper">
+                <div class="wrapper__text">
+                    <h1 class="header-1 light--text">Buttons</h1>
+                    <p class="desc header-6 light--text">
+                        Buttons help people initiate actions, from sending an email, to sharing a document, to liking a
+                        post.
+                    </p>
+                </div>
+            </div>
+            <!-- Component Page Desc Section -->
+            <section class="iris__desc__wrapper">
+                <h2 class="header-2 content__title">Basic Buttons</h2>
+                <p class=" header-6 header-6 content__desc">
+                    The Basic buttons are available in 4 states as shown below which can be
+                    toggled by using <i class="code--green">btn---primary</i>, <i class="code--green">btn---success</i>
+                    and <i class="code--green">btn---warning</i> and <i class="code--green">btn---critical</i> .</p>
+                <!-- Make the component wrapper in row or column accordingly -->
+                <div class="component__wrapper--row bg-green border-8d  gap20 text--left">
+                    <!-- Basic Buttons -->
+                    <div class="component__item--row">
+                        <!-- Insert Component Here -->
+                        <!-- Primary Button -->
+                        <button class="btn btn--primary">
+                            <span class="material-icons">send</span>
+                            Submit
+                        </button>
+                        <!-- Insert Component Label Here -->
+                        <span class="subtitle-1">Primary Button </span>
+                    </div>
+                    <div class="component__item--row">
+                        <!-- Insert Component Here -->
+                        <!-- Input with top label -->
+                        <button class="btn btn--success">
+                            <span class="material-icons">check</span>
+                            Accept
+                        </button>
+                        <!-- Insert Component Label Here -->
+                        <span class="subtitle-1">Succcess Button</span>
+                    </div>
+                    <div class="component__item--row">
+                        <!-- Insert Component Here -->
+                        <!-- Failure Button -->
+                        <button class="btn btn--critical">
+                            <span class="material-icons">cancel</span>
+                            Cancel
+                        </button>
+                        <!-- Insert Component Label Here -->
+                        <span class="subtitle-1">Critical Button </span>
+                    </div>
+                    <div class="component__item--row">
+                        <!-- Insert Component Here -->
+                        <!-- Warning Button-->
+                        <button class="btn btn--warning">
+                            <span class="material-icons">delete</span>
+                            Delete
+                        </button>
+                        <!-- Insert Component Label Here -->
+                        <span class="subtitle-1">Warning Button</span>
+                    </div>
+
+                </div>
+            </section>
+            <!-- Implementation Code Section -->
+            <section class="iris__desc__wrapper">
+                <h2 class="header-h2 content__title">Implementation</h2>
+                <p class=" header-6 content__desc">
+                    Choose your Button type and off you go!</p>
+                <!-- Make the component wrapper in row or column accordingly -->
+                <div class="code__wrapper code__wrapper code--green gap20">
+                    <pre><code>
+        <button class="btn btn--primary">
+                        <span class="material-icons">send</span>
+                        Submit
+        </button>
+                   </code></pre>
+                </div>
+
+
+            </section>
+            <!-- Component Page Desc Section -->
+            <section class="iris__desc__wrapper">
+                <h2 class="header-2 content__title">Link Buttons</h2>
+                <p class=" header-6 content__desc">
+                    The linked variant buttons as shown below are best suited for navigation. and can be
+                    toggled by using <i class="code--green">btn--link</i> and then <i class="code--green">btn--ltr</i>
+                    and <i class="code--green">btn--ltr</i> for choosing directions.</p>
+                <!-- Make the component wrapper in row or column accordingly -->
+                <div class="component__wrapper--row bg-green border-8d  gap20 text--left">
+
+                    <div class="component__item--row">
+                        <!-- Insert Component Here -->
+                        <!-- Link Buttons LTR -->
+                        <button class="btn btn--link btn--ltr">
+                            <span class="material-icons">arrow_back</span>
+                            <a href="#">Previous</a>
+                        </button>
+                        <!-- Insert Component Label Here -->
+                        <span class="subtitle-1">Side Labelled</span>
+                    </div>
+                    <div class="component__item--row">
+                        <!-- Insert Component Here -->
+                        <!-- Link Buttons RTL-->
+                        <button class="btn btn--link btn--rtl">
+                            <span class="material-icons">arrow_forward</span>
+                            <a href="#">Next</a>
+                        </button>
+                        <!-- Insert Component Label Here -->
+                        <span class="subtitle-1">Top Labelled</span>
+                    </div>
+
+                </div>
+            </section>
+            <!-- Implementation Code Section -->
+            <section class="iris__desc__wrapper">
+                <h2 class="header-h2 content__title">Implementation</h2>
+                <p class=" header-6 content__desc">
+                    Not everyone likes to be independent. Some prefer cute little nudges!</p>
+                <!-- Make the component wrapper in row or column accordingly -->
+                <div class="code__wrapper code__wrapper code--green gap20">
+                    <pre><code>                        <!-- Input with top label -->
+                        <button class="btn btn--link btn--ltr">
+                            <span class="material-icons">arrow_back</span>
+                            <a href="#">Previous</a>
+                          </button>
+                               </code></pre>
+                </div>
+
+
+            </section>
+
+            <!-- Component Page Desc Section -->
+            <section class="iris__desc__wrapper">
+                <h2 class="header-2 content__title">Icon Buttons</h2>
+                <p class=" header-6 header-6 content__desc">
+                    The Icon Buttons are small mini buttons with a touch of material icons and also have 2 variants
+                    shown below which can be
+                    toggled by using <i class="code--green">icon---btn</i> along with the variants using <i
+                        class="code--green">--tonal</i> and <i class="code--green">--outline</i>
+                    .</p>
+                <!-- Make the component wrapper in row or column accordingly -->
+                <div class="component__wrapper--row bg-green border-8d  gap20 text--left">
+
+                    <div class="component__item--row">
+                        <!-- Insert Component Here -->
+                        <!-- Input Button Default -->
+                        <button class="btn btn--icon btn--icon">
+                            <span class="material-icons">cloud</span>
+                            <a href="#">Upload</a>
+                        </button>
+                        <!-- Insert Component Label Here -->
+                        <span class="subtitle-1">Icon Button</span>
+                    </div>
+                    <div class="component__item--row">
+                        <!-- Insert Component Here -->
+                        <!-- Input Button Tonal -->
+                        <button class="btn btn--icon btn--icon--tonal">
+                            <span class="material-icons">cloud</span>
+                            <a href="#">Upload</a>
+                        </button>
+                        <!-- Insert Component Label Here -->
+                        <span class="subtitle-1">Icon Tonal</span>
+                    </div>
+                    <div class="component__item--row">
+                        <!-- Insert Component Here -->
+                        <!-- Input Icon Outline -->
+                        <button class="btn btn--icon btn--icon--outline">
+                            <span class="material-icons">cloud</span>
+                            <a href="#">Upload</a>
+                        </button>
+
+                        <!-- Insert Component Label Here -->
+                        <span class="subtitle-1">Icon Outlined</span>
+                    </div>
+
+                </div>
+            </section>
+            <!-- Implementation Code Section -->
+            <section class="iris__desc__wrapper">
+                <h2 class="header-h2 content__title">Implementation</h2>
+                <p class=" header-6 content__desc">
+                    Choices, Choices, so many beautiful choices!</p>
+                <!-- Make the component wrapper in row or column accordingly -->
+                <div class="code__wrapper code__wrapper code--green gap20">
+                    <pre><code>             <!-- Icon Button -->
+                <button class="btn btn--icon btn--icon">
+                        <span class="material-icons">cloud</span>
+                        <a href="#">Upload</a>
+                </button> 
+                    </code></pre>
+                </div>
+
+
+            </section>
+
+            <!-- Component Page Desc Section -->
+            <section class="iris__desc__wrapper">
+                <h2 class="header-2 content__title">Floating Action Button</h2>
+                <p class=" header-6 header-6 content__desc">
+                    The inputs also have 3 States shown below which can be
+                    toggled by using <i class="code--green">btn---fab</i> along with the respective variants using <i
+                        class="code--green">fab--extend</i>
+                    and <i class="code--green">fab--squircle</i>.</p>
+                <!-- Make the component wrapper in row or column accordingly -->
+                <div class="component__wrapper--row bg-green  border-8d  gap20 text--left">
+
+                    <div class="component__item--row">
+                        <!-- Insert Component Here -->
+                        <!-- Input Field Outline --Success -->
+                        <button class="btn btn--fab position-relative">
+                            <span class="material-icons">add</span>
+
+                        </button>
+                        <!-- Insert Component Label Here -->
+                        <span class="subtitle-1">FAB</span>
+                    </div>
+                    <div class="component__item--row">
+                        <!-- Insert Component Here -->
+                        <!-- Floating Action Button Extended-->
+                        <button class="btn btn--fab fab--extend position-relative">
+                            <span class="material-icons">add</span>
+                            <a href="#">Add</a>
+                        </button>
+                        <!-- Insert Component Label Here -->
+                        <span class="subtitle-1">FAB Extended</span>
+                    </div>
+                    <div class="component__item--row">
+                        <!-- Insert Component Here -->
+                        <!-- FAB Squircle-->
+                        <button class="btn btn--fab fab--squircle position-relative">
+                            <span class="material-icons">add</span>
+                        </button>
+                        <!-- Insert Component Label Here -->
+                        <span class="subtitle-1">FAB Squircle</span>
+                    </div>
+
+                </div>
+            </section>
+            <!-- Implementation Code Section -->
+            <section class="iris__desc__wrapper">
+                <h2 class="header-h2 content__title">Implementation</h2>
+                <p class=" header-6 content__desc">
+                    Not everyone likes to be round and perfect. Some prefer cute corners!</p>
+                <!-- Make the component wrapper in row or column accordingly -->
+                <div class="code__wrapper code__wrapper code--green gap20">
+                    <pre><code>                      <!-- FAB Extended -->
+                        <button class="btn btn--fab fab--extend fab--bottomleft">
+                            <span class="material-icons">add</span>
+                            <a href="#">Add</a>
+                          </button></code></pre>
+                </div>
+
+
+            </section>
+
+            <footer class="iris__footer iris__desc__wrapper">
+                <div class="footer__content">
+                    <span class="material-icons md-48 icon--footer">mail</span>
+                    <p class="desc footer__desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat
+                        aliquam
+                        quod
+                        necessitatibus, iste dolores iure dolore cupiditate cumque excepturi. Minus esse pariatur at
+                        fugiat
+                        voluptatum officia cumque exercitationem eligendi consectetur!</p>
+                    <div class="nav__links__container">
+                        <ul class="nav__links__ul">
+                            <a href="https://www.twitter.com/srejitk" target="__blank"
+                                class="footer nav__links nav__links--footer">Twitter</a>
+                            <a href="https://www.github.com/srejitk" target="__blank"
+                                class="footer nav__links nav__links--footer">Github</a>
+                            <a href="https://www.linkedin.com/srejitk" target="__blank"
+                                class="footer nav__links nav__links--footer">LinkedIn</a>
+                        </ul>
+                    </div>
+                </div>
+
+            </footer>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
+        integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    <script src="/js/codeblocks.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
