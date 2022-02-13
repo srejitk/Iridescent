@@ -199,3 +199,66 @@
     border: 3px solid var(--primary-color);
   }
 
+
+    .btn--small {
+        height: 40px;
+        border-radius: 16px;
+    }
+
+    .btn--small--round {
+        padding: 8px 16px;
+        background-color: var(--component-orange-04);
+        color: white;
+    }
+
+    .btn--small--round:hover {
+        padding: 8px 16px;
+        background-color: var(--component-orange-01);
+        color: var(--component-orange-05);
+        border: 2px solid var(--component-orange-03);
+    }
+
+
+    .btn--outline--primary {
+        background-color: white;
+        border: 2px solid #C5DCFA;
+    }
+
+    .btn--outline--primary:hover {
+        background-color: var(--component-blue-01);
+        border: 2px solid var(--component-blue-03);
+    }
+
+    .btn--outline--secondary {
+        border: 2px solid #E0E0E0;
+        background-color: white;
+
+    }
+
+
+    .btn--outline--like {
+        color: var(--component-red-03);
+        background: white;
+        border: 2px solid var(--component-red-01);
+    }
+
+    .btn--outline--like:hover {
+        color: var(--component-red-05);
+        background: var(--component-red-01);
+        border: 2px solid var(--component-red-03);
+    }
+
+    .text--grey {
+        color: var(--component-grey-05);
+    }
+
+
+    .btn--link--expand {
+        max-height: 48px;
+        border-radius: 8px;
+    }
+
+    .btn--link--expand:hover {
+        color: var(--component-blue-05);
+    }
+
