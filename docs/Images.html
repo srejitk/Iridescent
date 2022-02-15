@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <link rel="stylesheet" href="/stylesheets/index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/path/to/styles/default.min.css" />
+    <script src="/path/to/highlight.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
+        integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        hljs.highlightAll();
+    </script>
+</head>
+<style>
+    :root {
+        --color: #a8c7fa;
+        --mio-theme-color-primary: #0b57d0;
+        --mio-theme-color-primary-200: #a8c7fa;
+        --mio-theme-color-primary-700: #0842a0;
+        --mio-theme-color-primary-800: #062e6f;
+        --page-green: #d9e8cb;
+        --page-green-light: #f3f7ee;
+        --page-red: #FFDAD9;
+        --page-red-light: #FFECEB;
+        --page-blue: #7ECEFF;
+        --page-blue-light: #C3E7FF;
+        --page-yellow: #E5E3C0;
+        --page-yellow-light: #F7F3E7;
+        --page-purple: #F4DBF1;
+        --page-purple-light: #FFEBFC;
+        --page-purple-dark: #85468B;
+    }
+
+    .iris__bg__wrapper {
+        background: url(https://lh3.googleusercontent.com/-Hwl8y2-8eHdCttlaY7KUV3VNtH_FeDi9T21ALNCJqZs-p2HYqxyqyxdWQZwOQJ2UAK3NVRAf8rh7YjHykGFDhfuBB6t-lPMEY8pmzEvIcVXaL3FWiSe=w1200-rj);
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .bg-green {
+        background-color: var(--page-green-light);
+    }
+
+    .bg-red {
+        background-color: var(--page-red-light);
+    }
+
+    .bg-blue {
+        background-color: var(--page-blue-light);
+    }
+
+    .bg-yellow {
+        background-color: var(--page-yellow-light);
+    }
+
+    .bg-blue-light {
+        background-color: var(--page-blue-light);
+    }
+
+    .bg-purple {
+        background-color: var(--page-purple);
+    }
+
+    .code--red {
+        background-color: var(--page-red);
+        font-style: normal;
+        font-weight: bolder;
+    }
+
+    .code--blue {
+        background-color: var(--page-blue);
+        font-style: normal;
+        font-weight: bolder;
+    }
+
+    .code--green {
+        background-color: var(--page-green);
+        font-style: normal;
+        font-weight: bolder;
+    }
+
+    .code--yellow {
+        background-color: var(--page-yellow);
+        font-style: normal;
+        font-weight: bolder;
+    }
+
+    .code--purple {
+        background-color: var(--page-purple);
+        font-style: normal;
+        font-weight: bolder;
+
+    }
+
+    .demo--input {
+        background-color: white;
+    }
+
+    .position-absolute {
+        position: absolute;
+    }
+
+    .position-relative {
+        position: relative;
+    }
+
+    .position-static {
+        position: relative;
+    }
+
+    .list {
+        width: 20rem;
+        background-color: var(--page-green);
+        height: 5rem;
+        margin: 2rem;
+        border-radius: 8px;
+    }
+
+    .lists--spaced {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .lists--spaced>.list {
+        width: 10rem;
+    }
+
+    .lists--stacked {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box-shadow {
+        box-shadow: 0px 2px 4px rgba(97, 97, 97, 0.18), 0px 4px 8px rgba(97, 97, 97, 0.18);
+    }
+
+    /* Grids Styling */
+    .grid {
+        display: grid;
+    }
+
+    .col2x2 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+
+    .col3x3 {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+    }
+
+    .grid--item {
+        background-color: var(--page-purple-dark);
+        width: 10rem;
+        height: 5rem;
+        border-radius: 8px;
+    }
+
+    .image--demo img {
+        border-radius: 16px;
+    }
+</style>
+
+
+<body>
+    <div class="main-container">
+        <!-- Header HTML -->
+        <header id="header" class="iris__header">
+            <nav class="iris__navbar">
+                <div class="iris__navbar__logo__section">
+                    <a class="home__section">
+                        <span id="hamburger_open" class="material-icons icon--sidebar">menu</span>
+                        <span id="hamburger_close" class="material-icons icon--sidebar">
+                            menu_open
+                        </span>
+                        <h3 class="iris__logo__title">Iridescent</h3>
+                    </a>
+                </div>
+                <div class="nav__links__container">
+                    <ul class="nav__links__ul">
+                        <a href="/docs/Introduction.html" class="header nav__links hoverOn--round">Docs</a>
+                        <a href="https://www.github.com/srejitk" class="header nav__links hoverOn--round">Github</a>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- Side bar HTML -->
+        <section id="sidebar" class="iris__sidebar">
+            <div class="section__title">Getting Started</div>
+            <a href="./Introduction.html" class="iris__categories title hoverOn ">Introduction</a>
+            <a href="./Colors.html" class="iris__categories title hoverOn">Colors</a>
+            <a href="./Typography.html" class="iris__categories title hoverOn">Typography</a>
+            <a href="./Contribution" class="iris__categories title hoverOn">Conclusion</a>
+            <div class="section__title">Components</div>
+            <a href="./Avatars.html" class="iris__categories title hoverOn ">Avatars</a>
+            <a href="./Alerts.html" class="iris__categories title hoverOn ">Alert</a>
+            <a href="./Badge.html" class="iris__categories title hoverOn">Badge</a>
+            <a href="./Buttons.html" class="iris__categories title hoverOn ">Button</a>
+            <a href="./Cards.html" class="iris__categories title hoverOn">Card</a>
+            <a href="./Images.html" class="iris__categories title hoverOn  selectedOn">Image</a>
+            <a href="./Inputs.html" class="iris__categories title hoverOn ">Input</a>
+            <a href="./Lists.html" class="iris__categories title hoverOn ">Lists</a>
+            <a href="./Ratings.html" class="iris__categories title hoverOn">Ratings</a>
+            <a href="./Grids.html" class="iris__categories title hoverOn">Grids</a>
+        </section>
+        <!-- Content HTML -->
+        <div class="iris__container" id="content">
+            <!-- Component BG Header Section -->
+            <div class="iris__bg__wrapper">
+                <div class="wrapper__text">
+                    <h1 class="header-1">Images</h1>
+                    <p class="desc header-6">
+                        The images creates visual consistency and add to the user experience while adding vibrancy
+                        across a wide
+                        variety of designs.
+                    </p>
+                </div>
+            </div>
+            <!-- Component Page Desc Section -->
+            <section class="iris__desc__wrapper">
+                <h2 class="header-2 content__title">Responsive Image</h2>
+                <p class=" header-6 header-6 content__desc">
+                    The Responsive Image shown below can be
+                    triggered by using <i class="code--red">image--responsive</i>.</p>
+                <!-- Make the component wrapper in row or column accordingly -->
+                <div class="component__wrapper--column bg-red border-8d  gap20 text--left">
+                    <!-- 2x2 Grid -->
+                    <div class="component__item--row">
+                        <!-- Insert Component Here -->
+                        <!-- Responsive Image -->
+                        <div class="image--responsive image--demo">
+                            <img src="https://picsum.photos/id/1020/600/400" alt="bear" loading="lazy" />
+                        </div>
+                        <!-- Insert Component Label Here -->
+                        <span class="subtitle-1">Responsive Image</span>
+                    </div>
+
+
+
+                </div>
+            </section>
+            <!-- Implementation Code Section -->
+            <section class="iris__desc__wrapper">
+                <h2 class="header-h2 content__title">Implementation</h2>
+                <p class=" header-6 content__desc">
+                    The only component who will respond to your response</p>
+                <!-- Make the component wrapper in row or column accordingly -->
+                <div class="code__wrapper code__wrapper code--red gap20">
+                    <pre><code>                        <!-- Responsive Image -->
+                        <div class="image--responsive">
+                            <img src="Enter source image here" alt="enter alt text" loading="lazy" />
+                        </div></code></pre>
+                </div>
+
+
+            </section>
+
+            <section class="iris__desc__wrapper">
+                <h2 class="header-2 content__title">Image Types </h2>
+                <p class=" header-6 header-6 content__desc">
+                    The Images are available in 3 shapes which can be triggered using <i
+                        class="code--red">image--responsive</i> class
+                    and then adding <i class="code--red">image--round</i>, <i class="code--red">image--squircle</i> and
+                    <i class="code--red">image--square</i>.The blocks shown below are for representation
+                    purpose</p>
+                <!-- Make the component wrapper in row or column accordingly -->
+                <div class="component__wrapper--row bg-purple border-8d  gap20 text--left">
+
+                    <!-- Square Image -->
+                    <div class="component__item--row">
+                        <!-- Insert Component Here -->
+                        <!-- Square Image -->
+                        <div class="image--responsive image--square">
+                            <img src="https://picsum.photos/id/1020/600/400" alt="bear" loading="lazy" />
+                        </div>
+                        <!-- Insert Component Label Here -->
+                        <span class="subtitle-1">Square Image</span>
+                    </div>
+                    <!-- Round Image -->
+                    <div class="component__item--row">
+                        <!-- Insert Component Here -->
+                        <!-- Round Image -->
+                        <div class="image--responsive image--round">
+                            <img src="https://picsum.photos/id/1020/600/400" alt="bear" loading="lazy" />
+                        </div>
+                        <!-- Insert Component Label Here -->
+                        <span class="subtitle-1">Round Image</span>
+                    </div>
+                    <!-- Squircle Image -->
+                    <div class="component__item--row">
+                        <!-- Insert Component Here -->
+                        <!-- Squircle Image -->
+                        <div class="image--responsive image--squircle image--demo">
+                            <img src="https://picsum.photos/id/1020/600/400" alt="bear" loading="lazy" />
+                        </div>
+                        <!-- Insert Component Label Here -->
+                        <span class="subtitle-1">Squircle Image</span>
+                    </div>
+
+
+
+                </div>
+            </section>
+            <!-- Implementation Code Section -->
+            <section class="iris__desc__wrapper">
+                <h2 class="header-h2 content__title">Implementation</h2>
+                <p class=" header-6 content__desc">
+                    Circle + Square = Squircle</p>
+                <!-- Make the component wrapper in row or column accordingly -->
+                <div class="code__wrapper code__wrapper code--red gap20">
+                    <pre><code>
+                        <!-- Round Image -->
+                        <div class="image--responsive image--round">
+                            <img src="Insert Image link here" alt="Alternative Text" loading="lazy" />
+                        </div>
+                            <!-- Squircle Image -->
+                        <div class="image--responsive image--squircle image--demo">
+                            <img src="https://picsum.photos/id/1020/600/400" alt="bear" loading="lazy" />
+                        </div>
+                        <!-- Square Image -->
+                        <div class="image--responsive image--square">
+                            <img src="https://picsum.photos/id/1020/600/400" alt="bear" loading="lazy" />
+                        </div>
+                            </code></pre>
+                </div>
+
+
+            </section>
+
+
+            <footer class="iris__footer iris__desc__wrapper">
+                <div class="footer__content">
+                    <span class="material-icons md-48 icon--footer">mail</span>
+                    <p class="desc footer__desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat
+                        aliquam
+                        quod
+                        necessitatibus, iste dolores iure dolore cupiditate cumque excepturi. Minus esse pariatur at
+                        fugiat
+                        voluptatum officia cumque exercitationem eligendi consectetur!</p>
+                    <div class="nav__links__container">
+                        <ul class="nav__links__ul">
+                            <a href="https://www.twitter.com/srejitk" target="__blank"
+                                class="footer nav__links nav__links--footer">Twitter</a>
+                            <a href="https://www.github.com/srejitk" target="__blank"
+                                class="footer nav__links nav__links--footer">Github</a>
+                            <a href="https://www.linkedin.com/srejitk" target="__blank"
+                                class="footer nav__links nav__links--footer">LinkedIn</a>
+                        </ul>
+                    </div>
+                </div>
+
+            </footer>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
+        integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    <script src="/js/codeblocks.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
