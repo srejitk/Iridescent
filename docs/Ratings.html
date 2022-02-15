@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+    <link rel="stylesheet" href="/stylesheets/index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/path/to/styles/default.min.css" />
+    <script src="/path/to/highlight.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
+        integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        hljs.highlightAll();
+    </script>
+</head>
+<style>
+    :root {
+        --color: #a8c7fa;
+        --mio-theme-color-primary: #0b57d0;
+        --mio-theme-color-primary-200: #a8c7fa;
+        --mio-theme-color-primary-700: #0842a0;
+        --mio-theme-color-primary-800: #062e6f;
+        --page-green: #d9e8cb;
+        --page-green-light: #f3f7ee;
+        --page-red: #FFDAD9;
+        --page-red-light: #FFECEB;
+        --page-blue: #7ECEFF;
+        --page-blue-light: #C3E7FF;
+        --page-yellow: #E5E3C0;
+        --page-yellow-light: #F7F3E7;
+    }
+
+    .iris__bg__wrapper {
+        background-image: url("https://lh3.googleusercontent.com/RzidtsAbEOHHlavTSV1mEZKMHnLIYtPOadkLIZscjaffAylHS-EwZ25xSczs-QWiyCKweVoFsDvxuN9GoWfF24iHdeYZTmjv5d5HBMiezQn99aGx5A=w1200-rj");
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .bg-green {
+        background-color: var(--page-green-light);
+    }
+
+    .bg-red {
+        background-color: var(--page-red-light);
+    }
+
+    .bg-blue {
+        background-color: var(--page-blue-light);
+    }
+
+    .bg-yellow {
+        background-color: var(--page-yellow-light);
+    }
+
+    .bg-blue-light {
+        background-color: var(--page-blue-light);
+    }
+
+    .code--red {
+        background-color: var(--page-red);
+        font-style: normal;
+        font-weight: bolder;
+    }
+
+    .code--blue {
+        background-color: var(--page-blue);
+        font-style: normal;
+        font-weight: bolder;
+    }
+
+    .code--green {
+        background-color: var(--page-green);
+        font-style: normal;
+        font-weight: bolder;
+    }
+
+    .code--yellow {
+        background-color: var(--page-yellow);
+        font-style: normal;
+        font-weight: bolder;
+    }
+
+    .demo--input {
+        background-color: white;
+    }
+
+    .position-absolute {
+        position: absolute;
+    }
+
+    .position-relative {
+        position: relative;
+    }
+
+    .position-static {
+        position: relative;
+    }
+
+    .list {
+        width: 20rem;
+        background-color: var(--page-green);
+        height: 5rem;
+        margin: 2rem;
+        border-radius: 8px;
+    }
+
+    .lists--spaced {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .lists--spaced>.list {
+        width: 10rem;
+    }
+
+    .lists--stacked {
+        flex-direction: column;
+    }
+
+    .box-shadow {
+        box-shadow: 0px 2px 4px rgba(97, 97, 97, 0.18), 0px 4px 8px rgba(97, 97, 97, 0.18);
+    }
+</style>
+
+
+<body>
+    <div class="main-container">
+        <!-- Header HTML -->
+        <header id="header" class="iris__header">
+            <nav class="iris__navbar">
+                <div class="iris__navbar__logo__section">
+                    <a class="home__section">
+                        <span id="hamburger_open" class="material-icons icon--sidebar">menu</span>
+                        <span id="hamburger_close" class="material-icons icon--sidebar">
+                            menu_open
+                        </span>
+                        <h3 class="iris__logo__title">Iridescent</h3>
+                    </a>
+                </div>
+                <div class="nav__links__container">
+                    <ul class="nav__links__ul">
+                        <a href="/docs/Introduction.html" class="header nav__links hoverOn--round">Docs</a>
+                        <a href="https://www.github.com/srejitk" class="header nav__links hoverOn--round">Github</a>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- Side bar HTML -->
+        <section id="sidebar" class="iris__sidebar">
+            <div class="section__title">Getting Started</div>
+            <a href="./Introduction.html" class="iris__categories title hoverOn ">Introduction</a>
+            <a href="./Colors.html" class="iris__categories title hoverOn">Colors</a>
+            <a href="./Typography.html" class="iris__categories title hoverOn">Typography</a>
+            <a href="./Contribution" class="iris__categories title hoverOn">Conclusion</a>
+            <div class="section__title">Components</div>
+            <a href="./Avatars.html" class="iris__categories title hoverOn ">Avatars</a>
+            <a href="./Alerts.html" class="iris__categories title hoverOn ">Alert</a>
+            <a href="./Badge.html" class="iris__categories title hoverOn">Badge</a>
+            <a href="./Buttons.html" class="iris__categories title hoverOn ">Button</a>
+            <a href="./Cards.html" class="iris__categories title hoverOn">Card</a>
+            <a href="./Images.html" class="iris__categories title hoverOn">Image</a>
+            <a href="./Inputs.html" class="iris__categories title hoverOn ">Input</a>
+            <a href="./Lists.html" class="iris__categories title hoverOn ">Lists</a>
+            <a href="./Ratings.html" class="iris__categories title hoverOn selectedOn">Ratings</a>
+            <a href="./Grids.html" class="iris__categories title hoverOn">Grids</a>
+        </section>
+        <!-- Content HTML -->
+        <div class="iris__container" id="content">
+            <!-- Component BG Header Section -->
+            <div class="iris__bg__wrapper">
+                <div class="wrapper__text">
+                    <h1 class="header-1">Rating</h1>
+                    <p class="desc header-6">
+                        Ratings provide insight regarding others' opinions and experiences, and can allow the user to
+                        submit a rating of their own.
+                    </p>
+                </div>
+            </div>
+            <!-- Component Page Desc Section -->
+            <section class="iris__desc__wrapper">
+                <h2 class="header-2 content__title">Basic Rating</h2>
+                <p class=" header-6 header-6 content__desc">
+                    The ratings shown below can be
+                    triggered by using <i class="code--yellow">lists</i>
+                    and then adding <i class="code--yellow">list--stacked</i> and
+                    <i class="code--yellow">list--spaced</i>
+                    as required.The blocks shown below are for representation purpose</p>
+                <!-- Make the component wrapper in row or column accordingly -->
+                <div class="component__wrapper--column bg-yellow border-8d  gap20 text--left">
+                    <!-- Default -->
+                    <div class="component__item--row">
+                        <!-- Insert Component Here -->
+                        <!-- Rating -->
+                        <div class="rating">
+                            <span class="material-icons ">star</span>
+                            <span class="material-icons ">star</span>
+                            <span class="material-icons ">star</span>
+                            <span class="material-icons ">star</span>
+                            <span class="material-icons ">star</span>
+                        </div>
+                        <!-- Insert Component Label Here -->
+                        <span class="subtitle-1">Default Rating</span>
+                    </div>
+                    <!-- Half filled -->
+                    <div class="component__item--row">
+                        <!-- Insert Component Here -->
+                        <!-- Rating -->
+                        <div class="rating">
+                            <span class="material-icons selected">star</span>
+                            <span class="material-icons selected">star</span>
+                            <span class="material-icons selected">star</span>
+                            <span class="material-icons selected">star_half</span>
+                            <span class="material-icons">star</span>
+                        </div>
+                        <!-- Insert Component Label Here -->
+                        <span class="subtitle-1">Half Filled Ratings</span>
+                    </div>
+                    <!-- Filled ratings -->
+                    <div class="component__item--row">
+                        <!-- Insert Component Here -->
+                        <!-- Rating -->
+                        <div class="rating">
+                            <span class="material-icons selected">star</span>
+                            <span class="material-icons selected">star</span>
+                            <span class="material-icons selected">star</span>
+                            <span class="material-icons selected">star</span>
+                            <span class="material-icons selected">star</span>
+                        </div>
+                        <!-- Insert Component Label Here -->
+                        <span class="subtitle-1">Filled Ratings</span>
+                    </div>
+
+
+                </div>
+            </section>
+            <!-- Implementation Code Section -->
+            <section class="iris__desc__wrapper">
+                <h2 class="header-h2 content__title">Implementation</h2>
+                <p class=" header-6 content__desc">
+                    Rate Away!</p>
+                <!-- Make the component wrapper in row or column accordingly -->
+                <div class="code__wrapper code__wrapper code--yellow gap20">
+                    <pre><code>
+                        <!-- Rating -->
+                        <div class="rating">
+                            <span class="material-icons selected">star</span>
+                            <span class="material-icons selected">star</span>
+                            <span class="material-icons selected">star</span>
+                            <span class="material-icons selected">star_half</span>
+                            <span class="material-icons">star</span>
+                        </div></code></pre>
+                </div>
+
+
+            </section>
+
+
+            <footer class="iris__footer iris__desc__wrapper">
+                <div class="footer__content">
+                    <span class="material-icons md-48 icon--footer">mail</span>
+                    <p class="desc footer__desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat
+                        aliquam
+                        quod
+                        necessitatibus, iste dolores iure dolore cupiditate cumque excepturi. Minus esse pariatur at
+                        fugiat
+                        voluptatum officia cumque exercitationem eligendi consectetur!</p>
+                    <div class="nav__links__container">
+                        <ul class="nav__links__ul">
+                            <a href="https://www.twitter.com/srejitk" target="__blank"
+                                class="footer nav__links nav__links--footer">Twitter</a>
+                            <a href="https://www.github.com/srejitk" target="__blank"
+                                class="footer nav__links nav__links--footer">Github</a>
+                            <a href="https://www.linkedin.com/srejitk" target="__blank"
+                                class="footer nav__links nav__links--footer">LinkedIn</a>
+                        </ul>
+                    </div>
+                </div>
+
+            </footer>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
+        integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    <script src="/js/codeblocks.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
