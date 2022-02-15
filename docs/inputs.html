@@ -74,6 +74,22 @@
     .demo--input {
         background-color: white;
     }
+
+    .input--textarea {
+        border-radius: 8px;
+        font-size: 1rem;
+        width: 80%;
+        height: 80%;
+
+    }
+
+    .input--demo {
+        outline: 2px solid;
+    }
+
+    .radio__label {
+        margin-left: 1rem;
+    }
 </style>
 
 
@@ -386,6 +402,135 @@
                         </div>
                                     
                                 </code></pre>
+                </div>
+
+
+            </section>
+
+            <!-- Text Input Box -->
+            <!-- Component Page Desc Section -->
+            <section class="iris__desc__wrapper">
+                <h2 class="header-2 content__title">Text Box</h2>
+                <p class=" header-6 header-6 content__desc">
+                    The text box can be used whenever you feel the need to vent or provide critical feedback which can
+                    be
+                    toggled by using <i class="code--blue">input---textarea</i> and editing the cols and rows section
+                    accordingly.</p>
+                <!-- Make the component wrapper in row or column accordingly -->
+                <div class="component__wrapper--column bg-blue border-8d  gap20 text--left">
+
+                    <div class="component__item--row">
+                        <!-- Insert Component Here -->
+                        <!-- Input Text Area -->
+
+                        <textarea class="input--textarea" id="" cols="100" rows="10"></textarea>
+
+                        <!-- Insert Component Label Here -->
+                        <span class="subtitle-1">Text Area</span>
+                    </div>
+
+
+                </div>
+            </section>
+            <!-- Implementation Code Section -->
+            <section class="iris__desc__wrapper">
+                <h2 class="header-h2 content__title">Implementation</h2>
+                <p class=" header-6 content__desc">
+                    Not everyone likes to be round and perfect. Some prefer cute corners!</p>
+                <!-- Make the component wrapper in row or column accordingly -->
+                <div class="code__wrapper code__wrapper code--blue gap20">
+                    <pre><code>    <!-- Text Box -->
+    <textarea name="text-area" id="" cols="100" rows="10"></textarea>
+                                                
+                                            </code></pre>
+                </div>
+
+
+            </section>
+
+            <!-- Checkboc -->
+            <!-- Component Page Desc Section -->
+            <section class="iris__desc__wrapper">
+                <h2 class="header-2 content__title">Radio and Checkbox Input</h2>
+                <p class=" header-6 header-6 content__desc">
+                    The radio and checkbox inputs can be triggered by using <i class="code--blue">input---field</i>
+                    and then using <i class="code--blue">---checkbox</i> and <i class="code--blue">---radio</i> for the
+                    respective input types .</p>
+                <!-- Make the component wrapper in row or column accordingly -->
+                <div class="component__wrapper--row bg-blue border-8d  gap20 text--left">
+
+                    <div class="component__item--row">
+                        <!-- Insert Component Here -->
+                        <!-- Radio Input -->
+                        <div class="input__container">
+                            <input type="radio" id="radio" class="input--field--radio input--demo"
+                                placeholder="Peter Parker" required />
+                            <label for="Radio" class="input--sidelabel radio__label">Your Name</label>
+                        </div>
+
+                        <!-- Insert Component Label Here -->
+                        <span class="subtitle-1">Radio Input</span>
+                    </div>
+                    <div class="component__item--row">
+                        <!-- Insert Component Here -->
+                        <!-- Radio Input -->
+                        <div class="input__container">
+                            <input type="radio" id="radio" class="input--field--radio input--demo"
+                                placeholder="Peter Parker" required disabled />
+                            <label for="Radio" class="radio__label input--sidelabel">Your Name</label>
+                        </div>
+
+                        <!-- Insert Component Label Here -->
+                        <span class="subtitle-1">Disabled Radio Input</span>
+                    </div>
+                    <div class="component__item--row">
+                        <!-- Insert Component Here -->
+                        <!-- Checkbox Input -->
+                        <div class="input__container">
+                            <label for="checkbox" class="input--sidelabel">Your Name</label>
+                            <input type="checkbox" id="checkbox" class=" input--field--checkbox input--demo"
+                                placeholder="Peter Parker" required />
+                        </div>
+
+                        <!-- Insert Component Label Here -->
+                        <span class="subtitle-1">Checkbox Input</span>
+                    </div>
+                    <div class="component__item--row">
+                        <!-- Insert Component Here -->
+                        <!-- Radio Input -->
+                        <div class="input__container">
+                            <label for="checkbox" class="input--sidelabel">Your Name</label>
+                            <input type="checkbox" id="checkbox" class="input--field--checkbox input--demo"
+                                placeholder="Peter Parker" required disabled />
+                        </div>
+
+                        <!-- Insert Component Label Here -->
+                        <span class="subtitle-1">Disabled Checkbox Input</span>
+                    </div>
+
+
+                </div>
+            </section>
+            <!-- Implementation Code Section -->
+            <section class="iris__desc__wrapper">
+                <h2 class="header-h2 content__title">Implementation</h2>
+                <p class=" header-6 content__desc">
+                    Not everyone likes to be round and perfect. Some prefer cute corners!</p>
+                <!-- Make the component wrapper in row or column accordingly -->
+                <div class="code__wrapper code__wrapper code--blue gap20">
+                    <pre><code>                     <!-- Radio Input -->
+                        <div class="input__container">
+                            <input type="radio" id="radio" class="input--field--radio input--demo"
+                                placeholder="Peter Parker" required />
+                            <label for="Radio" class="input--sidelabel radio__label">Your Name</label>
+                        </div>
+                    
+                    <!-- Checkbox Input -->
+                    <div class="input__container">
+                        <label for="checkbox" class="input--sidelabel">Your Name</label>
+                        <input type="checkbox" id="checkbox" class=" input--field--checkbox input--demo"
+                            placeholder="Peter Parker" required />
+                    </div></code></pre>
                 </div>
 
 
