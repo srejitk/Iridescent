@@ -33,13 +33,12 @@
 
     .card__content--row {
         display: flex;
-        flex-direction: row;
         padding: 10px 12px;
     }
 
     .card__icon {
         position: absolute;
-        outline: 0px;
+        outline: 0;
         top: 8px;
         right: 8px;
         background-color: rgba(230, 230, 230, 0.5);
@@ -80,7 +79,6 @@
         padding: 2px 6px;
         border-radius: 4px;
         background: var(--component-yellow-03);
-        ;
     }
 
     .card--horizontal {
@@ -120,7 +118,6 @@
     }
 
     .card__cover {
-        /* Refactor : Use Utils here */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -146,9 +143,6 @@
         height: 100%;
         display: flex;
         justify-content: flex-start;
-
-
-
     }
 
     .cover--vertical img {
@@ -184,7 +178,9 @@
 
     .card--text--overlay {
         min-height: fit-content;
-    }    .item--price {
+    }    
+    
+    .item--price {
         text-decoration: line-through;
     }
 
