@@ -35,3 +35,13 @@
         font-family: "Roboto";
         outline: 2px solid;
       }
+
+
+      .selected{
+        border-radius: 8px;
+        border: 2px solid var(--black);
+      }
+      .selected:hover{
+        background-color: #7FCFFF;
+
+      }
