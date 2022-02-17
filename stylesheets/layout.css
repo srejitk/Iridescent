@@ -1,0 +1,23 @@
+.hoverOn:hover {
+    background-color: #E3E3E3;
+}
+
+.hoverOn--round {
+    border-radius: 50px;
+
+}
+
+.hoverOn--round:hover {
+    border-radius: 50px;
+    background-color: #E3E3E3;
+
+}
+
+.selectedOn {
+    background-color: #7FCFFF;
+}
+
+.selectedOn:hover {
+    background-color: #5AB3F0;
+}
+
