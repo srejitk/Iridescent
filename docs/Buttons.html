@@ -7,11 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buttons</title>
     <link rel="stylesheet" href="/stylesheets/index.css">
+    <link rel="stylesheet" href="/main.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="/path/to/styles/default.min.css" />
-    <script src="/path/to/highlight.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
         integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -19,81 +18,6 @@
         hljs.highlightAll();
     </script>
 </head>
-<style>
-    :root {
-        --color: #a8c7fa;
-        --mio-theme-color-primary: #0b57d0;
-        --mio-theme-color-primary-200: #a8c7fa;
-        --mio-theme-color-primary-700: #0842a0;
-        --mio-theme-color-primary-800: #062e6f;
-        --page-green: #d9e8cb;
-        --page-green-light: #f3f7ee;
-        --page-red: #FFDAD9;
-        --page-red-light: #FFECEB;
-        --page-blue: #7ECEFF;
-        --page-blue-light: #C3E7FF;
-
-    }
-
-    .iris__bg__wrapper {
-        background-image: url("https://lh3.googleusercontent.com/DRYibnTX0WxqlggQpV0O8e3B1WdcQ2YEjGpwfxod_OPxEPawG62kfqEpjvoqBMJYPyu3kuKUEB0txqTI0S4PidvcAISePvUexmU8uq-HcUfTjnKQ5A=w1200-rj")
-    }
-
-    ::-webkit-scrollbar {
-        display: none;
-    }
-
-    .bg-green {
-        background-color: var(--page-green-light);
-    }
-
-    .bg-red {
-        background-color: var(--page-red-light);
-    }
-
-    .bg-blue {
-        background-color: var(--page-blue-light);
-    }
-
-    .bg-blue-light {
-        background-color: var(--page-blue-light);
-    }
-
-    .code--red {
-        background-color: var(--page-red);
-        font-style: normal;
-        font-weight: bolder;
-    }
-
-    .code--blue {
-        background-color: var(--page-blue);
-        font-style: normal;
-        font-weight: bolder;
-    }
-
-    .code--green {
-        background-color: var(--page-green);
-        font-style: normal;
-        font-weight: bolder;
-    }
-
-    .demo--input {
-        background-color: white;
-    }
-
-    .position-absolute {
-        position: absolute;
-    }
-
-    .position-relative {
-        position: relative;
-    }
-
-    .position-static {
-        position: relative;
-    }
-</style>
-
 
 <body>
     <div class="main-container">
@@ -123,22 +47,25 @@
             <a href="./Introduction.html" class="iris__categories title hoverOn ">Introduction</a>
             <a href="./Colors.html" class="iris__categories title hoverOn">Colors</a>
             <a href="./Typography.html" class="iris__categories title hoverOn">Typography</a>
-            <a href="./Contribution" class="iris__categories title hoverOn">Conclusion</a>
+            <!-- <a href="./Contribution" class="iris__categories title hoverOn">Contribution</a> -->
             <div class="section__title">Components</div>
+            <a href="./Alerts.html" class="iris__categories title hoverOn">Alert</a>
             <a href="./Avatars.html" class="iris__categories title hoverOn ">Avatars</a>
-            <a href="./Alerts.html" class="iris__categories title hoverOn ">Alert</a>
-            <a href="./Badge.html" class="iris__categories title hoverOn">Badge</a>
-            <a href="./Buttons.html" class="iris__categories title hoverOn selectedOn">Button</a>
+            <a href="./Badges.html" class="iris__categories title hoverOn">Badge</a>
+            <a href="./Buttons.html" class="iris__categories title hoverOn  selectedOn">Button</a>
             <a href="./Cards.html" class="iris__categories title hoverOn">Card</a>
+            <a href="./Grids.html" class="iris__categories title hoverOn">Grids</a>
             <a href="./Images.html" class="iris__categories title hoverOn">Image</a>
             <a href="./Inputs.html" class="iris__categories title hoverOn ">Input</a>
+            <a href="./Lists.html" class="iris__categories title hoverOn">Lists</a>
             <a href="./Ratings.html" class="iris__categories title hoverOn">Ratings</a>
-            <a href="./Grids.html" class="iris__categories title hoverOn">Grids</a>
+            <a href="./Text-Utils.html" class="iris__categories title hoverOn">Text Utilities</a>
+
         </section>
         <!-- Content HTML -->
         <div class="iris__container" id="content">
             <!-- Component BG Header Section -->
-            <div class="iris__bg__wrapper">
+            <div class="iris__bg__wrapper iris__bg__wrapper-green">
                 <div class="wrapper__text">
                     <h1 class="header-1 light--text">Buttons</h1>
                     <p class="desc header-6 light--text">
@@ -392,15 +319,25 @@
 
             </section>
 
-            <footer class="iris__footer iris__desc__wrapper">
-                <div class="footer__content">
-                    <span class="material-icons md-48 icon--footer">mail</span>
-                    <p class="desc footer__desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat
-                        aliquam
-                        quod
-                        necessitatibus, iste dolores iure dolore cupiditate cumque excepturi. Minus esse pariatur at
-                        fugiat
-                        voluptatum officia cumque exercitationem eligendi consectetur!</p>
+            <!-- Page Navigation -->
+            <section class="iris__desc__wrapper page_nav">
+                <button class="btn btn--link btn--ltr">
+                    <span class="material-icons">arrow_back</span>
+                    <a href="/docs/Badges.html">Badges</a>
+                </button>
+                <button class="btn btn--link btn--rtl">
+                    <span class="material-icons">arrow_forward</span>
+                    <a href="/docs/Cards.html">Cards</a>
+                </button>
+            </section>
+
+            <footer class="iris__footer flex-mid-center iris__desc__wrapper">
+                <div class="footer__content flex-mid-center text--center">
+                    <span class="material-icons md-48 icon--footer text--center">favorite</span>
+                    <p class="desc footer__desc text--center">Iridescent was made with the intention of creating a
+                        playful library
+                        which was apt for formal purposes too. We hope you liked it. Feel free to connect and provide
+                        suggestions from the below means. </p>
                     <div class="nav__links__container">
                         <ul class="nav__links__ul">
                             <a href="https://www.twitter.com/srejitk" target="__blank"
