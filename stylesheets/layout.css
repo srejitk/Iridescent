@@ -1,0 +1,23 @@
+hoverOn:hover {
+    background-color: var(--hover-grey);
+}
+
+.hoverOn--round {
+    border-radius: 50px;
+
+}
+
+.hoverOn--round:hover {
+    border-radius: 50px;
+    background-color: var(--hover-grey);
+
+}
+
+.selectedOn {
+    background-color: var(--page-blue);
+}
+
+.selectedOn:hover {
+    background-color:var(--hover-blue) ;
+}
+

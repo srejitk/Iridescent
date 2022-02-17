@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <link rel="stylesheet" href="/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
+        integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+<style>
+    .rating {
+        display: flex;
+        color: var(--component-grey-01);
+        padding: 8px 0px;
+        align-items: center;
+    }
+
+
+
+    .selected {
+        color: var(--component-orange-04);
+        outline: 0px;
+        font-size: 16px;
+        padding: 3px;
+    }
+</style>
+
+<body>
+    <div class="main-container">
+        <!-- Header HTML -->
+        <header id="header" class="iris__header">
+            <nav class="iris__navbar">
+                <div class="iris__navbar__logo__section">
+                    <a class="home__section">
+                        <span id="hamburger_open" class="material-icons icon--sidebar">menu</span>
+                        <span id="hamburger_close" class="material-icons icon--sidebar">
+                            menu_open
+                        </span>
+                        <h3 class="iris__logo__title">Iridescent</h3>
+                    </a>
+                </div>
+                <div class="nav__links__container">
+                    <ul class="nav__links__ul">
+                        <a href="/docs/Introduction.html" class="header nav__links hoverOn--round">Docs</a>
+                        <a href="https://www.github.com/srejitk" class="header nav__links hoverOn--round">Github</a>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- Side bar HTML -->
+        <section id="sidebar" class="iris__sidebar">
+            <div class="section__title">Getting Started</div>
+            <a href="./Introduction.html" class="iris__categories title hoverOn ">Introduction</a>
+            <a href="./Colors.html" class="iris__categories title hoverOn">Colors</a>
+            <a href="./Typography.html" class="iris__categories title hoverOn">Typography</a>
+            <div class="section__title">Components</div>
+            <a href="./Alerts.html" class="iris__categories title hoverOn">Alert</a>
+            <a href="./Avatars.html" class="iris__categories title hoverOn ">Avatars</a>
+            <a href="./Badges.html" class="iris__categories title hoverOn">Badge</a>
+            <a href="./Buttons.html" class="iris__categories title hoverOn ">Button</a>
+            <a href="./Cards.html" class="iris__categories title hoverOn  selectedOn">Card</a>
+            <a href="./Grids.html" class="iris__categories title hoverOn">Grids</a>
+            <a href="./Images.html" class="iris__categories title hoverOn">Image</a>
+            <a href="./Inputs.html" class="iris__categories title hoverOn ">Input</a>
+            <a href="./Lists.html" class="iris__categories title hoverOn">Lists</a>
+            <a href="./Ratings.html" class="iris__categories title hoverOn">Ratings</a>
+            <a href="./Text-Utils.html" class="iris__categories title hoverOn">Text Utilities</a>
+        </section>
+        <!-- Content HTML -->
+        <div class="iris__container" id="content">
+            <!-- Component BG Header Section -->
+            <div class="iris__bg__wrapper iris__bg__wrapper-blue">
+                <div class="wrapper__text">
+                    <h1 class="header-1">Cards</h1>
+                    <p class="desc header-6">
+                        Cards contain content and actions that relate information about a subject.
+                    </p>
+                </div>
+            </div>
+            <!-- Component Page Desc Section -->
+            <section class="iris__desc__wrapper">
+                <h2 class="header-2 content__title">Small / Mini Cards</h2>
+                <p class=" header-6 header-6 content__desc">
+                    Not everything needs to be put out on a large banner, some prefer cute little mini tidbits of
+                    information which was exactly our thought process when designing the small and mini cards which can
+                    be triggered by using <i class="code--blue"> card</i> along with the desired sizes using <i
+                        class="code--blue">card---small</i>
+                    and <i class="code--blue">card---mini</i>.</p>
+                <!-- Make the component wrapper in row or column accordingly -->
+                <div class="component__wrapper--row bg-blue border-8d  gap20 text--left">
+                    <div class="component__item--row">
+                        <!-- Insert Component Here -->
+                        <!-- Small Card -->
+                        <div class="card card--small box-shadow">
+                            <div class="card__img--small image--responsive">
+                                <img src="https://picsum.photos/id/684/400/400">
+                            </div>
+                            <div class="card__content--column ">
+                                <p class="subtitle-1 pad-12side ">Smartphones</p>
+                                <p class="body-2 pad-12side">Starting from 10k</p>
+                            </div>
+                            <span class="card__icon material-icons">favorite</span>
+                        </div>
+                        <!-- Insert Component Label Here -->
+                        <span class="subtitle-1">Small Card</span>
+                    </div>
+                    <div class="component__item--row">
+                        <!-- Insert Component Here -->
+                        <!-- Mini Card -->
+                        <div class="card card--mini box-shadow">
+                            <div class="card__img--mini image--responsive">
+                                <img src="https://picsum.photos/id/684/400/400">
+                            </div>
+                            <div class="card__content--row mini--content">
+                                <p class="subtitle-2">New Products</p>
+                                <p class="body-2">| Test</p>
+                            </div>
+                            <p class="subtitle-2 card__tag">NEW</p>
+                        </div>
+                        <!-- Insert Component Label Here -->
+                        <span class="subtitle-1">Mini Card</span>
+                    </div>
+                </div>
+            </section>
+            <!-- Implementation Code Section -->
+            <section class="iris__desc__wrapper">
+                <h2 class="header-2 content__title">Implementation</h2>
+                <p class=" header-6 content__desc">
+                    Choose your Input size and off you go!</p>
+                <!-- Make the component wrapper in row or column accordingly -->
+                <div class=" code__wrapper code--blue gap20">
+                    <pre><code><!-- Small Card -->
+<div class="card card--small box-shadow">
+    <div class="card__img--small image--responsive">
+        <img src="https://picsum.photos/id/684/400/400">
+    </div>
+    <div class="card__content--column ">
+        <p class="subtitle-1 pad-12side ">Smartphones</p>
+        <p class="body-2 pad-12side">Starting from 10k</p>
+    </div>
+    <span class="card__icon material-icons">favorite</span>
+</div>
+                   </code></pre>
+                </div>
+            </section>
+            <!-- Component Page Desc Section -->
+            <section class="iris__desc__wrapper">
+                <h2 class="header-2 content__title">Horizontal / Vertical Cards</h2>
+                <p class=" header-6 content__desc">
+                    The inputs also have a labelled variant as shown below which can be
+                    toggled by using <i class="code--blue">input--toplabel</i> , <i
+                        class="code--blue">input--sidelabel</i>
+                    and <i class="code--blue">input__field--outline</i> for outlined version.</p>
+                <!-- Make the component wrapper in row or column accordingly -->
+                <div class="component__wrapper--column bg-blue border-8d  gap20 text--left">
+                    <div class="component__item--row">
+                        <!-- Insert Component Here -->
+                        <!-- Horizontal Card -->
+                        <div class="card card--horizontal box-shadow">
+                            <div class="card__contents">
+                                <div class="card__content--column card__text">
+                                    <h5 class="header-5">The most expensive stuff you can imagine</h5>
+                                    <div class="container--row">
+                                        <p class="subtitle-1 item--sale text--primary">Rs. 999<p
+                                                class="body-1 item--price">Rs. 2443</p>
+                                            <p class="subtitle-1 item--info text--grey">Free Shipping</p>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card__content--row card__footer">
+                                    <div class="container--row">
+                                        <div class="btn btn--small btn--small--round">Buy Now</div>
+                                        <div class="btn btn--small btn--outline--primary">
+                                            <span class="material-icons text--primary">shopping_cart</span>
+                                            <p class="subtitle-1 btn--text text--primary">To cart</p>
+                                        </div>
+                                        <div class="btn btn--small btn--outline--like">
+                                            <span class="material-icons icon--">favorite_outline</span>
+                                            <p class="subtitle-1 btn--txt">Save</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__cover card__img--large image--responsive">
+                                <img src="https://picsum.photos/id/684/600/400">
+                                <div class="rating">
+                                    <p class="subtitle-2 text--grey">4.2</p>
+                                    <span class="material-icons md-18 star_selected">star</span>
+                                    <span class="material-icons md-18  star_selected">star</span>
+                                    <span class="material-icons md-18  star_selected">star</span>
+                                    <span class="material-icons md-18  star_selected">star</span>
+                                    <span class="material-icons md-18  star_selected">star_half</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Insert Component Label Here -->
+                        <span class="subtitle-1">Horizontal Card</span>
+                    </div>
+                    <div class="component__item--row">
+                        <!-- Insert Component Here -->
+                        <!-- Vertical Card -->
+                        <div class="card card--vertical box-shadow">
+                            <div class="card__cover cover--vertical image--responsive">
+                                <img src="https://picsum.photos/id/684/600/400">
+                                <span class="material-icons card__icon">favorite</span>
+                            </div>
+                            <div class="card__contents--vertical">
+                                <div class="card__content card__text--vertical">
+                                    <h5 class="header-5">The most expensive stuff you can imagine</h5>
+                                    <div class="container--row">
+                                        <p class="subtitle-1 item--sale text--primary">Rs. 999<p
+                                                class="body-1 item--price">Rs. 2443</p>
+                                            <p class="subtitle-1 item--info text--grey">Free Shipping</p>
+                                        </p>
+                                    </div>
+                                    <div class="rating">
+                                        <p class="subtitle-2 text--grey">4.2</p>
+                                        <span class="material-icons md-18  star_selected">star</span>
+                                        <span class="material-icons md-18  star_selected">star</span>
+                                        <span class="material-icons md-18  star_selected">star</span>
+                                        <span class="material-icons md-18  star_selected">star</span>
+                                        <span class="material-icons md-18  star_selected">star_half</span>
+                                    </div>
+                                    <div class="container--row">
+                                        <div class="btn btn--small btn--small--round">Buy Now</div>
+                                        <div class="btn btn--small btn--outline--primary">
+                                            <span class="material-icons text--primary">shopping_cart</span>
+                                            <p class="subtitle-1 btn--text text--primary">To cart</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Insert Component Label Here -->
+                        <span class="subtitle-1">Vertical Card</span>
+                    </div>
+                </div>
+            </section>
+            <!-- Implementation Code Section -->
+            <section class="iris__desc__wrapper">
+                <h2 class="header-2 content__title">Implementation</h2>
+                <p class=" header-6 content__desc">
+                    Not everyone likes to be independent. Some prefer cute little nudges!</p>
+                <!-- Make the component wrapper in row or column accordingly -->
+                <div class="code__wrapper code__wrapper code--blue gap20">
+                    <pre><code>    <!-- Horizontal Card -->
+                        <div class="card card--horizontal box-shadow">
+                            <div class="card__contents">
+                                <div class="card__content--column card__text">
+                                    <h5 class="header-5">The most expensive stuff you can imagine</h5>
+                                    <div class="container--row">
+                                        <p class="subtitle-1 item--sale text--primary">Rs. 999<p class="body-1 item--price">Rs. 2443</p>
+                                            <p class="subtitle-1 item--info text--grey">Free Shipping</p>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card__content--row card__footer">
+                                    <div class="container--row">
+                                        <div class="btn btn--small btn--small--round">Buy Now</div>
+                                        <div class="btn btn--small btn--outline--primary">
+                                            <span class="material-icons text--primary">shopping_cart</span>
+                                            <p class="subtitle-1 btn--text text--primary">To cart</p>
+                                        </div>
+                                        <div class="btn btn--small btn--outline--like">
+                                            <span class="material-icons icon--">favorite_outline</span>
+                                            <p class="subtitle-1 btn--txt">Save</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__cover card__img--large image--responsive">
+                                <img src="https://picsum.photos/id/684/600/400">
+                                <div class="rating">
+                                    <p class="subtitle-2 text--grey">4.2</p>
+                                    <span class="material-icons selected">star</span>
+                                    <span class="material-icons selected">star</span>
+                                    <span class="material-icons selected">star</span>
+                                    <span class="material-icons selected">star</span>
+                                    <span class="material-icons selected">star_half</span>
+                                </div>
+                            </div>
+                        </div>
+                               </code></pre>
+                </div>
+            </section>
+            <!-- Component Page Desc Section -->
+            <section class="iris__desc__wrapper">
+                <h2 class="header-2 content__title">Text Only / Text Overlay Cards</h2>
+                <p class=" header-6 header-6 content__desc">
+                    These Textonly cards provide concise tidbits of information in a cute little package which can be
+                    triggered by using <i class="code--blue">card</i> along with the respective states using <i
+                        class="code--blue">card--text</i>, <i class="code--blue">card---text---overlay</i> to trigger an
+                    overlay
+                    and <i class="code--blue">--primaryy</i>.</p>
+                <!-- Make the component wrapper in row or column accordingly -->
+                <div class="component__wrapper--column bg-blue border-8d  gap20 text--left">
+                    <div class="component__item--row">
+                        <!-- Insert Component Here -->
+                        <!-- Text Only Card -->
+                        <div class="card card--text p-24 box-shadow">
+                            <h5 class="header-5">Hello</h5>
+                            <p class="body-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi
+                                temporibus, nihil corporis
+                                omnis voluptate magnam eum laborum reiciendis cumque quis.</p>
+                            <div class="container--row">
+                                <div class="btn btn--link btn--link--expand">
+                                    <span class="material-icons btn--icon">check</span>
+                                    <a href="#" class="subtitle-1">Proceed</a>
+                                </div>
+                                <div class="btn btn--link btn--link--expand">
+                                    <span class="material-icons btn--icon">close</span>
+                                    <a href="#" class="subtitle-1">Dismiss</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Insert Component Label Here -->
+                        <span class="subtitle-1">Text Only Card</span>
+                    </div>
+                    <div class="component__item--row">
+                        <!-- Insert Component Here -->
+                        <!-- Cards With Text Overlay -->
+                        <div class="card card--vertical card--text--overlay box-shadow">
+                            <div class="card__cover cover--vertical image--responsive">
+                                <img src="https://picsum.photos/id/684/600/400">
+                                <span class="material-icons card__icon">favorite</span>
+                                <h5 class="header-5 text--overlay p-12-24">The most expensive stuff you can imagine</h5>
+                            </div>
+                        </div>
+                        <!-- Insert Component Label Here -->
+                        <span class="subtitle-1">Text Overlay Card</span>
+                    </div>
+                </div>
+            </section>
+            <!-- Implementation Code Section -->
+            <section class="iris__desc__wrapper">
+                <h2 class="header-2 content__title">Implementation</h2>
+                <p class=" header-6 content__desc">
+                    Choices, Choices, so many beautiful choices!</p>
+                <!-- Make the component wrapper in row or column accordingly -->
+                <div class="code__wrapper code__wrapper code--blue gap20">
+                    <pre><code>    <!-- Text Only Card -->
+                        <div class="card card--text p-24 box-shadow">
+                            <h5 class="header-5">Hello</h5>
+                            <p class="body-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi temporibus, nihil corporis
+                                omnis voluptate magnam eum laborum reiciendis cumque quis.</p>
+                            <div class="container--row">
+                                <div class="btn btn--link btn--link--expand">
+                                    <span class="material-icons btn--icon">check</span>
+                                    <a href="#" class="subtitle-1">Proceed</a>
+                                </div>
+                                <div class="btn btn--link btn--link--expand">
+                                    <span class="material-icons btn--icon">close</span>
+                                    <a href="#" class="subtitle-1">Dismiss</a>
+                                </div>
+                            </div>
+                        </div>
+                    </code></pre>
+                </div>
+            </section>
+            <!-- Component Page Desc Section -->
+            <section class="iris__desc__wrapper">
+                <h2 class="header-2 content__title">Cards with Dismiss</h2>
+                <p class=" header-6 header-6 content__desc">
+                    The inputs also have 3 States shown below which can be
+                    toggled by using <i class="code--blue">---tonal</i> along with the respective states using <i
+                        class="code--blue">---success</i>, <i class="code--blue">---warning</i>
+                    and <i class="code--blue">---primary</i>.</p>
+                <!-- Make the component wrapper in row or column accordingly -->
+                <div class="component__wrapper--column bg-blue border-8d  gap20 text--left">
+                    <div class="component__item--row">
+                        <!-- Insert Component Here -->
+                        <!-- Cards With Dismiss -->
+                        <div class="card card--small box-shadow">
+                            <div class="card__img--small image--responsive">
+                                <img src="https://picsum.photos/id/684/400/400">
+                            </div>
+                            <div class="card__content--column ">
+                                <p class="subtitle-1 pad-12side ">Smartphones</p>
+                                <p class="body-2 pad-12side">Starting from 10k</p>
+                            </div>
+                            <span class="card__icon material-icons">close</span>
+                        </div>
+                        <!-- Insert Component Label Here -->
+                        <span class="subtitle-1">Cards with Dismiss</span>
+                    </div>
+                </div>
+            </section>
+            <!-- Implementation Code Section -->
+            <section class="iris__desc__wrapper">
+                <h2 class="header-2 content__title">Implementation</h2>
+                <p class=" header-6 content__desc">
+                    Not everyone likes to be round and perfect. Some prefer cute corners!</p>
+                <!-- Make the component wrapper in row or column accordingly -->
+                <div class="code__wrapper code__wrapper code--blue gap20">
+                    <pre><code>    <!-- Cards With Dismiss -->
+                        <div class="card card--small box-shadow">
+                            <div class="card__img--small image--responsive">
+                                <img src="https://picsum.photos/id/684/400/400">
+                            </div>
+                            <div class="card__content--column ">
+                                <p class="subtitle-1 pad-12side ">Smartphones</p>
+                                <p class="body-2 pad-12side">Starting from 10k</p>
+                            </div>
+                            <span class="card__icon material-icons">close</span>
+                        </div></code></pre>
+                </div>
+                </nav>
+                <!-- Page Navigation -->
+                <section class="iris__desc__wrapper page_nav">
+                    <button class="btn btn--link btn--ltr">
+                        <span class="material-icons">arrow_back</span>
+                        <a href="/docs/Buttons.html">Buttons</a>
+                    </button>
+                    <button class="btn btn--link btn--rtl">
+                        <span class="material-icons">arrow_forward</span>
+                        <a href="/docs/Grids.html">Grids</a>
+                    </button>
+                    </nav>
+                    <footer class="iris__footer flex-mid-center iris__desc__wrapper">
+                        <div class="footer__content flex-mid-center text--center">
+                            <span class="material-icons md-48 icon--footer text--center">favorite</span>
+                            <p class="desc footer__desc text--center">Iridescent was made with the intention of creating
+                                a
+                                playful library
+                                which was apt for formal purposes too. We hope you liked it. Feel free to connect and
+                                provide
+                                suggestions from the below means. </p>
+                            <div class="nav__links__container">
+                                <ul class="nav__links__ul">
+                                    <a href="https://www.twitter.com/srejitk" target="__blank"
+                                        class="footer nav__links nav__links--footer">Twitter</a>
+                                    <a href="https://www.github.com/srejitk" target="__blank"
+                                        class="footer nav__links nav__links--footer">Github</a>
+                                    <a href="https://www.linkedin.com/srejitk" target="__blank"
+                                        class="footer nav__links nav__links--footer">LinkedIn</a>
+                                </ul>
+                            </div>
+                        </div>
+                    </footer>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
+        integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    <script src="/js/codeblocks.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
