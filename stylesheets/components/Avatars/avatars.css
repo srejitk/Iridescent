@@ -2,7 +2,7 @@
 .avatar {
     border-radius: 50%;
     position: relative;
-    border: 5px solid var(--material-color-grey-50);
+    border: 2px solid var(--white);
   }
   
   .avatar .avatar--small {
