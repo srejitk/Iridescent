@@ -21,8 +21,6 @@
         transition: left cubic-bezier(0.4, 0, 0.2, 1) 350ms;
       }
 
-
-  
       .section__title{
         margin-bottom: 8px;
         margin-left: 24px;
@@ -63,3 +61,14 @@
     .sidebar--open {
         left: 0px
     }
+
+
+      .selected{
+        border-radius: 8px;
+        border: 2px solid var(--black);
+      }
+      .selected:hover{
+        background-color: #7FCFFF;
+
+      }
+

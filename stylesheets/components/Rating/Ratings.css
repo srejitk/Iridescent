@@ -1,0 +1,11 @@
+    /* Ratings Styling  */
+    .rating {
+        display: flex;
+        color: var(--component-grey-01);
+
+    }
+
+    .selected {
+        color: var(--component-orange-04);
+        outline: 0px;
+    }
