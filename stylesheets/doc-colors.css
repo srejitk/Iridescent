@@ -1,0 +1,23 @@
+:root{
+    --color: #a8c7fa;
+    --mio-theme-color-primary: #0b57d0;
+    --mio-theme-color-primary-200: #a8c7fa;
+    --mio-theme-color-primary-700: #0842a0;
+    --mio-theme-color-primary-800: #062e6f;
+    
+		/* Docs Page Colors */
+		--page-green: #d9e8cb;
+        --page-green-light: #f3f7ee;
+        --page-red: #FFDAD9;
+        --page-red-light: #FFECEB;
+        --page-blue: #7ECEFF;
+        --page-blue-light: #C3E7FF;
+        --page-yellow: #E5E3C0;
+        --page-yellow-light: #F7F3E7;
+        --page-purple: #F4DBF1;
+        --page-purple-light: #FFEBFC;
+        --page-purple-dark: #85468B;
+        --page-gradient: #F7F2FA;
+        --page-gradient-light: ##F3EDF7;
+        --page-gradient-dark: #987480;
+}
