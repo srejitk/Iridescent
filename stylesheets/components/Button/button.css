@@ -1,0 +1,264 @@
+/* Add to color Variables */
+:root{
+  --success-shadow :rgba(31, 139, 36, 0.2);
+  --warning-shadow:rgba(191, 113, 15, 0.2);
+  --critical-shadow:rgba(218, 16, 11, 0.2);
+  --primary-shadow:rgba(197, 220, 250, 0.502);
+  --white:#ffffff;
+  --black:#000000;
+}
+
+
+/* Button Component Styling */
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    width: fit-content;
+    font-weight: 500;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    color: var(--white);
+    border: 2px solid transparent;
+    background-color: var(--component-grey-01);
+    color: var(--component-grey-05);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .btn:hover {
+    background-color: var(--component-grey-01);
+    color: #000;
+  }
+  /* Button Icons */
+  .btn .material-icons {
+    font-size: 1rem;
+    outline: 0px solid;
+  }
+
+  /* Primary Button */
+  .btn--primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+  }
+  .btn--primary:hover {
+    color: var(--component-blue-04);
+    background-color: var(--white);
+    border: 3px solid var(--component-blue-04);
+  }
+
+  /* Success Button */
+
+  .btn--success {
+    background-color: var(--white);
+    border: 3px solid var(--success-color);
+    color: var(--success-color);
+  }
+  .btn--success:hover {
+    background-color: var(--success-color);
+    color: var(--component-green-01);
+    border: 3px solid transparent;
+    box-shadow: 0px 1px 2px var(--success-shadow),
+      0px 2px 4px var(--success-shadow);
+  }
+
+  /* Warning Button */
+
+  .btn--warning {
+    background-color: var(--white);
+    border: 3px solid var(--warning-color);
+    color: var(--warning-color);
+  }
+  .btn--warning:hover {
+    background-color: var(--warning-color);
+    color: var(--component-orange-01);
+    border: 3px solid transparent;
+    box-shadow: 0px 1px 2px var(--warning-shadow),
+      0px 2px 4px var(--warning-shadow);
+  }
+
+  /* Critical Button */
+
+  .btn--critical {
+    background-color: var(--white);
+    border: 3px solid var(--failure-color);
+    color: var(--failure-color);
+  }
+  .btn--critical:hover {
+    background-color: var(--failure-color);
+    color: var(--component-red-01);
+    border: 3px solid transparent;
+    box-shadow: 0px 1px 2px var(--critical-shadow),
+      0px 2px 4px var(--critical-shadow);
+  }
+
+  /* Link Buttons */
+
+  .btn--link {
+    background-color: var(--white);
+  }
+
+  .btn--link:hover {
+    background-color: var(--component-grey-01);
+  }
+
+  /* Link Buttons Outline */
+  .btn--link--outline {
+    background-color: var(--white);
+    border: 3px solid var(--component-grey-04);
+  }
+
+  .btn--link--outline:hover {
+    background-color: var(--component-grey-01);
+    border: 3px solid transparent;
+  }
+
+  .btn--rtl {
+    flex-flow: row-reverse nowrap;
+  }
+  .btn--ltr {
+    flex-flow: row nowrap;
+  }
+
+  /* Icon Buttons */
+  .btn--icon {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Icon Button Tonal */
+  .btn--icon--tonal {
+    background-color: var(--primary-shadow);
+    color: var(--component-indigo-05);
+  }
+  .btn--icon--tonal:hover {
+    background-color: var(--component-blue-05);
+    color: var(--white);
+  }
+  /* Icon Button Outline */
+  .btn--icon--outline {
+    background-color: var(--primary-shadow);
+    color: var(--component-indigo-05);
+    border: 3px solid var(--primary-color);
+  }
+  .btn--icon--outline:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: 3px solid transparent;
+  }
+
+  /* FAB Btn */
+  .btn--fab {
+    position: absolute;
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: var(--primary-color);
+    box-shadow: 0px 4px 8px rgba(15, 86, 179, 0.14),
+      0px 8px 16px rgba(15, 86, 179, 0.14);
+    color: var(--white);
+    z-index: 5;
+  }
+  .btn--fab:hover {
+    background-color: var(--component-grey-01);
+    color: var(--primary-color);
+  }
+
+
+  .fab--topright {
+    top: 25px;
+    right: 25px;
+  }
+
+  .fab--bottomleft {
+    bottom: 25px;
+    left: 25px;
+  }
+
+  .fab--bottomright {
+    bottom: 25px;
+    right: 25px;
+  }
+  .fab--topleft {
+    top: 25px;
+    left: 25px;
+  }
+
+  /* Fab Extended */
+  .fab--extend {
+    width: 141px;
+    border-radius: 50px;
+  }
+  .fab--extend:hover {
+    background-color: var(--component-grey-01);
+    color: var(--primary-color);
+  }
+  /* Squircle FAB */
+  .fab--squircle {
+    border-radius: 16px;
+    border: 3px solid var(--primary-color);
+  }
+
+
+    .btn--small {
+        height: 40px;
+        border-radius: 16px;
+    }
+
+    .btn--small--round {
+        padding: 8px 16px;
+        background-color: var(--component-orange-04);
+        color: white;
+    }
+
+    .btn--small--round:hover {
+        padding: 8px 16px;
+        background-color: var(--component-orange-01);
+        color: var(--component-orange-05);
+        border: 2px solid var(--component-orange-03);
+    }
+
+
+    .btn--outline--primary {
+        background-color: white;
+        border: 2px solid #C5DCFA;
+    }
+
+    .btn--outline--primary:hover {
+        background-color: var(--component-blue-01);
+        border: 2px solid var(--component-blue-03);
+    }
+
+    .btn--outline--secondary {
+        border: 2px solid #E0E0E0;
+        background-color: white;
+
+    }
+
+
+    .btn--outline--like {
+        color: var(--component-red-03);
+        background: white;
+        border: 2px solid var(--component-red-01);
+    }
+
+    .btn--outline--like:hover {
+        color: var(--component-red-05);
+        background: var(--component-red-01);
+        border: 2px solid var(--component-red-03);
+    }
+
+    .text--grey {
+        color: var(--component-grey-05);
+    }
+
+
+    .btn--link--expand {
+        max-height: 48px;
+        border-radius: 8px;
+    }
+
+    .btn--link--expand:hover {
+        color: var(--component-blue-05);
+    }
+

@@ -1,0 +1,105 @@
+  /* Badge Container */
+  .badge__container {
+      position: relative;
+      width: max-content;
+  }
+/* Badge Types */
+  /* Default Badge */
+  .badge {
+      position: absolute;
+      top: -12px;
+      right: -12px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      min-width: 24px;
+      min-height: 24px;
+      background-color: var(--primary-color);
+      color: var(--primary-text);
+      border-radius: 6px;
+  }
+
+  .badge--icon {
+      top: -10px;
+      right: -10px;
+  }
+
+  .badge--round {
+      border-radius: 50%;
+  }
+
+  .badge--tag {
+    position: absolute;
+    top: -12px;
+    right: -18px;
+    width: fit-content;
+    border-radius: 4px;
+    padding: 0px 6px;
+    font-size: 0.875rem;
+    text-transform: capitalize;
+}
+  .badge--avatar {
+    background-color: var(--primary-color);
+    top: 0px;
+    right: 0px;
+    border: 3px solid var(--white);
+}
+
+
+  /* Badge Sizes */
+  .badge--large {
+      min-width: 32px;
+      min-height: 32px;
+      top: -16px;
+      right: -16px;
+      font-size: 1rem;
+      font-weight: 800;
+  }
+
+  .badge--small {
+      min-width: 16px;
+      min-height: 16px;
+      top: -8px;
+      right: -8px;
+      font-size: 0.625rem;
+      font-weight: 700;
+  }
+
+  /* Tag Badges Sizes */
+  .badge--tag--lg {
+      border-radius: 4px;
+      font-size: 1rem;
+      padding: 4px 8px;
+      top: -12px;
+      right: -30px;
+      background-color: var(--primary-color);
+      color: var(--primary-text);
+  }
+
+  .badge--tag--sm {
+      top: -10px;
+      right: -9px;
+      border-radius: 6px;
+      text-transform: capitalize;
+      font-size: 10px;
+      padding: 0px 4px;
+      background-color: var(--primary-color);
+      color: var(--primary-text);
+  }
+
+  /* Avatar Badge States */
+  .badge--active {
+      background-color: var(--component-green-02);
+  }
+
+  .badge--busy,
+  .badge--like {
+      background-color: var(--component-red-02);
+  }
+
+  .badge--dnd {
+      background-color: var(--component-red-05);
+  }
+
+  .badge--away {
+      background-color: var(--component-yellow-02);
+  }
