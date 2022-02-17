@@ -35,7 +35,7 @@
     box-shadow: 0px 8px 16px var(--component-green-hover),
       0px 4px 8px var(--component-green-hover);
     background-color: var(--component-green-06);
-    color: white;
+    color: var(--white);
   }
 
   .alert--success--shaded .material-icons {
@@ -51,7 +51,7 @@
     box-shadow: 0px 8px 16px var(--component-orange-hover),
       0px 4px 8px var(--component-orange-hover);
     background-color: var(--component-orange-06);
-    color: white;
+    color: var(--white);
   }
 
   .alert--warning--shaded .material-icons {
@@ -67,7 +67,7 @@
     box-shadow: 0px 8px 16px var(--component-red-hover),
       0px 4px 8px var(--component-red-hover);
     background-color: var(--component-red-06);
-    color: white;
+    color: var(--white);
   }
 
   .alert--failure--shaded .material-icons {
@@ -84,7 +84,7 @@
     box-shadow: 0px 8px 16px var(--component-blue-hover),
       0px 4px 8px var(--component-blue-hover);
     background-color: var(--component-blue-06);
-    color: white;
+    color: var(--white);
   }
 
   .alert--primary--shaded .material-icons {
@@ -102,7 +102,7 @@
     box-shadow: 0px 8px 16px var(--component-green-hover),
       0px 4px 8px var(--component-green-hover);
     background-color: var(--component-grey-06);
-    color: white;
+    color: var(--white);
   }
 
   .alert--secondary--shaded .material-icons {
