@@ -76,5 +76,20 @@
 		--primary-color:var(--component-blue-05);
 		--secondary-color:var(--component-grey-05);
 
-		
+		--white:#ffffff;
+		--black:#000000;
+
+		--primary-color-green: #1F8B24;
+		--primary-text-green: #C5F2C7;
+		--primary-color-blue: #0F56B3;
+		--primary-text-blue: #C5DCFA;
+		--primary-color-red: #DA100B;
+		--primary-text-red: #FCD0CF;
+
+
 }
+
+
+
+
+
