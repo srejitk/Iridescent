@@ -15,6 +15,10 @@
 @import "./components/Inputs/Input.css";
 @import "./components/Image/images.css";
 @import "./components/Cards/Cards.css";
-@import "./components/Buttons/Buttons.css";
+@import "./components/Button/button.css";
 @import "./components/Grids/Grids.css";
 @import "./components/Lists/Lists.css";
+@import "./components/Alerts/Alerts.css";
+@import "./components/Rating/Ratings.css";
+@import "./components/Text Utils/TextUtils.css";
+
