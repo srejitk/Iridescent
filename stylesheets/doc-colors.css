@@ -21,3 +21,23 @@
         --page-gradient-light: ##F3EDF7;
         --page-gradient-dark: #987480;
 }
+
+.red {
+  background-color: var(--component-red-04);
+}
+
+.green {
+  background-color: var(--component-green-04);
+}
+
+.yellow {
+  background-color: var(--component-yellow-04);
+}
+
+.blue {
+  background-color: var(--component-blue-04);
+}
+
+.orange {
+  background-color: var(--component-orange-04);
+}
