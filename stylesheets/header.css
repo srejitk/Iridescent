@@ -11,14 +11,16 @@
         display: flex;
         width: 100%;
         height: 64px;
-        outline: 2px solid;
-    
+        background-color: white;
+        /* outline: 2px solid; */
+        position: fixed;
+        top: 0;
+        z-index: 5;
       }
   
       .iris__navbar {
         width: 100%;
         display: flex;
-        outline: 2px solid;
         justify-content: space-between;
         align-items: center;
         margin: 1rem 2rem;
@@ -32,19 +34,24 @@
         padding: 8px 16px;
       }
       .material-icons {
-        outline: 2px solid;
+        /* outline: 2px solid; */
         font: 24px;
         border-radius: 50%;
         padding: 10px;
       }
   
       .iris__logo__title {
-        margin: 0 0 0 16px;
+        margin: 0 0 0 2rem;
+        align-self: center;
+        font-size: 1.5rem;
+        /* border: 2px solid; */
+        padding: 0.5rem 1rem;
+        border-radius: 64px;
       }
   
       .nav__links__ul {
         display: flex;
-        outline: 2px solid;
+        /* outline: 2px solid; */
         justify-content: center;
         align-items: center;
       }
@@ -53,7 +60,7 @@
         margin: 1rem;
         font-size: 16px;
         font-weight: bold;
-        outline: 2px solid;
+        /* outline: 2px solid; */
         width: fit-content;
         padding: 0.5rem 1rem;
         border-radius: 50px;
