@@ -39,7 +39,7 @@
 
       .selected{
         border-radius: 8px;
-        border: 2px solid black;
+        border: 2px solid var(--black);
       }
       .selected:hover{
         background-color: #7FCFFF;
