@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: column;
     margin: 4rem;
-    padding: 0px 40px;
+    padding: 0px 2.5rem;
     width: 90%;
     min-height: calc(100vh - 64px);
   }
@@ -28,7 +28,7 @@
     margin: 2.5rem;
     padding: 2.5rem;
     border-radius: 64px;
-    min-height: 360px;
+    min-height: 22.5rem;
 }
 
   .wrapper__text {
@@ -39,7 +39,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    /* outline: 2px solid; */
   }
 
   .iris__desc__wrapper {
@@ -241,17 +240,23 @@
   border-radius: 8px;
 }
 
-    /* Button Icons */
-    .btn .material-icons {
-      font-size: 1rem;
-      outline: 0px solid;
-  }
+.list--block {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 16px;
+}
 
-  .card__icon {
-      position: absolute;
-      outline: 0px;
-      top: 8px;
-      right: 8px;
-      background-color: rgba(230, 230, 230, 0.5);
-      font-size: 1rem !important;
-  }
+.container--row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.rating>.material-icons {
+  padding: 2px;
+}
+
+.card__cover>.rating {
+  width: 100%;
+}

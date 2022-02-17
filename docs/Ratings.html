@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buttons</title>
-    <link rel="stylesheet" href="/stylesheets/index.css">
+    <title>Ratings</title>
     <link rel="stylesheet" href="/main.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,9 +13,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
         integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script>
-        hljs.highlightAll();
-    </script>
 </head>
 
 <body>
@@ -47,7 +43,6 @@
             <a href="./Introduction.html" class="iris__categories title hoverOn ">Introduction</a>
             <a href="./Colors.html" class="iris__categories title hoverOn">Colors</a>
             <a href="./Typography.html" class="iris__categories title hoverOn">Typography</a>
-            <!-- <a href="./Contribution" class="iris__categories title hoverOn">Contribution</a> -->
             <div class="section__title">Components</div>
             <a href="./Alerts.html" class="iris__categories title hoverOn">Alert</a>
             <a href="./Avatars.html" class="iris__categories title hoverOn ">Avatars</a>
@@ -103,10 +98,10 @@
                         <!-- Insert Component Here -->
                         <!-- Rating -->
                         <div class="rating">
-                            <span class="material-icons selected">star</span>
-                            <span class="material-icons selected">star</span>
-                            <span class="material-icons selected">star</span>
-                            <span class="material-icons selected">star_half</span>
+                            <span class="material-icons star_selected">star</span>
+                            <span class="material-icons star_selected">star</span>
+                            <span class="material-icons star_selected">star</span>
+                            <span class="material-icons star_selected">star_half</span>
                             <span class="material-icons">star</span>
                         </div>
                         <!-- Insert Component Label Here -->
@@ -117,17 +112,15 @@
                         <!-- Insert Component Here -->
                         <!-- Rating -->
                         <div class="rating">
-                            <span class="material-icons selected">star</span>
-                            <span class="material-icons selected">star</span>
-                            <span class="material-icons selected">star</span>
-                            <span class="material-icons selected">star</span>
-                            <span class="material-icons selected">star</span>
+                            <span class="material-icons star_selected">star</span>
+                            <span class="material-icons star_selected">star</span>
+                            <span class="material-icons star_selected">star</span>
+                            <span class="material-icons star_selected">star</span>
+                            <span class="material-icons star_selected">star</span>
                         </div>
                         <!-- Insert Component Label Here -->
                         <span class="subtitle-1">Filled Ratings</span>
                     </div>
-
-
                 </div>
             </section>
             <!-- Implementation Code Section -->
@@ -147,12 +140,9 @@
                             <span class="material-icons">star</span>
                         </div></code></pre>
                 </div>
-
-
             </section>
-
             <!-- Page Navigation -->
-            <section class="iris__desc__wrapper page_nav">
+            <nav class="iris__desc__wrapper page_nav">
                 <button class="btn btn--link btn--ltr">
                     <span class="material-icons">arrow_back</span>
                     <a href="/docs/Lists.html">Lists</a>
@@ -161,9 +151,7 @@
                     <span class="material-icons">arrow_forward</span>
                     <a href="/docs/Text-Utils.html">Text Utilities</a>
                 </button>
-            </section>
-
-
+            </nav>
 
             <footer class="iris__footer flex-mid-center iris__desc__wrapper">
                 <div class="footer__content flex-mid-center text--center">
@@ -183,12 +171,9 @@
                         </ul>
                     </div>
                 </div>
-
             </footer>
         </div>
     </div>
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
         integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>

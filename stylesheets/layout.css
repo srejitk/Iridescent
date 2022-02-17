@@ -1,5 +1,5 @@
-.hoverOn:hover {
-    background-color: #E3E3E3;
+hoverOn:hover {
+    background-color: var(--hover-grey);
 }
 
 .hoverOn--round {
@@ -9,15 +9,15 @@
 
 .hoverOn--round:hover {
     border-radius: 50px;
-    background-color: #E3E3E3;
+    background-color: var(--hover-grey);
 
 }
 
 .selectedOn {
-    background-color: #7FCFFF;
+    background-color: var(--page-blue);
 }
 
 .selectedOn:hover {
-    background-color: #5AB3F0;
+    background-color:var(--hover-blue) ;
 }
 

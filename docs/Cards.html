@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cards</title>
-    <link rel="stylesheet" href="/stylesheets/index.css">
     <link rel="stylesheet" href="/main.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,10 +13,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
         integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script>
-        hljs.highlightAll();
-    </script>
 </head>
+
+
+<style>
+    .rating {
+        display: flex;
+        color: var(--component-grey-01);
+        padding: 8px 0px;
+        align-items: center;
+    }
+
+
+
+    .selected {
+        color: var(--component-orange-04);
+        outline: 0px;
+        font-size: 16px;
+        padding: 3px;
+    }
+</style>
 
 <body>
     <div class="main-container">
@@ -47,7 +62,6 @@
             <a href="./Introduction.html" class="iris__categories title hoverOn ">Introduction</a>
             <a href="./Colors.html" class="iris__categories title hoverOn">Colors</a>
             <a href="./Typography.html" class="iris__categories title hoverOn">Typography</a>
-            <!-- <a href="./Contribution" class="iris__categories title hoverOn">Contribution</a> -->
             <div class="section__title">Components</div>
             <a href="./Alerts.html" class="iris__categories title hoverOn">Alert</a>
             <a href="./Avatars.html" class="iris__categories title hoverOn ">Avatars</a>
@@ -60,7 +74,6 @@
             <a href="./Lists.html" class="iris__categories title hoverOn">Lists</a>
             <a href="./Ratings.html" class="iris__categories title hoverOn">Ratings</a>
             <a href="./Text-Utils.html" class="iris__categories title hoverOn">Text Utilities</a>
-
         </section>
         <!-- Content HTML -->
         <div class="iris__container" id="content">
@@ -116,12 +129,11 @@
                         <!-- Insert Component Label Here -->
                         <span class="subtitle-1">Mini Card</span>
                     </div>
-
                 </div>
             </section>
             <!-- Implementation Code Section -->
             <section class="iris__desc__wrapper">
-                <h2 class="header-h2 content__title">Implementation</h2>
+                <h2 class="header-2 content__title">Implementation</h2>
                 <p class=" header-6 content__desc">
                     Choose your Input size and off you go!</p>
                 <!-- Make the component wrapper in row or column accordingly -->
@@ -139,8 +151,6 @@
 </div>
                    </code></pre>
                 </div>
-
-
             </section>
             <!-- Component Page Desc Section -->
             <section class="iris__desc__wrapper">
@@ -152,7 +162,6 @@
                     and <i class="code--blue">input__field--outline</i> for outlined version.</p>
                 <!-- Make the component wrapper in row or column accordingly -->
                 <div class="component__wrapper--column bg-blue border-8d  gap20 text--left">
-
                     <div class="component__item--row">
                         <!-- Insert Component Here -->
                         <!-- Horizontal Card -->
@@ -178,20 +187,18 @@
                                             <span class="material-icons icon--">favorite_outline</span>
                                             <p class="subtitle-1 btn--txt">Save</p>
                                         </div>
-
                                     </div>
-
                                 </div>
                             </div>
                             <div class="card__cover card__img--large image--responsive">
                                 <img src="https://picsum.photos/id/684/600/400">
                                 <div class="rating">
                                     <p class="subtitle-2 text--grey">4.2</p>
-                                    <span class="material-icons md-18 selected">star</span>
-                                    <span class="material-icons md-18  selected">star</span>
-                                    <span class="material-icons md-18  selected">star</span>
-                                    <span class="material-icons md-18  selected">star</span>
-                                    <span class="material-icons md-18  selected">star_half</span>
+                                    <span class="material-icons md-18 star_selected">star</span>
+                                    <span class="material-icons md-18  star_selected">star</span>
+                                    <span class="material-icons md-18  star_selected">star</span>
+                                    <span class="material-icons md-18  star_selected">star</span>
+                                    <span class="material-icons md-18  star_selected">star_half</span>
                                 </div>
                             </div>
                         </div>
@@ -214,15 +221,14 @@
                                                 class="body-1 item--price">Rs. 2443</p>
                                             <p class="subtitle-1 item--info text--grey">Free Shipping</p>
                                         </p>
-
                                     </div>
                                     <div class="rating">
                                         <p class="subtitle-2 text--grey">4.2</p>
-                                        <span class="material-icons md-18  selected">star</span>
-                                        <span class="material-icons md-18  selected">star</span>
-                                        <span class="material-icons md-18  selected">star</span>
-                                        <span class="material-icons md-18  selected">star</span>
-                                        <span class="material-icons md-18  selected">star_half</span>
+                                        <span class="material-icons md-18  star_selected">star</span>
+                                        <span class="material-icons md-18  star_selected">star</span>
+                                        <span class="material-icons md-18  star_selected">star</span>
+                                        <span class="material-icons md-18  star_selected">star</span>
+                                        <span class="material-icons md-18  star_selected">star_half</span>
                                     </div>
                                     <div class="container--row">
                                         <div class="btn btn--small btn--small--round">Buy Now</div>
@@ -230,21 +236,18 @@
                                             <span class="material-icons text--primary">shopping_cart</span>
                                             <p class="subtitle-1 btn--text text--primary">To cart</p>
                                         </div>
-
                                     </div>
-
                                 </div>
                             </div>
                         </div>
                         <!-- Insert Component Label Here -->
                         <span class="subtitle-1">Vertical Card</span>
                     </div>
-
                 </div>
             </section>
             <!-- Implementation Code Section -->
             <section class="iris__desc__wrapper">
-                <h2 class="header-h2 content__title">Implementation</h2>
+                <h2 class="header-2 content__title">Implementation</h2>
                 <p class=" header-6 content__desc">
                     Not everyone likes to be independent. Some prefer cute little nudges!</p>
                 <!-- Make the component wrapper in row or column accordingly -->
@@ -271,9 +274,7 @@
                                             <span class="material-icons icon--">favorite_outline</span>
                                             <p class="subtitle-1 btn--txt">Save</p>
                                         </div>
-                    
                                     </div>
-                    
                                 </div>
                             </div>
                             <div class="card__cover card__img--large image--responsive">
@@ -290,10 +291,7 @@
                         </div>
                                </code></pre>
                 </div>
-
-
             </section>
-
             <!-- Component Page Desc Section -->
             <section class="iris__desc__wrapper">
                 <h2 class="header-2 content__title">Text Only / Text Overlay Cards</h2>
@@ -305,7 +303,6 @@
                     and <i class="code--blue">--primaryy</i>.</p>
                 <!-- Make the component wrapper in row or column accordingly -->
                 <div class="component__wrapper--column bg-blue border-8d  gap20 text--left">
-
                     <div class="component__item--row">
                         <!-- Insert Component Here -->
                         <!-- Text Only Card -->
@@ -341,12 +338,11 @@
                         <!-- Insert Component Label Here -->
                         <span class="subtitle-1">Text Overlay Card</span>
                     </div>
-
                 </div>
             </section>
             <!-- Implementation Code Section -->
             <section class="iris__desc__wrapper">
-                <h2 class="header-h2 content__title">Implementation</h2>
+                <h2 class="header-2 content__title">Implementation</h2>
                 <p class=" header-6 content__desc">
                     Choices, Choices, so many beautiful choices!</p>
                 <!-- Make the component wrapper in row or column accordingly -->
@@ -369,10 +365,7 @@
                         </div>
                     </code></pre>
                 </div>
-
-
             </section>
-
             <!-- Component Page Desc Section -->
             <section class="iris__desc__wrapper">
                 <h2 class="header-2 content__title">Cards with Dismiss</h2>
@@ -383,7 +376,6 @@
                     and <i class="code--blue">---primary</i>.</p>
                 <!-- Make the component wrapper in row or column accordingly -->
                 <div class="component__wrapper--column bg-blue border-8d  gap20 text--left">
-
                     <div class="component__item--row">
                         <!-- Insert Component Here -->
                         <!-- Cards With Dismiss -->
@@ -400,14 +392,11 @@
                         <!-- Insert Component Label Here -->
                         <span class="subtitle-1">Cards with Dismiss</span>
                     </div>
-
-
-
                 </div>
             </section>
             <!-- Implementation Code Section -->
             <section class="iris__desc__wrapper">
-                <h2 class="header-h2 content__title">Implementation</h2>
+                <h2 class="header-2 content__title">Implementation</h2>
                 <p class=" header-6 content__desc">
                     Not everyone likes to be round and perfect. Some prefer cute corners!</p>
                 <!-- Make the component wrapper in row or column accordingly -->
@@ -424,42 +413,39 @@
                             <span class="card__icon material-icons">close</span>
                         </div></code></pre>
                 </div>
-
-
-            </section>
-            <!-- Page Navigation -->
-            <section class="iris__desc__wrapper page_nav">
-                <button class="btn btn--link btn--ltr">
-                    <span class="material-icons">arrow_back</span>
-                    <a href="/docs/Buttons.html">Buttons</a>
-                </button>
-                <button class="btn btn--link btn--rtl">
-                    <span class="material-icons">arrow_forward</span>
-                    <a href="/docs/Grids.html">Grids</a>
-                </button>
-            </section>
-
-
-            <footer class="iris__footer flex-mid-center iris__desc__wrapper">
-                <div class="footer__content flex-mid-center text--center">
-                    <span class="material-icons md-48 icon--footer text--center">favorite</span>
-                    <p class="desc footer__desc text--center">Iridescent was made with the intention of creating a
-                        playful library
-                        which was apt for formal purposes too. We hope you liked it. Feel free to connect and provide
-                        suggestions from the below means. </p>
-                    <div class="nav__links__container">
-                        <ul class="nav__links__ul">
-                            <a href="https://www.twitter.com/srejitk" target="__blank"
-                                class="footer nav__links nav__links--footer">Twitter</a>
-                            <a href="https://www.github.com/srejitk" target="__blank"
-                                class="footer nav__links nav__links--footer">Github</a>
-                            <a href="https://www.linkedin.com/srejitk" target="__blank"
-                                class="footer nav__links nav__links--footer">LinkedIn</a>
-                        </ul>
-                    </div>
-                </div>
-
-            </footer>
+                </nav>
+                <!-- Page Navigation -->
+                <section class="iris__desc__wrapper page_nav">
+                    <button class="btn btn--link btn--ltr">
+                        <span class="material-icons">arrow_back</span>
+                        <a href="/docs/Buttons.html">Buttons</a>
+                    </button>
+                    <button class="btn btn--link btn--rtl">
+                        <span class="material-icons">arrow_forward</span>
+                        <a href="/docs/Grids.html">Grids</a>
+                    </button>
+                    </nav>
+                    <footer class="iris__footer flex-mid-center iris__desc__wrapper">
+                        <div class="footer__content flex-mid-center text--center">
+                            <span class="material-icons md-48 icon--footer text--center">favorite</span>
+                            <p class="desc footer__desc text--center">Iridescent was made with the intention of creating
+                                a
+                                playful library
+                                which was apt for formal purposes too. We hope you liked it. Feel free to connect and
+                                provide
+                                suggestions from the below means. </p>
+                            <div class="nav__links__container">
+                                <ul class="nav__links__ul">
+                                    <a href="https://www.twitter.com/srejitk" target="__blank"
+                                        class="footer nav__links nav__links--footer">Twitter</a>
+                                    <a href="https://www.github.com/srejitk" target="__blank"
+                                        class="footer nav__links nav__links--footer">Github</a>
+                                    <a href="https://www.linkedin.com/srejitk" target="__blank"
+                                        class="footer nav__links nav__links--footer">LinkedIn</a>
+                                </ul>
+                            </div>
+                        </div>
+                    </footer>
         </div>
     </div>
 

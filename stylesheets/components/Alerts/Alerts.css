@@ -3,6 +3,7 @@
     min-height: 56px;
     min-width: 700px;
     justify-content: space-between;
+    background-color: var(--white);
     align-items: center;
     border-radius: 12px;
     box-shadow: 0px 2px 4px var(--component-grey-hover),

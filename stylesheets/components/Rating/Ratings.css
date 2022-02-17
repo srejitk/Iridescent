@@ -1,11 +1,11 @@
     /* Ratings Styling  */
     .rating {
         display: flex;
+        align-items: center;
         color: var(--component-grey-01);
-
     }
 
-    .selected {
+    .star_selected {
         color: var(--component-orange-04);
         outline: 0px;
     }

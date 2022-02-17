@@ -13,14 +13,8 @@ function openNav() {
 sidebarClose.addEventListener("click", clickHandler);
 function clickHandler(event) {
    if(event.target.closest(".iris__sidebar")) return;
-
-
     sidebar.classList.remove("sidebar--open");
     sidebarClose.style.display ="none";  
     sidebarOpen.style.display ="block";  
-
 }
-
-
-  
     
