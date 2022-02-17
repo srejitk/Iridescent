@@ -1,0 +1,10 @@
+/* List Component */
+.lists--spaced {
+    display: flex;
+    flex-direction: row;
+}
+
+.lists--stacked {
+    display: flex;
+    flex-direction: column;
+}
