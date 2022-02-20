@@ -1,4 +1,4 @@
-:root{
+:root {
     /* Font weights */
     --fw-light: 300;
     --fw-regular: 400;
@@ -17,87 +17,89 @@
 }
 
 
-.center-children{
+.center-children {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.border-2d{
+.border-2d {
     border: 2px solid var(--accent);
 }
 
-.border-4d{
+.border-4d {
     border: 4px solid var(--accent);
 }
 
-.border-8d{
+.border-8d {
     border: 8px solid var(--accent);
 }
 
-.border-16d{
+.border-16d {
     border: 16px solid var(--accent);
 }
 
-.border-24d{
+.border-24d {
     border: 24px solid var(--accent);
 }
-.border-32d{
+
+.border-32d {
     border: 32px solid var(--accent);
 }
 
 
-.flex-row-wrap{
+.flex-row-wrap {
     display: flex;
     flex-flow: row wrap;
 }
 
-.flex-row-nowrap{
+.flex-row-nowrap {
     display: flex;
     flex-flow: row nowrap;
 }
 
-.flex-column-wrap{
+.flex-column-wrap {
     display: flex;
     flex-flow: column wrap;
 }
 
-.flex-column-nowrap{
+.flex-column-nowrap {
     display: flex;
     flex-flow: column nowrap;
 }
+
 /* Border Radius */
-.br-8{
+.br-8 {
     border-radius: 8px;
 }
 
-.br-12{
+.br-12 {
     border-radius: 12px;
 }
 
-.br-24{
+.br-24 {
     border-radius: 24px;
 }
 
-.m-1{
+.m-1 {
     margin: 1rem;
 }
 
-.m-2{
+.m-2 {
     margin: 2rem;
 }
 
-.m-3{
+.m-3 {
     margin: 3rem;
 }
 
 /* Padding */
 
-.p-top-bottom-1{
+.p-top-bottom-1 {
     padding: 1rem 0rem;
 }
 
-.p-left-right-1{
+.p-left-right-1 {
     padding: 0rem 1rem;
 }
 
@@ -114,55 +116,55 @@
 }
 
 /* Flex Alignment */
-.flex-top-left{
+.flex-top-left {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
 }
 
-.flex-top-center{
+.flex-top-center {
     display: flex;
     justify-content: center;
     align-items: flex-start;
 }
 
-.flex-top-right{
+.flex-top-right {
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
 }
 
-.flex-mid-left{
+.flex-mid-left {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-.flex-mid-center{
+.flex-mid-center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.flex-mid-right{
+.flex-mid-right {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-.flex-low-left{
+.flex-low-left {
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
 }
 
-.flex-low-center{
+.flex-low-center {
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
 
-.flex-low-right{
+.flex-low-right {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -173,15 +175,15 @@
     box-shadow: 0px 2px 4px rgba(97, 97, 97, 0.18), 0px 4px 8px rgba(97, 97, 97, 0.18);
 }
 
-.position-absolute{
+.position-absolute {
     position: absolute;
 }
 
-.position-relative{
+.position-relative {
     position: relative;
 }
 
-.position-static{
+.position-static {
     position: relative;
 }
 
@@ -253,88 +255,127 @@
     align-self: center;
 }
 
-.--success{
-	color: var(--success-color);
+.--success {
+    color: var(--success-color);
 }
 
-.--warning{
-	color: var(--failure-color);
+.--warning {
+    color: var(--failure-color);
 }
 
 
-.--primary{
-	color: var(--primary-color);
+.--primary {
+    color: var(--primary-color);
 }
 
-.padding-2{
+.padding-2 {
     border: 2px solid;
 }
 
-.padding-4{
+.padding-4 {
     border: 4px solid;
 }
 
-.padding-8{
+.padding-8 {
     padding: 8px;
 }
 
-.padding-12{
+.padding-12 {
     padding: 12px;
 }
-.padding-16{
-   padding: 16px;
+
+.padding-16 {
+    padding: 16px;
 }
 
-.padding-24{
+.padding-24 {
     padding: 24px;
 }
 
-.padding-32{
+.padding-32 {
     padding: 24px;
 }
 
-.text--center{
+.text--center {
     text-align: center;
 }
 
-.text--left{
+.text--left {
     text-align: left;
 }
 
-.text--right{
+.text--right {
     text-align: right;
 }
 
-.text--justify{
-    text-align:justify;
+.text--justify {
+    text-align: justify;
 }
 
 
-.gap20{
+.gap20 {
     gap: 20px;
 }
 
-.gap30{
+.gap30 {
     gap: 30px;
 }
 
-.align--center{
+.align--center {
     align-items: center;
     justify-content: center;
 }
 
-.align--topleft{
+.align--topleft {
     align-items: flex-start;
     justify-content: flex-start;
 }
 
-.align--midleft{
+.align--midleft {
     align-items: center;
     justify-content: flex-start;
 }
 
-.align--bottomleft{
+.align--bottomleft {
     align-items: flex-end;
     justify-content: flex-start;
 }
 
+/* Add to Utils */
+.m-1r{
+    margin-right: 1rem;
+}
+
+.m-1l{
+    margin-left: 1rem;
+}
+
+.m-1t{
+    margin-top: 1rem;
+}
+
+.m-1b{
+    margin-bottom: 1rem;
+}
+
+/* Margin 2rem */
+.m-2r{
+    margin-right: 2rem;
+}
+
+.m-2l{
+    margin-left: 2rem;
+}
+
+.m-2t{
+    margin-top: 2rem;
+}
+
+.m-2b{
+    margin-bottom: 2rem;
+}
+
+
+.outline {
+    outline: 2px solid
+}
