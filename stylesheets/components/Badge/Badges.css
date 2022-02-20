@@ -16,11 +16,13 @@
       background-color: var(--primary-color);
       color: var(--primary-text);
       border-radius: 6px;
+      
   }
 
   .badge--icon {
-      top: -10px;
-      right: -10px;
+      top: -15px;
+      right: -15px;
+      transform: translate(-50%,50%);
   }
 
   .badge--round {
@@ -29,21 +31,22 @@
 
   .badge--tag {
     position: absolute;
-    top: -12px;
-    right: -18px;
+    top: -20px;
+    right: -50px;
     width: fit-content;
     border-radius: 4px;
     padding: 0px 6px;
     font-size: 0.875rem;
     text-transform: capitalize;
+    transform: translate(-50%,50%);
 }
   .badge--avatar {
     background-color: var(--primary-color);
     top: 0px;
     right: 0px;
     border: 3px solid var(--white);
+    transform: translate(-50%,50%);
 }
-
 
   /* Badge Sizes */
   .badge--large {
@@ -69,15 +72,15 @@
       border-radius: 4px;
       font-size: 1rem;
       padding: 4px 8px;
-      top: -12px;
-      right: -30px;
+      top: -30px;
+      right: -40px;
       background-color: var(--primary-color);
       color: var(--primary-text);
   }
 
   .badge--tag--sm {
-      top: -10px;
-      right: -9px;
+      top: -20px;
+      right: -30px;
       border-radius: 6px;
       text-transform: capitalize;
       font-size: 10px;
