@@ -7,8 +7,8 @@
   grid-template-columns: 16rem auto;
   grid-template-areas:
       "header header"
-      "sidebar content"
-      "sidebar footer";
+      "content content"
+      "footer footer";
 }
 
 .iris__container {
@@ -85,7 +85,7 @@
     justify-content: center;
 }
 
-.code__wrapper code {
+code {
   border-radius: 8px;
   font-size: 16px;
   font-family: 'Manrope', sans-serif;
@@ -97,10 +97,8 @@
   flex-direction: row;
   width: 100%;
   align-items: center;
-  min-height: 18.75rem;
   max-height: 100%;
   border-radius: 8px;
-
 }
 
 .bg-green {
@@ -235,15 +233,25 @@
 
 .grid--item {
   background-color: var(--page-purple-dark);
-  width: 10rem;
+  width: 20rem;
   height: 5rem;
   border-radius: 8px;
 }
 
 .list--block {
-  width: 5rem;
+  width: 10rem;
   height: 5rem;
   border-radius: 16px;
+  margin: 1rem;
+  background-color: var(--page-green);
+}
+
+.list{
+  width: 20rem;
+  height: 5rem;
+  border-radius: 16px;
+  background-color: var(--page-green);
+  margin: 1rem;
 }
 
 .container--row {
@@ -259,4 +267,16 @@
 
 .card__cover>.rating {
   width: 100%;
+}
+
+pre{
+  word-wrap:break-word;
+  white-space: pre-wrap;
+  width: 100%;
+  
+}
+
+code{
+  width: 80%;
+  margin: 3rem auto;
 }
