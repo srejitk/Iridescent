@@ -1,4 +1,4 @@
-hoverOn:hover {
+.hoverOn:hover {
     background-color: var(--hover-grey);
 }
 
