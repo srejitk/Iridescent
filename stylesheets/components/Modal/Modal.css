@@ -1,0 +1,105 @@
+/* Modal CSS */
+:root{
+    --ACCENT:var(--component-red-05);
+    --ACCENT-BG:hsla(1, 88%, 90%,0.8);
+    --ACCENT-LIGHT: hsla(1, 88%, 90%,0.5);
+    ;
+}
+
+
+.modal {
+    height: fit-content;
+    width: 30rem;
+    border-radius: 12px;
+}
+
+.modal-title {
+    background-color: var(--ACCENT-LIGHT);
+    color: var(--ACCENT);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.875rem 1rem;
+}
+
+.modal-content {
+    display: flex;
+    align-items: center;
+    padding: 2rem 2rem 1rem;
+}
+
+.modal-icon {
+    font-size: 3rem;
+    color: var(--ACCENT)
+}
+
+
+
+
+.modal-icon-container {
+    padding: 1rem;
+    border-radius: 40px;
+    border: 1px solid var(--component-grey-02);
+    height: fit-content;
+}
+
+.modal-desc-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 1.5rem;
+    text-align: left;
+}
+
+.modal-cta {
+    display: flex;
+    justify-content: flex-end;
+    height: max-content;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    border-top: 2px solid var(--component-grey-02);
+}
+
+.modal-success {
+    background-color: var(--component-green-05);
+    color: white;
+    border: 2px solid transparent
+}
+
+.modal-success:hover {
+    background-color: var(--white);
+    color: var(--component-green-05);
+    border: 2px solid var(--component-green-05);
+}
+
+.modal-critical {
+    background-color: var(--component-red-05);
+    color: white;
+    border: 2px solid transparent
+}
+
+.modal-critical:hover {
+    background-color: var(--white);
+    color: var(--component-red-05);
+    border: 2px solid var(--component-red-05);
+}
+
+
+.modal-desc-container>.header-5 {
+    color: var(--component-red-06);
+    padding-bottom: 8px;
+}
+
+/* Modal Mini CSS */
+.modal-mini {
+    width: 344px;
+}
+
+.modal-mini>.modal-content {
+    background-color: var(--ACCENT-BG);
+    backdrop-filter: blur(40px);
+}
+
+.modal-mini>.modal-cta {
+    background-color: var(--ACCENT-BG);
+    backdrop-filter: blur(40px);
+}
