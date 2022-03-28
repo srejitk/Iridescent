@@ -91,15 +91,14 @@
 
 /* Modal Mini CSS */
 .modal-mini {
-    width: 344px;
+    width: 21rem;
 }
 
 .modal-mini>.modal-content {
     background-color: var(--ACCENT-BG);
-    backdrop-filter: blur(40px);
 }
 
 .modal-mini>.modal-cta {
     background-color: var(--ACCENT-BG);
-    backdrop-filter: blur(40px);
+
 }
