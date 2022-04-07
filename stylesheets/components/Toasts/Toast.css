@@ -1,0 +1,35 @@
+/* Toast */
+.toast {
+    display: flex;
+    padding: 0.75rem 1rem;
+    width: 25rem;
+    min-height: fit-content;
+    border-radius: 8px;
+    border: 4px solid transparent;
+    font-weight: bold;
+}
+
+.toast--primary {
+    background-color: var(--component-blue-01);
+    border-color: var(--component-blue-05);
+    color: var(--component-blue-05);
+
+}
+
+.toast--success {
+    background-color: var(--component-green-01);
+    border-color: var(--component-green-05);
+    color: var(--component-green-05);
+}
+
+.toast--warning {
+    background-color: var(--component-red-01);
+    border-color: var(--component-red-05);
+    color: var(--component-red-05);
+}
+
+.toast--critical {
+    background-color: var(--component-orange-01);
+    border-color: var(--component-orange-05);
+    color: var(--component-orange-05);
+}

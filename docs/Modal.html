@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/stylesheets/components/Modal/Modal.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
+        integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- Header HTML -->
+        <header id="header" class="iris__header">
+            <nav class="iris__navbar">
+                <div class="iris__navbar__logo__section">
+                    <a class="home__section">
+                        <span id="hamburger_open" class="material-icons icon--sidebar">menu</span>
+                        <span id="hamburger_close" class="material-icons icon--sidebar">
+                            menu_open
+                        </span>
+                        <h3 class="iris__logo__title">Iridescent</h3>
+                    </a>
+                </div>
+                <div class="nav__links__container">
+                    <ul class="nav__links__ul">
+                        <a href="/index.html" class="header nav__links hoverOn--round">Home</a>
+                        <a href="https://www.github.com/srejitk" class="header nav__links hoverOn--round">Github</a>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- Side bar HTML -->
+        <section id="sidebar" class="iris__sidebar">
+            <div class="section__title">Getting Started</div>
+            <a href="./Introduction.html" class="iris__categories title hoverOn ">Introduction</a>
+            <a href="./Colors.html" class="iris__categories title hoverOn">Colors</a>
+            <a href="./Typography.html" class="iris__categories title hoverOn">Typography</a>
+            <div class="section__title">Components</div>
+            <a href="./Alerts.html" class="iris__categories title hoverOn">Alert</a>
+            <a href="./Avatars.html" class="iris__categories title hoverOn ">Avatars</a>
+            <a href="./Badges.html" class="iris__categories title hoverOn">Badge</a>
+            <a href="./Buttons.html" class="iris__categories title hoverOn ">Button</a>
+            <a href="./Cards.html" class="iris__categories title hoverOn">Card</a>
+            <a href="./Grids.html" class="iris__categories title hoverOn">Grids</a>
+            <a href="./Images.html" class="iris__categories title hoverOn">Image</a>
+            <a href="./Inputs.html" class="iris__categories title hoverOn ">Input</a>
+            <a href="./Lists.html" class="iris__categories title hoverOn">Lists</a>
+            <a href="./Modal.html" class="iris__categories title hoverOn selectedOn">Modal</a>
+            <a href="./Ratings.html" class="iris__categories title hoverOn">Ratings</a>
+            <a href="./Text-Utils.html" class="iris__categories title hoverOn">Text Utilities</a>
+        </section>
+        <!-- Content HTML -->
+        <div class="iris__container" id="content">
+            <!-- Component BG Header Section -->
+            <div class="iris__bg__wrapper iris__bg__wrapper-red">
+                <div class="wrapper__text">
+                    <h1 class="header-1">Modal</h1>
+                    <p class="desc header-6">
+                        Modal provide insight regarding the state of an action and allows users to provide feedback and
+                        intimate them of their actions.
+                    </p>
+                </div>
+            </div>
+            <!-- Component Page Desc Section -->
+            <section class="iris__desc__wrapper">
+                <h2 class="header-2 content__title">Modal</h2>
+                <p class=" header-6 header-6 content__desc">
+                    The Modal component shown below can be
+                    triggered by using <i class="code--yellow">modal</i>
+                    and then adding <i class="code--yellow">modal--mini</i> for the mini version.
+                </p>
+                <!-- Make the component wrapper in row or column accordingly -->
+                <div class="component__wrapper--column bg-red border-8d  gap20 text--left">
+                    <!-- Default -->
+                    <div class="component__item--row">
+                        <!-- Insert Component Here -->
+                        <!-- Modal -->
+                        <div class="modal box-shadow">
+                            <div class="modal-title">
+                                <h6 class="header-6">Modal Title</h6>
+                                <span class="material-icons">close</span>
+                            </div>
+                            <div class="modal-content">
+                                <div class="modal-icon-container">
+                                    <span class="material-icons modal-icon">
+                                        check
+                                    </span>
+                                </div>
+                                <div class="modal-desc-container">
+                                    <p class="header-5">Warning!</p>
+                                    <p class="body-1">Uh-Oh! Something went wrong, let's get you back to safety.</p>
+                                </div>
+                            </div>
+                            <div class="modal-cta">
+                                <button class="btn btn--outline--secondary ">Go Home</button>
+                                <button class="btn btn--critical modal-critical ">Close</button>
+                            </div>
+                        </div>
+
+                        <!-- Insert Component Label Here -->
+                        <span class="subtitle-1">Modal</span>
+                    </div>
+                    <!-- Half filled -->
+                    <div class="component__item--row">
+                        <!-- Insert Component Here -->
+                        <!-- Modal Mini -->
+                        <div class="modal-mini box-shadow">
+                            <div class="modal-title">
+                                <h6 class="header-6">Modal Title</h6>
+                                <span class="material-icons">close</span>
+                            </div>
+                            <div class="modal-content">
+                                <div class="modal-desc-container">
+                                    <p class="header-5">Warning!</p>
+                                    <p class="body-1">You failed in your mission. That one little task. Ishh.</p>
+                                </div>
+                            </div>
+                            <div class="modal-cta">
+                                <button class="btn btn--critical modal-critical ">Close</button>
+                            </div>
+                        </div>
+                        <!-- Insert Component Label Here -->
+                        <span class="subtitle-1">Modal Mini</span>
+                    </div>
+                </div>
+            </section>
+            <!-- Implementation Code Section -->
+            <section class="iris__desc__wrapper">
+                <h2 class="header-h2 content__title">Implementation</h2>
+                <p class=" header-6 content__desc">
+                    So you're the one who needs constant feed back huh? </p>
+                <!-- Make the component wrapper in row or column accordingly -->
+                <div class="code__wrapper code__wrapper code--red gap20">
+                    <pre><code>
+<!-- Modal -->
+<div class="modal box-shadow">
+<div class="modal-title">
+<h6 class="header-6">Modal Title</h6>
+<span class="material-icons">close</span>
+</div>
+<div class="modal-content">
+<div class="modal-icon-container">
+<span class="material-icons modal-icon">
+check
+</span>
+</div>
+<div class="modal-desc-container">
+<p class="header-5">"Insert Header here!"</p>
+<p class="body-1">"Insert Desc here"</p>
+</div>
+</div>
+<div class="modal-cta">
+<button class="btn btn--outline--secondary ">Primary Action</button>
+<button class="btn btn--primary modal-success ">Secondary Action</button>
+</div>
+</div>
+
+<!-- Modal Mini -->
+<div class="modal-mini box-shadow">
+<div class="modal-title">
+<h6 class="header-6">Modal Title</h6>
+<span class="material-icons">close</span>
+</div>
+<div class="modal-content">
+<div class="modal-desc-container">
+<p class="header-5">"Enter Title Here"</p>
+<p class="body-1">"Enter Desc Here"</p>
+</div>
+</div>
+<div class="modal-cta">
+<button class="btn btn--primary modal-success ">Primary Action</button>
+</div>
+</div>
+                    
+                    
+                    
+                    </code></pre>
+                </div>
+            </section>
+            <!-- Page Navigation -->
+            <nav class="iris__desc__wrapper page_nav">
+                <button class="btn btn--link btn--ltr">
+                    <span class="material-icons">arrow_back</span>
+                    <a href="/docs/Lists.html">Lists</a>
+                </button>
+                <button class="btn btn--link btn--rtl">
+                    <span class="material-icons">arrow_forward</span>
+                    <a href="/docs/Ratings.html">Ratings</a>
+                </button>
+            </nav>
+
+            <footer class="iris__footer flex-mid-center iris__desc__wrapper">
+                <div class="footer__content flex-mid-center text--center">
+                    <span class="material-icons md-48 icon--footer text--center">favorite</span>
+                    <p class="desc footer__desc text--center">Iridescent was made with the intention of creating a
+                        playful library
+                        which was apt for formal purposes too. We hope you liked it. Feel free to connect and provide
+                        suggestions from the below means. </p>
+                    <div class="nav__links__container">
+                        <ul class="nav__links__ul">
+                            <a href="https://www.twitter.com/srejitk" target="__blank"
+                                class="footer nav__links nav__links--footer">Twitter</a>
+                            <a href="https://www.github.com/srejitk" target="__blank"
+                                class="footer nav__links nav__links--footer">Github</a>
+                            <a href="https://www.linkedin.com/srejitk" target="__blank"
+                                class="footer nav__links nav__links--footer">LinkedIn</a>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
+        integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    <script src="/js/codeblocks.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
