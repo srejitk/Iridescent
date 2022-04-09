@@ -1,31 +1,27 @@
 .iris__footer {
-    grid-area: footer;
-    margin: 2.5rem;
-    padding: 0rem 2.5rem;
-    flex-direction: column;
-    background-color: #F6F8FC;
-    border-radius: 64px;
-
-
+  grid-area: footer;
+  margin: 2.5rem auto;
+  padding: 0rem 2.5rem;
+  flex-direction: column;
+  background-color: #f6f8fc;
+  border-radius: 64px;
 }
 
 .footer__content {
-    flex-direction: column;
-    padding: 40px 40px 15px;
-    border-bottom: 1px solid var(--mio-theme-color-surface-variant);
-    text-align: center;
+  flex-direction: column;
+  border-bottom: 1px solid var(--mio-theme-color-surface-variant);
+  text-align: center;
 }
 
-
 .nav__links--footer {
-    color: var(--mio-theme-color-primary);
+  color: var(--mio-theme-color-primary);
 }
 
 .nav__links--footer:hover {
-    color: black;
+  color: black;
 }
 
 .icon--footer {
-    font-size: 40px;
-    color: var(--component-red-05);
+  font-size: 2rem;
+  color: var(--component-red-05);
 }
