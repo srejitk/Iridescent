@@ -26,7 +26,7 @@ nifty documentation site for you to refer to and even copy the boiler plate code
 P.S. Feel free to play around with our components and make them your own, after all, it is designed to be your best friend :D
 Visit the below link to refer to the documentation site of Iridescent:
 
-    https://iridescentv2.vercel.app/
+    https://iridescent-srejitk.vercel.app/
 
 ## List of Components in Iridescent v2
 
