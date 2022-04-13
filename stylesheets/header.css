@@ -6,14 +6,14 @@
   height: 6rem;
   background-color: var(--white);
   flex-wrap: wrap;
-  outline: 2px solid;
+  border: 2px solid var(--component-grey-01);
   position: sticky;
   top: 0;
-  z-index: 5;
+  z-index: 10;
 }
 
 .iris__navbar {
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -53,4 +53,43 @@
   width: fit-content;
   padding: 0.5rem 1rem;
   border-radius: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .iris__header {
+    height: 12rem;
+  }
+
+  .iris__navbar {
+    margin: 1rem 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .home__section {
+    width: 100%;
+  }
+  .material-icons {
+    font: 24px;
+    border-radius: 50%;
+    padding: 10px;
+  }
+
+  .iris__logo__title {
+    margin: 0;
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  .nav__links__ul {
+    width: 100%;
+  }
+
+  .nav__links {
+    font-size: 16px;
+    font-weight: bold;
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+  }
 }

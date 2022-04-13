@@ -25,3 +25,45 @@
   font-size: 2rem;
   color: var(--component-red-05);
 }
+
+@media only screen and (max-width: 768px) {
+  .iris__footer {
+    grid-area: footer;
+    margin: 2.5rem auto;
+    width: 90vw;
+    flex-direction: column;
+    background-color: #f6f8fc;
+  }
+
+  .footer__content {
+    width: 100%;
+    flex-direction: column;
+    border-bottom: 1px solid var(--mio-theme-color-surface-variant);
+    text-align: center;
+  }
+
+  .nav__links--footer {
+    width: 90%;
+    color: var(--mio-theme-color-primary);
+  }
+
+  .nav__links--footer:hover {
+    color: black;
+  }
+
+  .icon--footer {
+    font-size: 2rem;
+    padding: 0;
+    border-radius: 0;
+    color: var(--component-red-05);
+  }
+  .nav__links__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .nav__links__ul {
+    flex-wrap: wrap;
+  }
+}

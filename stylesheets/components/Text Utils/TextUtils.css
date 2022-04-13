@@ -1,102 +1,90 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 
-
 * {
-    font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
 .header-1 {
-    font-weight: bold;
-    font-size: 6rem;
-    line-height: 125%;
+  font-weight: bold;
+  font-size: clamp(2rem, 3rem, 6rem);
+  line-height: 125%;
 }
-
 
 .header-2 {
-    font-weight: bold;
-    font-size: 3.75rem;
-    line-height: 133%;
+  font-weight: bold;
+  font-size: clamp(1rem, 2rem, 3.75rem);
+  line-height: 133%;
 }
-
 
 .header-3 {
-    font-weight: bold;
-    font-size: 3rem;
-    line-height: 133%;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 133%;
 }
 
-
 .header-4 {
-    font-weight: 600;
-    font-size: 2.125rem;
-    line-height: 130%;
+  font-weight: 600;
+  font-size: 2.125rem;
+  line-height: 130%;
 }
 
 .header-5 {
-    font-weight: 600;
-    font-size: 1.5rem;
-    line-height: 132%;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 132%;
 }
 
 .header-6 {
-    font-weight: 600;
-    font-size: 1.25rem;
-    line-height: 138%;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 138%;
 }
 
-
 .subtitle-1 {
-    font-weight: bold;
-    font-size: 1rem;
-    line-height: 150%;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 150%;
 }
 
 .subtitle-2 {
-    font-weight: bold;
-    font-size: 0.875rem;
-    line-height: 142%;
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 142%;
 }
 
 .body-1 {
   font-weight: normal;
   font-size: 1.25rem;
   line-height: 138%;
-
 }
 
 .body-2 {
   font-weight: normal;
   font-size: 1rem;
   line-height: 150%;
-
-
 }
 
-.body-3{
+.body-3 {
   font-weight: normal;
   font-size: 0.875rem;
   line-height: 142%;
-
 }
 
 .btn-text {
-    font-weight: bold;
-    font-size: 1rem;
-    line-height: 150%;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 150%;
 }
 
 .caption {
-    font-weight: normal;
-    font-size: 0.75rem;
-    line-height: 130%;
+  font-weight: normal;
+  font-size: 0.75rem;
+  line-height: 130%;
 }
 
 .overline {
-    font-weight: 800;
-    font-size: 0.625rem;
-    line-height: 158%;
+  font-weight: 800;
+  font-size: 0.625rem;
+  line-height: 158%;
 }
-
-
-

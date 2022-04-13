@@ -20,16 +20,6 @@
   width: 90%;
   min-height: calc(100vh - 64px);
 }
-.iris__bg__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  margin: 2.5rem;
-  padding: 2.5rem;
-  border-radius: 64px;
-  min-height: 22.5rem;
-}
 
 .wrapper__text {
   padding: 2.5rem 0rem;
@@ -278,6 +268,16 @@ code {
 }
 
 @media only screen and (max-width: 768px) {
+  .main-container {
+    display: grid;
+    width: 100vw;
+    grid-gap: 0px 20px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "content"
+      "footer";
+  }
   .iris__container {
     width: 100vw;
     height: fit-content;
@@ -287,12 +287,16 @@ code {
   .iris__bg__wrapper {
     border-radius: 64px;
     height: fit-content;
-    width: fit-content;
-    outline: 2px solid pink;
+    width: 95%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .iris__bg__wrapper img {
+    padding: 1rem;
   }
 
   .wrapper__text {
-    outline: 2px solid red;
     width: fit-content;
     min-height: 14.5rem;
   }
@@ -300,8 +304,8 @@ code {
   .iris__desc__wrapper {
     display: flex;
     flex-direction: column;
-    margin: 1rem;
-    padding: 0rem 2rem;
+    margin: 1rem 0;
+    padding: 0rem 1.5rem;
   }
 
   .component__wrapper {
@@ -311,9 +315,8 @@ code {
   }
 
   .component__wrapper--row {
-    padding: 1rem;
     border-radius: 8px;
-    max-width: 100%;
+    width: 100%;
   }
 
   .component__wrapper--column {
@@ -331,14 +334,61 @@ code {
 
   .grid--item {
     background-color: var(--page-purple-dark);
-    width: 10rem;
+    width: 5rem;
   }
 
+  .list-color,
   .list--block {
-    width: 5rem;
+    width: 2rem;
+    height: 2rem;
   }
 
   .easter-egg {
     display: none;
+  }
+  .page_nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .header-showcase {
+    padding: 1rem;
+  }
+
+  .btn--fab {
+    background-color: var(--component-blue-05) !important;
+  }
+
+  .demo-column {
+    flex-direction: column;
+  }
+
+  .card--horizontal {
+    transform: scale(0.6);
+  }
+
+  .card--vertical {
+    height: fit-content;
+  }
+  .input__container .demo--input {
+    width: 100%;
+    transform: scale(0.6);
+  }
+
+  .input__container .demo--input--label {
+    margin-left: 3.5rem;
+  }
+
+  .input__container .demo--input--label--side {
+    transform: scale(0.6);
+    margin-right: -4rem;
+  }
+
+  .list {
+    width: 10rem;
+  }
+
+  .modal {
+    width: 100% !important;
   }
 }
