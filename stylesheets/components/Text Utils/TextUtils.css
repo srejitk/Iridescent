@@ -7,13 +7,13 @@
 
 .header-1 {
   font-weight: bold;
-  font-size: clamp(2rem, 3rem, 6rem);
+  font-size: 6rem;
   line-height: 125%;
 }
 
 .header-2 {
   font-weight: bold;
-  font-size: clamp(1rem, 2rem, 3.75rem);
+  font-size: 3.75rem;
   line-height: 133%;
 }
 
