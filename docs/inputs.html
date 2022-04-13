@@ -40,7 +40,7 @@
         <!-- Side bar HTML -->
         <section id="sidebar" class="iris__sidebar">
             <div class="section__title">Getting Started</div>
-            <a href="./Introduction.html" class="iris__categories title hoverOn ">Introduction</a>
+            <a href="./Introduction.html" class="iris__categories title hoverOn">Introduction</a>
             <a href="./Colors.html" class="iris__categories title hoverOn">Colors</a>
             <a href="./Typography.html" class="iris__categories title hoverOn">Typography</a>
             <div class="section__title">Components</div>
@@ -51,10 +51,14 @@
             <a href="./Cards.html" class="iris__categories title hoverOn">Card</a>
             <a href="./Grids.html" class="iris__categories title hoverOn">Grids</a>
             <a href="./Images.html" class="iris__categories title hoverOn">Image</a>
-            <a href="./Inputs.html" class="iris__categories title hoverOn  selectedOn ">Input</a>
-            <a href="./Lists.html" class="iris__categories title hoverOn">Lists</a>
-            <a href="./Ratings.html" class="iris__categories title hoverOn">Ratings</a>
-            <a href="./Text-Utils.html" class="iris__categories title hoverOn">Text Utilities</a>
+            <a href="./Inputs.html" class="iris__categories title hoverOn selectedOn">Input</a>
+            <a href="./Lists.html" class="iris__categories title hoverOn ">Lists</a>
+            <a href="./Modal.html" class="iris__categories title hoverOn ">Modal</a>
+            <a href="./Navigation.html" class="iris__categories title hoverOn ">Navigation</a>
+            <a href="./Ratings.html" class="iris__categories title hoverOn ">Ratings</a>
+            <a href="./Slider.html" class="iris__categories title hoverOn ">Sliders</a>
+            <a href="./Toasts.html" class="iris__categories title hoverOn ">Toasts</a>
+            <a href="./Text-Utils.html" class="iris__categories title hoverOn ">Text Utilities</a>
         </section>
         <!-- Content HTML -->
         <div class="iris__container" id="content">
@@ -141,9 +145,8 @@
                         <!-- Insert Component Here -->
                         <!-- Input with Side label -->
                         <div class="input__container">
-                            <label for="name" class="input--sidelabel">Full Name</label>
+                            <label for="name" class="input--sidelabel demo--input--label--side">Full Name</label>
                             <input type="text" placeholder="Enter Name" id="name" class="input__field demo--input">
-                            <p class="input--msg">Success!</p>
                         </div>
                         <!-- Insert Component Label Here -->
                         <span class="subtitle-1">Side Labelled</span>
@@ -153,8 +156,7 @@
                         <!-- Input with top label -->
                         <div class="input__container">
                             <input type="text" placeholder="Enter Name" id="name" class="input__field demo--input">
-                            <p class="input--msg">Success!</p>
-                            <label for="name" class="input--toplabel">Full Name</label>
+                            <label for="name" class="input--toplabel demo--input--label">Full Name</label>
                         </div>
                         <!-- Insert Component Label Here -->
                         <span class="subtitle-1">Top Labelled</span>
@@ -182,7 +184,7 @@
                 <h2 class="header-2 content__title">Validation States</h2>
                 <p class=" header-6 header-6 content__desc">
                     The inputs also have 3 States shown below which can be
-                    toggled by using <i class="code--blue"></i> along with the respective states using <i
+                    toggled by using <i
                         class="code--blue">--success</i>, <i class="code--blue">--warning</i>
                     and <i class="code--blue">---primary</i>.</p>
                 <!-- Make the component wrapper in row or column accordingly -->
@@ -296,11 +298,13 @@
                     Not everyone likes to be round and perfect. Some prefer cute corners!</p>
                 <!-- Make the component wrapper in row or column accordingly -->
                 <div class="code__wrapper code__wrapper code--blue gap20">
-                    <pre><code>    <!-- Input Field Outline --Primary -->
+                    <pre><code> 
+<!-- Input Field Outline --Primary -->
 <div class="input__container">
 <input type="text" placeholder="Enter Name" id="name" class="input__field input__field--primary tonal--primary">
 <label for="name" class="input--toplabel --primary">Full Name</label>
-</div></code></pre>
+</div>
+</code></pre>
                 </div>
             </section>
             <!-- Text Input Box -->
@@ -317,7 +321,7 @@
                     <div class="component__item--row">
                         <!-- Insert Component Here -->
                         <!-- Input Text Area -->
-                        <textarea class="input--textarea" id="" cols="30" rows="10"></textarea>
+                        <textarea class="input--textarea" id="" cols="30" rows="5" placeholder="What's on your mind"></textarea>
                         <!-- Insert Component Label Here -->
                         <span class="subtitle-1">Text Area</span>
                     </div>
@@ -346,7 +350,7 @@
                     and then using <i class="code--blue">---checkbox</i> and <i class="code--blue">---radio</i> for the
                     respective input types .</p>
                 <!-- Make the component wrapper in row or column accordingly -->
-                <div class="component__wrapper--row bg-blue border-8d  gap20 text--left">
+                <div class="component__wrapper--row demo-column bg-blue border-8d  gap20 text--left">
                     <div class="component__item--row">
                         <!-- Insert Component Here -->
                         <!-- Radio Input -->

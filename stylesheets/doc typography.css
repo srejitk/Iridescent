@@ -1,48 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-.doc-font{
-    font-family: 'Work Sans', sans-serif;
+.doc-font {
+  font-family: "Work Sans", sans-serif;
 }
 
 .header h1 {
-    font-size: 4rem;
-    line-height: 4.5rem;
-    font-weight: bold;
+  font-size: 4rem;
+  line-height: 4.5rem;
+  font-weight: bold;
 }
 
 .header h2 {
-    font-size: 2.8125rem;
-    line-height: 3.25rem;
-    font-weight: bold;
+  font-size: 2.8125rem;
+  line-height: 3.25rem;
+  font-weight: bold;
 }
 
 .header h3 {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: bold;
 }
 
 .header h4 {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: bold;
 }
 
 .header h5 {
-    font-size: 0.5rem;
-    line-height: 1rem;
-    font-weight: bold;
+  font-size: 0.5rem;
+  line-height: 1rem;
+  font-weight: bold;
 }
-
 
 .text {
-    font-size:1rem;
-    line-height: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
-.text-large{
-    font-size: 1.5rem;
-    line-height: 2rem;
+.text-large {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
-
-

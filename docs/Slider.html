@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ratings</title>
+    <title>Slider</title>
     <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/stylesheets/components/Slider/Slider.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -55,105 +56,93 @@
             <a href="./Lists.html" class="iris__categories title hoverOn">Lists</a>
             <a href="./Modal.html" class="iris__categories title hoverOn ">Modal</a>
             <a href="./Navigation.html" class="iris__categories title hoverOn">Navigation</a>
-            <a href="./Ratings.html" class="iris__categories title hoverOn selectedOn">Ratings</a>
-            <a href="./Slider.html" class="iris__categories title hoverOn ">Sliders</a>
+            <a href="./Ratings.html" class="iris__categories title hoverOn">Ratings</a>
+            <a href="./Slider.html" class="iris__categories title hoverOn selectedOn">Sliders</a>
             <a href="./Toasts.html" class="iris__categories title hoverOn ">Toasts</a>
             <a href="./Text-Utils.html" class="iris__categories title hoverOn ">Text Utilities</a>
         </section>
         <!-- Content HTML -->
         <div class="iris__container" id="content">
             <!-- Component BG Header Section -->
-            <div class="iris__bg__wrapper iris__bg__wrapper-yellow">
+            <div class="iris__bg__wrapper iris__bg__wrapper-blue">
                 <div class="wrapper__text">
-                    <h1 class="header-1">Rating</h1>
+                    <h1 class="header-1">Slider</h1>
                     <p class="desc header-6">
-                        Ratings provide insight regarding others' opinions and experiences, and can allow the user to
-                        submit a rating of their own.
+                        Sliders provide users a quick and simplified way to quickly choose the limit of values. It
+                        is best used as a filter.
                     </p>
                 </div>
             </div>
             <!-- Component Page Desc Section -->
             <section class="iris__desc__wrapper">
-                <h2 class="header-2 content__title">Basic Rating</h2>
+                <h2 class="header-2 content__title">Range Slider</h2>
                 <p class=" header-6 header-6 content__desc">
                     The ratings shown below can be
-                    triggered by using <i class="code--yellow">lists</i>
-                    and then adding <i class="code--yellow">list--stacked</i> and
-                    <i class="code--yellow">list--spaced</i>
+                    triggered by using <i class="code--blue">lists</i>
+                    and then adding <i class="code--blue">list--stacked</i> and
+                    <i class="code--blue">list--spaced</i>
                     as required.The blocks shown below are for representation purpose</p>
                 <!-- Make the component wrapper in row or column accordingly -->
-                <div class="component__wrapper--column bg-yellow border-8d  gap20 text--left">
+                <div class="component__wrapper--column bg-blue border-8d  gap20 text--left">
                     <!-- Default -->
                     <div class="component__item--row">
                         <!-- Insert Component Here -->
-                        <!-- Rating -->
-                        <div class="rating">
-                            <span class="material-icons ">star</span>
-                            <span class="material-icons ">star</span>
-                            <span class="material-icons ">star</span>
-                            <span class="material-icons ">star</span>
-                            <span class="material-icons ">star</span>
-                        </div>
+                        <!-- Slider -->
+                        <div class="slider flex-mid-center"><input type="range" name="slider" list="tickmarks" step=100
+                                min=0 max=500 class="input-slider">
+                            <datalist id="tickmarks">
+                                <option value=0 label="50">50</option>
+                                <option value="100" ,label="100">100</option>
+                                <option value="200" ,label="200">200</option>
+                                <option value="300" ,label="300">300</option>
+                                <option value="400" ,label="400">400</option>
+                                <option value="500" ,label="500">500</option>
+                                <option value="600" ,label="600">600</option>
+                                <option value="700" ,label="700">700</option>
+                                <option value="800" ,label="800">800</option>
+                                <option value="900" ,label="900">900</option>
+                            </datalist></div>
+
                         <!-- Insert Component Label Here -->
-                        <span class="subtitle-1">Default Rating</span>
-                    </div>
-                    <!-- Half filled -->
-                    <div class="component__item--row">
-                        <!-- Insert Component Here -->
-                        <!-- Rating -->
-                        <div class="rating">
-                            <span class="material-icons star_selected">star</span>
-                            <span class="material-icons star_selected">star</span>
-                            <span class="material-icons star_selected">star</span>
-                            <span class="material-icons star_selected">star_half</span>
-                            <span class="material-icons">star</span>
-                        </div>
-                        <!-- Insert Component Label Here -->
-                        <span class="subtitle-1">Half Filled Ratings</span>
-                    </div>
-                    <!-- Filled ratings -->
-                    <div class="component__item--row">
-                        <!-- Insert Component Here -->
-                        <!-- Rating -->
-                        <div class="rating">
-                            <span class="material-icons star_selected">star</span>
-                            <span class="material-icons star_selected">star</span>
-                            <span class="material-icons star_selected">star</span>
-                            <span class="material-icons star_selected">star</span>
-                            <span class="material-icons star_selected">star</span>
-                        </div>
-                        <!-- Insert Component Label Here -->
-                        <span class="subtitle-1">Filled Ratings</span>
+                        <span class="subtitle-1">Range Slider</span>
                     </div>
                 </div>
             </section>
             <!-- Implementation Code Section -->
             <section class="iris__desc__wrapper">
-                <h2 class="header-2 content__title">Implementation</h2>
+                <h2 class="header-h2 content__title">Implementation</h2>
                 <p class=" header-6 content__desc">
-                    Rate Away!</p>
+                    We won't scold you for sliding too long!</p>
                 <!-- Make the component wrapper in row or column accordingly -->
-                <div class="code__wrapper code__wrapper code--yellow gap20">
+                <div class="code__wrapper code__wrapper code--blue gap20">
                     <pre><code>
-<!-- Rating -->
-<div class="rating">
-<span class="material-icons selected">star</span>
-<span class="material-icons selected">star</span>
-<span class="material-icons selected">star</span>
-<span class="material-icons selected">star_half</span>
-<span class="material-icons">star</span>
-</div></code></pre>
+<!-- Slider -->
+<div class="slider"><input type="range" name="slider" list="tickmarks" step=100 min=0 max=500
+class="input-slider">
+<datalist id="tickmarks">
+<option value=0 label="50">50</option>
+<option value="100" ,label="100">100</option>
+<option value="200" ,label="200">200</option>
+<option value="300" ,label="300">300</option>
+<option value="400" ,label="400">400</option>
+<option value="500" ,label="500">500</option>
+<option value="600" ,label="600">600</option>
+<option value="700" ,label="700">700</option>
+<option value="800" ,label="800">800</option>
+<option value="900" ,label="900">900</option>
+</datalist></div>
+</code></pre>
                 </div>
             </section>
             <!-- Page Navigation -->
             <nav class="iris__desc__wrapper page_nav">
                 <button class="btn btn--link btn--ltr">
                     <span class="material-icons">arrow_back</span>
-                    <a href="/docs/Navigation.html">Navigation</a>
+                    <a href="/docs/Ratings.html">Ratings</a>
                 </button>
                 <button class="btn btn--link btn--rtl">
                     <span class="material-icons">arrow_forward</span>
-                    <a href="/docs/Slider.html">Sliders</a>
+                    <a href="/docs/Toasts.html">Toasts</a>
                 </button>
             </nav>
 
