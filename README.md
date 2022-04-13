@@ -1,5 +1,8 @@
 # Iridescent.
+![Iridescent](https://res.cloudinary.com/dkqrmlxlg/image/upload/v1649884272/Iridescent/Ellipse_2_u9uafq.png)
 ## A playful minimalistic UI.
+
+
 
 Iridescent is an open source lightweight CSS styling framework. It's a component library aimed at being user friendly and helping you focus on the how, and why's of design and get right to building.
 The entire library was designed keeping in mind that it's easy to use and get started.
@@ -23,9 +26,9 @@ nifty documentation site for you to refer to and even copy the boiler plate code
 P.S. Feel free to play around with our components and make them your own, after all, it is designed to be your best friend :D
 Visit the below link to refer to the documentation site of Iridescent:
 
-    https://iridescent.netlify.app/
+    https://iridescentv2.vercel.app/
 
-## List of Components in Iridescent v1
+## List of Components in Iridescent v2
 
  - Alerts	
  - Avatars
@@ -38,6 +41,9 @@ Visit the below link to refer to the documentation site of Iridescent:
  - Lists
  - Rating
  - Grid Layouts
+ - Navigation
+ - Modal
+ - Toasts
 
 
 # How Can You Help?
