@@ -14,11 +14,11 @@ Just like the various colors of light you see in a bubble, Iridescent will offer
 ## Usage
 In order to introduce Iridescent to your project, Copy the link given below and paste it in the head tag of your html, above all other style sheets.
 
-    <link rel="stylesheet" href="https://iridescent-srejitk.vercel.app/main.css">
+    <link rel="stylesheet" href="https://iridescent.vercel.app/main.css">
 ## Alternative
 Add the following import to your CSS file at the top before all other CSS file imports.
 
-    @import url("https://iridescent-srejitk.vercel.app/main.css");
+    @import url("https://iridescent.vercel.app/main.css");
 ## Directory
 Now that you've imported the library to your project, you'll need some help from us to get yourself going. Fret not. We at Iridescent have put together a 
 nifty documentation site for you to refer to and even copy the boiler plate code to use our components. 
@@ -26,7 +26,7 @@ nifty documentation site for you to refer to and even copy the boiler plate code
 P.S. Feel free to play around with our components and make them your own, after all, it is designed to be your best friend :D
 Visit the below link to refer to the documentation site of Iridescent:
 
-    https://iridescent-srejitk.vercel.app/
+    https://iridescent.vercel.app/
 ## List of Components in Iridescent v2
 
  - Alerts	
