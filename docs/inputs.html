@@ -1,238 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inputs</title>
-    <link rel="stylesheet" href="/main.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
-        integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <link rel="stylesheet" href="/main.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
+      integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="main-container">
-        <!-- Header HTML -->
-        <header id="header" class="iris__header">
-            <nav class="iris__navbar">
-                <div class="iris__navbar__logo__section">
-                    <a class="home__section">
-                        <span id="hamburger_open" class="material-icons icon--sidebar">menu</span>
-                        <span id="hamburger_close" class="material-icons icon--sidebar">
-                            menu_open
-                        </span>
-                        <h3 class="iris__logo__title">Iridescent</h3>
-                    </a>
-                </div>
-                <div class="nav__links__container">
-                    <ul class="nav__links__ul">
-                        <a href="/index.html" class="header nav__links hoverOn--round">Home</a>
-                        <a href="https://www.github.com/srejitk" class="header nav__links hoverOn--round">Github</a>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <!-- Side bar HTML -->
-        <section id="sidebar" class="iris__sidebar">
-            <div class="section__title">Getting Started</div>
-            <a href="./Introduction.html" class="iris__categories title hoverOn">Introduction</a>
-            <a href="./Colors.html" class="iris__categories title hoverOn">Colors</a>
-            <a href="./Typography.html" class="iris__categories title hoverOn">Typography</a>
-            <div class="section__title">Components</div>
-            <a href="./Alerts.html" class="iris__categories title hoverOn">Alert</a>
-            <a href="./Avatars.html" class="iris__categories title hoverOn ">Avatars</a>
-            <a href="./Badges.html" class="iris__categories title hoverOn">Badge</a>
-            <a href="./Buttons.html" class="iris__categories title hoverOn ">Button</a>
-            <a href="./Cards.html" class="iris__categories title hoverOn">Card</a>
-            <a href="./Grids.html" class="iris__categories title hoverOn">Grids</a>
-            <a href="./Images.html" class="iris__categories title hoverOn">Image</a>
-            <a href="./Inputs.html" class="iris__categories title hoverOn selectedOn">Input</a>
-            <a href="./Lists.html" class="iris__categories title hoverOn ">Lists</a>
-            <a href="./Modal.html" class="iris__categories title hoverOn ">Modal</a>
-            <a href="./Navigation.html" class="iris__categories title hoverOn ">Navigation</a>
-            <a href="./Ratings.html" class="iris__categories title hoverOn ">Ratings</a>
-            <a href="./Slider.html" class="iris__categories title hoverOn ">Sliders</a>
-            <a href="./Toasts.html" class="iris__categories title hoverOn ">Toasts</a>
-            <a href="./Text-Utils.html" class="iris__categories title hoverOn ">Text Utilities</a>
-        </section>
-        <!-- Content HTML -->
-        <div class="iris__container" id="content">
-            <!-- Component BG Header Section -->
-            <div class="iris__bg__wrapper iris__bg__wrapper-blue">
-                <div class="wrapper__text">
-                    <h1 class="header-1">Inputs</h1>
-                    <p class="desc header-6">
-                        The Input element is used to create interactive controls for web-based forms in order to
-                        accept data from the user; a wide variety of types of input data and control widgets are
-                        available, depending on the device and user agent.
-                    </p>
-                </div>
+      <!-- Header HTML -->
+      <header id="header" class="iris__header">
+        <nav class="iris__navbar">
+          <div class="iris__navbar__logo__section">
+            <a class="home__section">
+              <span id="hamburger_open" class="material-icons icon--sidebar"
+                >menu</span
+              >
+              <span id="hamburger_close" class="material-icons icon--sidebar">
+                menu_open
+              </span>
+              <h3 class="iris__logo__title">Iridescent</h3>
+            </a>
+          </div>
+          <div class="nav__links__container">
+            <ul class="nav__links__ul">
+              <a href="/index.html" class="header nav__links hoverOn--round"
+                >Home</a
+              >
+              <a
+                href="https://www.github.com/srejitk"
+                class="header nav__links hoverOn--round"
+                >Github</a
+              >
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- Side bar HTML -->
+      <section id="sidebar" class="iris__sidebar">
+        <div class="section__title">Getting Started</div>
+        <a href="./Introduction.html" class="iris__categories title hoverOn"
+          >Introduction</a
+        >
+        <a href="./Colors.html" class="iris__categories title hoverOn"
+          >Colors</a
+        >
+        <a href="./Typography.html" class="iris__categories title hoverOn"
+          >Typography</a
+        >
+        <div class="section__title">Components</div>
+        <a href="./Alerts.html" class="iris__categories title hoverOn">Alert</a>
+        <a href="./Avatars.html" class="iris__categories title hoverOn"
+          >Avatars</a
+        >
+        <a href="./Badges.html" class="iris__categories title hoverOn">Badge</a>
+        <a href="./Buttons.html" class="iris__categories title hoverOn"
+          >Button</a
+        >
+        <a href="./Cards.html" class="iris__categories title hoverOn">Card</a>
+        <a href="./Grids.html" class="iris__categories title hoverOn">Grids</a>
+        <a href="./Images.html" class="iris__categories title hoverOn">Image</a>
+        <a
+          href="./Inputs.html"
+          class="iris__categories title hoverOn selectedOn"
+          >Input</a
+        >
+        <a href="./Lists.html" class="iris__categories title hoverOn">Lists</a>
+        <a href="./Modal.html" class="iris__categories title hoverOn">Modal</a>
+        <a href="./Navigation.html" class="iris__categories title hoverOn"
+          >Navigation</a
+        >
+        <a href="./Ratings.html" class="iris__categories title hoverOn"
+          >Ratings</a
+        >
+        <a href="./Slider.html" class="iris__categories title hoverOn"
+          >Sliders</a
+        >
+        <a href="./Toasts.html" class="iris__categories title hoverOn"
+          >Toasts</a
+        >
+        <a href="./Text-Utils.html" class="iris__categories title hoverOn"
+          >Text Utilities</a
+        >
+      </section>
+      <!-- Content HTML -->
+      <div class="iris__container" id="content">
+        <!-- Component BG Header Section -->
+        <div class="iris__bg__wrapper iris__bg__wrapper-blue">
+          <div class="wrapper__text">
+            <h1 class="header-1">Inputs</h1>
+            <p class="desc header-6">
+              The Input element is used to create interactive controls for
+              web-based forms in order to accept data from the user; a wide
+              variety of types of input data and control widgets are available,
+              depending on the device and user agent.
+            </p>
+          </div>
+        </div>
+        <!-- Component Page Desc Section -->
+        <section class="iris__desc__wrapper">
+          <h2 class="header-2 content__title">Basic Inputs</h2>
+          <p class="header-6 header-6 content__desc">
+            The Inputs are available in 3 sizes as shown below which can be
+            toggled by using <i class="code--blue">input__field--small</i>,
+            <i class="code--blue">input__field--medium</i> and
+            <i class="code--blue">input__field--large</i>.
+          </p>
+          <!-- Make the component wrapper in row or column accordingly -->
+          <div
+            class="component__wrapper--column bg-blue border-8d gap20 text--left"
+          >
+            <div class="component__item--row">
+              <!-- Insert Component Here -->
+              <!-- Basic  Small Input -->
+              <div class="input__container">
+                <input
+                  type="text"
+                  placeholder="Enter Name"
+                  id="name"
+                  class="input__field input__field--small demo--input"
+                />
+              </div>
+              <!-- Insert Component Label Here -->
+              <span class="subtitle-1">Small Input</span>
             </div>
-            <!-- Component Page Desc Section -->
-            <section class="iris__desc__wrapper">
-                <h2 class="header-2 content__title">Basic Inputs</h2>
-                <p class=" header-6 header-6 content__desc">
-                    The Inputs are available in 3 sizes as shown below which can be
-                    toggled by using <i class="code--blue">input__field--small</i>, <i
-                        class="code--blue">input__field--medium</i>
-                    and <i class="code--blue">input__field--large</i>.</p>
-                <!-- Make the component wrapper in row or column accordingly -->
-                <div class="component__wrapper--column bg-blue border-8d  gap20 text--left">
-                    <div class="component__item--row">
-                        <!-- Insert Component Here -->
-                        <!-- Basic  Small Input -->
-                        <div class="input__container">
-                            <input type="text" placeholder="Enter Name" id="name"
-                                class="input__field input__field--small demo--input">
-                        </div>
-                        <!-- Insert Component Label Here -->
-                        <span class="subtitle-1">Small Input</span>
-                    </div>
-                    <div class="component__item--row">
-                        <!-- Insert Component Here -->
-                        <!-- Basic  Input -->
-                        <div class="input__container">
-                            <input type="text" placeholder="Enter Name" id="name" class="input__field demo--input">
-                        </div>
-                        <!-- Insert Component Label Here -->
-                        <span class="subtitle-1">Basic Input</span>
-                    </div>
-                    <div class="component__item--row">
-                        <!-- Insert Component Here -->
-                        <!-- Basic Large Input -->
-                        <div class="input__container">
-                            <input type="text" placeholder="Enter Name" id="name"
-                                class="input__field input__field--large demo--input">
-                        </div>
-                        <!-- Insert Component Label Here -->
-                        <span class="subtitle-1">Large Input</span>
-                    </div>
-                </div>
-            </section>
-            <!-- Implementation Code Section -->
-            <section class="iris__desc__wrapper">
-                <h2 class="header-2 content__title">Implementation</h2>
-                <p class=" header-6 content__desc">
-                    Choose your Input size and off you go!</p>
-                <!-- Make the component wrapper in row or column accordingly -->
-                <div class="code__wrapper code__wrapper code--blue gap20">
-                    <pre><code>
+            <div class="component__item--row">
+              <!-- Insert Component Here -->
+              <!-- Basic  Input -->
+              <div class="input__container">
+                <input
+                  type="text"
+                  placeholder="Enter Name"
+                  id="name"
+                  class="input__field demo--input"
+                />
+              </div>
+              <!-- Insert Component Label Here -->
+              <span class="subtitle-1">Basic Input</span>
+            </div>
+            <div class="component__item--row">
+              <!-- Insert Component Here -->
+              <!-- Basic Large Input -->
+              <div class="input__container">
+                <input
+                  type="text"
+                  placeholder="Enter Name"
+                  id="name"
+                  class="input__field input__field--large demo--input"
+                />
+              </div>
+              <!-- Insert Component Label Here -->
+              <span class="subtitle-1">Large Input</span>
+            </div>
+          </div>
+        </section>
+        <!-- Implementation Code Section -->
+        <section class="iris__desc__wrapper">
+          <h2 class="header-2 content__title">Implementation</h2>
+          <p class="header-6 content__desc">
+            Choose your Input size and off you go!
+          </p>
+          <!-- Make the component wrapper in row or column accordingly -->
+          <div class="code__wrapper code__wrapper code--blue gap20">
+            <pre><code>
 
 <!-- Basic  Input -->
 <div class="input__container">
 <input type="text" placeholder="Enter placeholder here" id="name" class="input__field">
 </div>
                    </code></pre>
-                </div>
-            </section>
-            <!-- Component Page Desc Section -->
-            <section class="iris__desc__wrapper">
-                <h2 class="header-2 content__title">Labelled Inputs</h2>
-                <p class=" header-6 content__desc">
-                    The inputs also have a labelled variant as shown below which can be
-                    toggled by using <i class="code--blue">input--toplabel</i> , <i
-                        class="code--blue">input--sidelabel</i>
-                    and <i class="code--blue">input__field--outline</i> for outlined version.</p>
-                <!-- Make the component wrapper in row or column accordingly -->
-                <div class="component__wrapper--column bg-blue border-8d  gap20 text--left">
-
-                    <div class="component__item--row">
-                        <!-- Insert Component Here -->
-                        <!-- Input with Side label -->
-                        <div class="input__container">
-                            <label for="name" class="input--sidelabel demo--input--label--side">Full Name</label>
-                            <input type="text" placeholder="Enter Name" id="name" class="input__field demo--input">
-                        </div>
-                        <!-- Insert Component Label Here -->
-                        <span class="subtitle-1">Side Labelled</span>
-                    </div>
-                    <div class="component__item--row">
-                        <!-- Insert Component Here -->
-                        <!-- Input with top label -->
-                        <div class="input__container">
-                            <input type="text" placeholder="Enter Name" id="name" class="input__field demo--input">
-                            <label for="name" class="input--toplabel demo--input--label">Full Name</label>
-                        </div>
-                        <!-- Insert Component Label Here -->
-                        <span class="subtitle-1">Top Labelled</span>
-                    </div>
-                </div>
-            </section>
-            <!-- Implementation Code Section -->
-            <section class="iris__desc__wrapper">
-                <h2 class="header-2 content__title">Implementation</h2>
-                <p class=" header-6 content__desc">
-                    Not everyone likes to be independent. Some prefer cute little nudges!</p>
-                <!-- Make the component wrapper in row or column accordingly -->
-                <div class="code__wrapper code__wrapper code--blue gap20">
-                    <pre><code>                        <!-- Input with top label -->
+          </div>
+        </section>
+        <!-- Component Page Desc Section -->
+        <section class="iris__desc__wrapper">
+          <h2 class="header-2 content__title">Labelled Inputs</h2>
+          <p class="header-6 content__desc">
+            The inputs also have a labelled variant as shown below which can be
+            toggled by using <i class="code--blue">input--toplabel</i> ,
+            <i class="code--blue">input--sidelabel</i> and
+            <i class="code--blue">input__field--outline</i> for outlined
+            version.
+          </p>
+          <!-- Make the component wrapper in row or column accordingly -->
+          <div
+            class="component__wrapper--column bg-blue border-8d gap20 text--left"
+          >
+            <div class="component__item--row">
+              <!-- Insert Component Here -->
+              <!-- Input with Side label -->
+              <div class="input__container">
+                <label
+                  for="name"
+                  class="input--sidelabel demo--input--label--side"
+                  >Full Name</label
+                >
+                <input
+                  type="text"
+                  placeholder="Enter Name"
+                  id="name"
+                  class="input__field demo--input"
+                />
+              </div>
+              <!-- Insert Component Label Here -->
+              <span class="subtitle-1">Side Labelled</span>
+            </div>
+            <div class="component__item--row">
+              <!-- Insert Component Here -->
+              <!-- Input with top label -->
+              <div class="input__container">
+                <input
+                  type="text"
+                  placeholder="Enter Name"
+                  id="name"
+                  class="input__field demo--input"
+                />
+                <label for="name" class="input--toplabel demo--input--label"
+                  >Full Name</label
+                >
+              </div>
+              <!-- Insert Component Label Here -->
+              <span class="subtitle-1">Top Labelled</span>
+            </div>
+          </div>
+        </section>
+        <!-- Implementation Code Section -->
+        <section class="iris__desc__wrapper">
+          <h2 class="header-2 content__title">Implementation</h2>
+          <p class="header-6 content__desc">
+            Not everyone likes to be independent. Some prefer cute little
+            nudges!
+          </p>
+          <!-- Make the component wrapper in row or column accordingly -->
+          <div class="code__wrapper code__wrapper code--blue gap20">
+            <pre><code>                        <!-- Input with top label -->
 <div class="input__container">
 <input type="text" placeholder="Enter Name" id="name" class="input__field demo--input">
 <p class="input--msg">Success!</p>
 <label for="name" class="input--toplabel">Full Name</label>
 </div>
 </code></pre>
-                </div>
-            </section>
-            <!-- Component Page Desc Section -->
-            <section class="iris__desc__wrapper">
-                <h2 class="header-2 content__title">Validation States</h2>
-                <p class=" header-6 header-6 content__desc">
-                    The inputs also have 3 States shown below which can be
-                    toggled by using <i
-                        class="code--blue">--success</i>, <i class="code--blue">--warning</i>
-                    and <i class="code--blue">---primary</i>.</p>
-                <!-- Make the component wrapper in row or column accordingly -->
-                <div class="component__wrapper--column bg-blue border-8d  gap20 text--left">
-                    <div class="component__item--row">
-                        <!-- Insert Component Here -->
-                        <!-- Input Field Outline --Success -->
-                        <div class="input__container">
-                            <input type="text" placeholder="Enter Name" id="name"
-                                class="input__field input__field--success">
-                            <label for="name" class="input--toplabel --success">Full Name</label>
-                            <p class="input--msg --success">Success!</p>
-                        </div>
-                        <!-- Insert Component Label Here -->
-                        <span class="subtitle-1">Success State</span>
-                    </div>
-                    <div class="component__item--row">
-                        <!-- Insert Component Here -->
-                        <!-- Input Field Outline --Warning -->
-                        <div class="input__container">
-                            <input type="text" placeholder="Enter Name" id="name"
-                                class="input__field input__field--warning">
-                            <label for="name" class="input--toplabel --warning">Full Name</label>
-                            <p class="input--msg --warning">Ouch!</p>
-                        </div>
-                        <!-- Insert Component Label Here -->
-                        <span class="subtitle-1">Error State</span>
-                    </div>
-                    <div class="component__item--row">
-                        <!-- Insert Component Here -->
-                        <!-- Input Field Outline --Primary -->
-                        <div class="input__container">
-                            <input type="text" placeholder="Enter Name" id="name"
-                                class="input__field input__field--primary">
-                            <label for="name" class="input--toplabel --primary">Full Name</label></div>
-                        <!-- Insert Component Label Here -->
-                        <span class="subtitle-1">Primary State</span>
-                    </div>
-                </div>
-            </section>
-            <!-- Implementation Code Section -->
-            <section class="iris__desc__wrapper">
-                <h2 class="header-2 content__title">Implementation</h2>
-                <p class=" header-6 content__desc">
-                    Choices, Choices, so many beautiful choices!</p>
-                <!-- Make the component wrapper in row or column accordingly -->
-                <div class="code__wrapper code__wrapper code--blue gap20">
-                    <pre><code> 
+          </div>
+        </section>
+        <!-- Component Page Desc Section -->
+        <section class="iris__desc__wrapper">
+          <h2 class="header-2 content__title">Validation States</h2>
+          <p class="header-6 header-6 content__desc">
+            The inputs also have 3 States shown below which can be toggled by
+            using <i class="code--blue">--success</i>,
+            <i class="code--blue">--warning</i> and
+            <i class="code--blue">---primary</i>.
+          </p>
+          <!-- Make the component wrapper in row or column accordingly -->
+          <div
+            class="component__wrapper--column bg-blue border-8d gap20 text--left"
+          >
+            <div class="component__item--row">
+              <!-- Insert Component Here -->
+              <!-- Input Field Outline --Success -->
+              <div class="input__container">
+                <input
+                  type="text"
+                  placeholder="Enter Name"
+                  id="name"
+                  class="input__field input__field--success"
+                />
+                <label for="name" class="input--toplabel --success"
+                  >Full Name</label
+                >
+                <p class="input--msg --success">Success!</p>
+              </div>
+              <!-- Insert Component Label Here -->
+              <span class="subtitle-1">Success State</span>
+            </div>
+            <div class="component__item--row">
+              <!-- Insert Component Here -->
+              <!-- Input Field Outline --Warning -->
+              <div class="input__container">
+                <input
+                  type="text"
+                  placeholder="Enter Name"
+                  id="name"
+                  class="input__field input__field--warning"
+                />
+                <label for="name" class="input--toplabel --warning"
+                  >Full Name</label
+                >
+                <p class="input--msg --warning">Ouch!</p>
+              </div>
+              <!-- Insert Component Label Here -->
+              <span class="subtitle-1">Error State</span>
+            </div>
+            <div class="component__item--row">
+              <!-- Insert Component Here -->
+              <!-- Input Field Outline --Primary -->
+              <div class="input__container">
+                <input
+                  type="text"
+                  placeholder="Enter Name"
+                  id="name"
+                  class="input__field input__field--primary"
+                />
+                <label for="name" class="input--toplabel --primary"
+                  >Full Name</label
+                >
+              </div>
+              <!-- Insert Component Label Here -->
+              <span class="subtitle-1">Primary State</span>
+            </div>
+          </div>
+        </section>
+        <!-- Implementation Code Section -->
+        <section class="iris__desc__wrapper">
+          <h2 class="header-2 content__title">Implementation</h2>
+          <p class="header-6 content__desc">
+            Choices, Choices, so many beautiful choices!
+          </p>
+          <!-- Make the component wrapper in row or column accordingly -->
+          <div class="code__wrapper code__wrapper code--blue gap20">
+            <pre><code> 
 <!-- Input Field Outline --Primary -->
 <div class="input__container">
 <input type="text" placeholder="Enter Name" id="name" class="input__field input__field--primary">
@@ -240,171 +340,239 @@
 </label>
 </div>
                     </code></pre>
+          </div>
+        </section>
+        <!-- Component Page Desc Section -->
+        <section class="iris__desc__wrapper">
+          <h2 class="header-2 content__title">Tonal Input States</h2>
+          <p class="header-6 header-6 content__desc">
+            The inputs also have 3 States shown below which can be toggled by
+            using <i class="code--blue">---tonal</i> along with the respective
+            states using <i class="code--blue">---success</i>,
+            <i class="code--blue">---warning</i> and
+            <i class="code--blue">---primary</i>.
+          </p>
+          <!-- Make the component wrapper in row or column accordingly -->
+          <div
+            class="component__wrapper--column bg-blue border-8d gap20 text--left"
+          >
+            <div class="component__item--row">
+              <!-- Insert Component Here -->
+              <!-- Input Field Outline --Success -->
+              <div class="input__container">
+                <input
+                  type="text"
+                  placeholder="Enter Name"
+                  id="name"
+                  class="input__field input__field--success tonal--success"
+                />
+                <label for="name" class="input--toplabel --success"
+                  >Full Name</label
+                >
+                <p class="input--msg --success">Success!</p>
+              </div>
+              <!-- Insert Component Label Here -->
+              <span class="subtitle-1">Tonal Success State</span>
+            </div>
+            <div class="component__item--row">
+              <!-- Insert Component Here -->
+              <!-- Input Field Outline --Warning -->
+              <div class="input__container">
+                <input
+                  type="text"
+                  placeholder="Enter Name"
+                  id="name"
+                  class="input__field input__field--warning tonal--warning"
+                />
+                <label for="name" class="input--toplabel --warning"
+                  >Full Name</label
+                >
+                <p class="input--msg --warning">Uh-Oh!</p>
+              </div>
+              <!-- Insert Component Label Here -->
+              <span class="subtitle-1">Tonal Error State</span>
+            </div>
+            <div class="component__item--row">
+              <!-- Insert Component Here -->
+              <!-- Input Field Outline --Primary -->
+              <div class="input__container">
+                <!-- Input Field Outline --Primary -->
+                <div class="input__container">
+                  <input
+                    type="text"
+                    placeholder="Enter Name"
+                    id="name"
+                    class="input__field input__field--primary tonal--primary"
+                  />
+                  <label for="name" class="input--toplabel --primary"
+                    >Full Name</label
+                  >
                 </div>
-            </section>
-            <!-- Component Page Desc Section -->
-            <section class="iris__desc__wrapper">
-                <h2 class="header-2 content__title">Tonal Input States</h2>
-                <p class=" header-6 header-6 content__desc">
-                    The inputs also have 3 States shown below which can be
-                    toggled by using <i class="code--blue">---tonal</i> along with the respective states using <i
-                        class="code--blue">---success</i>, <i class="code--blue">---warning</i>
-                    and <i class="code--blue">---primary</i>.</p>
-                <!-- Make the component wrapper in row or column accordingly -->
-                <div class="component__wrapper--column bg-blue border-8d  gap20 text--left">
-                    <div class="component__item--row">
-                        <!-- Insert Component Here -->
-                        <!-- Input Field Outline --Success -->
-                        <div class="input__container">
-                            <input type="text" placeholder="Enter Name" id="name"
-                                class="input__field input__field--success tonal--success">
-                            <label for="name" class="input--toplabel --success">Full Name</label>
-                            <p class="input--msg --success">Success!</p>
-                        </div>
-                        <!-- Insert Component Label Here -->
-                        <span class="subtitle-1">Tonal Success State</span>
-                    </div>
-                    <div class="component__item--row">
-                        <!-- Insert Component Here -->
-                        <!-- Input Field Outline --Warning -->
-                        <div class="input__container">
-                            <input type="text" placeholder="Enter Name" id="name"
-                                class="input__field input__field--warning tonal--warning">
-                            <label for="name" class="input--toplabel --warning">Full Name</label>
-                            <p class="input--msg --warning">Uh-Oh!</p>
-                        </div>
-                        <!-- Insert Component Label Here -->
-                        <span class="subtitle-1">Tonal Error State</span>
-                    </div>
-                    <div class="component__item--row">
-                        <!-- Insert Component Here -->
-                        <!-- Input Field Outline --Primary -->
-                        <div class="input__container">
-                            <!-- Input Field Outline --Primary -->
-                            <div class="input__container">
-                                <input type="text" placeholder="Enter Name" id="name"
-                                    class="input__field input__field--primary tonal--primary">
-                                <label for="name" class="input--toplabel --primary">Full Name</label></div>
-                        </div>
-                        <!-- Insert Component Label Here -->
-                        <span class="subtitle-1">Tonal Primary State</span>
-                    </div>
-                </div>
-            </section>
-            <!-- Implementation Code Section -->
-            <section class="iris__desc__wrapper">
-                <h2 class="header-2 content__title">Implementation</h2>
-                <p class=" header-6 content__desc">
-                    Not everyone likes to be round and perfect. Some prefer cute corners!</p>
-                <!-- Make the component wrapper in row or column accordingly -->
-                <div class="code__wrapper code__wrapper code--blue gap20">
-                    <pre><code> 
+              </div>
+              <!-- Insert Component Label Here -->
+              <span class="subtitle-1">Tonal Primary State</span>
+            </div>
+          </div>
+        </section>
+        <!-- Implementation Code Section -->
+        <section class="iris__desc__wrapper">
+          <h2 class="header-2 content__title">Implementation</h2>
+          <p class="header-6 content__desc">
+            Not everyone likes to be round and perfect. Some prefer cute
+            corners!
+          </p>
+          <!-- Make the component wrapper in row or column accordingly -->
+          <div class="code__wrapper code__wrapper code--blue gap20">
+            <pre><code> 
 <!-- Input Field Outline --Primary -->
 <div class="input__container">
 <input type="text" placeholder="Enter Name" id="name" class="input__field input__field--primary tonal--primary">
 <label for="name" class="input--toplabel --primary">Full Name</label>
 </div>
 </code></pre>
-                </div>
-            </section>
-            <!-- Text Input Box -->
-            <!-- Component Page Desc Section -->
-            <section class="iris__desc__wrapper">
-                <h2 class="header-2 content__title">Text Box</h2>
-                <p class=" header-6 header-6 content__desc">
-                    The text box can be used whenever you feel the need to vent or provide critical feedback which can
-                    be
-                    toggled by using <i class="code--blue">input---textarea</i> and editing the cols and rows section
-                    accordingly.</p>
-                <!-- Make the component wrapper in row or column accordingly -->
-                <div class="component__wrapper--column bg-blue border-8d  gap20 text--left">
-                    <div class="component__item--row">
-                        <!-- Insert Component Here -->
-                        <!-- Input Text Area -->
-                        <textarea class="input--textarea" id="" cols="30" rows="5" placeholder="What's on your mind"></textarea>
-                        <!-- Insert Component Label Here -->
-                        <span class="subtitle-1">Text Area</span>
-                    </div>
-                </div>
-            </section>
-            <!-- Implementation Code Section -->
-            <section class="iris__desc__wrapper">
-                <h2 class="header-2 content__title">Implementation</h2>
-                <p class=" header-6 content__desc">
-                    Not everyone likes to be round and perfect. Some prefer cute corners!</p>
-                <!-- Make the component wrapper in row or column accordingly -->
-                <div class="code__wrapper code__wrapper code--blue gap20">
-                    <pre><code>
+          </div>
+        </section>
+        <!-- Text Input Box -->
+        <!-- Component Page Desc Section -->
+        <section class="iris__desc__wrapper">
+          <h2 class="header-2 content__title">Text Box</h2>
+          <p class="header-6 header-6 content__desc">
+            The text box can be used whenever you feel the need to vent or
+            provide critical feedback which can be toggled by using
+            <i class="code--blue">input---textarea</i> and editing the cols and
+            rows section accordingly.
+          </p>
+          <!-- Make the component wrapper in row or column accordingly -->
+          <div
+            class="component__wrapper--column bg-blue border-8d gap20 text--left"
+          >
+            <div class="component__item--row">
+              <!-- Insert Component Here -->
+              <!-- Input Text Area -->
+              <textarea
+                class="input--textarea"
+                id=""
+                cols="30"
+                rows="5"
+                placeholder="What's on your mind"
+              ></textarea>
+              <!-- Insert Component Label Here -->
+              <span class="subtitle-1">Text Area</span>
+            </div>
+          </div>
+        </section>
+        <!-- Implementation Code Section -->
+        <section class="iris__desc__wrapper">
+          <h2 class="header-2 content__title">Implementation</h2>
+          <p class="header-6 content__desc">
+            Not everyone likes to be round and perfect. Some prefer cute
+            corners!
+          </p>
+          <!-- Make the component wrapper in row or column accordingly -->
+          <div class="code__wrapper code__wrapper code--blue gap20">
+            <pre><code>
     <!-- Text Box -->
     <textarea name="text-area" id="" cols="10" rows="5"></textarea>
 
                 </code></pre>
-                </div>
-            </section>
-            <!-- Checkbox -->
-            <!-- Component Page Desc Section -->
-            <section class="iris__desc__wrapper">
-                <h2 class="header-2 content__title">Radio and Checkbox Input</h2>
-                <p class=" header-6 header-6 content__desc">
-                    The radio and checkbox inputs can be triggered by using <i class="code--blue">input---field</i>
-                    and then using <i class="code--blue">---checkbox</i> and <i class="code--blue">---radio</i> for the
-                    respective input types .</p>
-                <!-- Make the component wrapper in row or column accordingly -->
-                <div class="component__wrapper--row demo-column bg-blue border-8d  gap20 text--left">
-                    <div class="component__item--row">
-                        <!-- Insert Component Here -->
-                        <!-- Radio Input -->
-                        <div class="input__container">
-                            <input type="radio" id="radio" class="input--field--radio input--demo"
-                                placeholder="Peter Parker" required />
-                            <label for="Radio" class="input--sidelabel radio__label">Your Name</label>
-                        </div>
-                        <!-- Insert Component Label Here -->
-                        <span class="subtitle-1">Radio Input</span>
-                    </div>
-                    <div class="component__item--row">
-                        <!-- Insert Component Here -->
-                        <!-- Radio Input -->
-                        <div class="input__container">
-                            <input type="radio" id="radio" class="input--field--radio input--demo"
-                                placeholder="Peter Parker" required disabled />
-                            <label for="Radio" class="radio__label input--sidelabel">Your Name</label>
-                        </div>
-                        <!-- Insert Component Label Here -->
-                        <span class="subtitle-1">Disabled Radio Input</span>
-                    </div>
-                    <div class="component__item--row">
-                        <!-- Insert Component Here -->
-                        <!-- Checkbox Input -->
-                        <div class="input__container">
-                            <label for="checkbox" class="input--sidelabel">Your Name</label>
-                            <input type="checkbox" id="checkbox" class=" input--field--checkbox input--demo"
-                                placeholder="Peter Parker" required />
-                        </div>
-                        <!-- Insert Component Label Here -->
-                        <span class="subtitle-1">Checkbox Input</span>
-                    </div>
-                    <div class="component__item--row">
-                        <!-- Insert Component Here -->
-                        <!-- Radio Input -->
-                        <div class="input__container">
-                            <label for="checkbox" class="input--sidelabel">Your Name</label>
-                            <input type="checkbox" id="checkbox" class="input--field--checkbox input--demo"
-                                placeholder="Peter Parker" required disabled />
-                        </div>
-                        <!-- Insert Component Label Here -->
-                        <span class="subtitle-1">Disabled Checkbox Input</span>
-                    </div>
-                </div>
-            </section>
-            <!-- Implementation Code Section -->
-            <section class="iris__desc__wrapper">
-                <h2 class="header-2 content__title">Implementation</h2>
-                <p class=" header-6 content__desc">
-                    Not everyone likes to be round and perfect. Some prefer cute corners!</p>
-                <!-- Make the component wrapper in row or column accordingly -->
-                <div class="code__wrapper code__wrapper code--blue gap20">
-                    <pre><code>
+          </div>
+        </section>
+        <!-- Checkbox -->
+        <!-- Component Page Desc Section -->
+        <section class="iris__desc__wrapper">
+          <h2 class="header-2 content__title">Radio and Checkbox Input</h2>
+          <p class="header-6 header-6 content__desc">
+            The radio and checkbox inputs can be triggered by using
+            <i class="code--blue">input---field</i> and then using
+            <i class="code--blue">---checkbox</i> and
+            <i class="code--blue">---radio</i> for the respective input types .
+          </p>
+          <!-- Make the component wrapper in row or column accordingly -->
+          <div
+            class="component__wrapper--row demo-column bg-blue border-8d gap20 text--left"
+          >
+            <div class="component__item--row">
+              <!-- Insert Component Here -->
+              <!-- Radio Input -->
+              <div class="input__container">
+                <input
+                  type="radio"
+                  id="radio"
+                  class="input--field--radio input--demo"
+                  placeholder="Peter Parker"
+                  required
+                />
+                <label for="Radio" class="input--sidelabel radio__label"
+                  >Your Name</label
+                >
+              </div>
+              <!-- Insert Component Label Here -->
+              <span class="subtitle-1">Radio Input</span>
+            </div>
+            <div class="component__item--row">
+              <!-- Insert Component Here -->
+              <!-- Radio Input -->
+              <div class="input__container">
+                <input
+                  type="radio"
+                  id="radio"
+                  class="input--field--radio input--demo"
+                  placeholder="Peter Parker"
+                  required
+                  disabled
+                />
+                <label for="Radio" class="radio__label input--sidelabel"
+                  >Your Name</label
+                >
+              </div>
+              <!-- Insert Component Label Here -->
+              <span class="subtitle-1">Disabled Radio Input</span>
+            </div>
+            <div class="component__item--row">
+              <!-- Insert Component Here -->
+              <!-- Checkbox Input -->
+              <div class="input__container">
+                <label for="checkbox" class="input--sidelabel">Your Name</label>
+                <input
+                  type="checkbox"
+                  id="checkbox"
+                  class="input--field--checkbox input--demo"
+                  placeholder="Peter Parker"
+                  required
+                />
+              </div>
+              <!-- Insert Component Label Here -->
+              <span class="subtitle-1">Checkbox Input</span>
+            </div>
+            <div class="component__item--row">
+              <!-- Insert Component Here -->
+              <!-- Radio Input -->
+              <div class="input__container">
+                <label for="checkbox" class="input--sidelabel">Your Name</label>
+                <input
+                  type="checkbox"
+                  id="checkbox"
+                  class="input--field--checkbox input--demo"
+                  placeholder="Peter Parker"
+                  required
+                  disabled
+                />
+              </div>
+              <!-- Insert Component Label Here -->
+              <span class="subtitle-1">Disabled Checkbox Input</span>
+            </div>
+          </div>
+        </section>
+        <!-- Implementation Code Section -->
+        <section class="iris__desc__wrapper">
+          <h2 class="header-2 content__title">Implementation</h2>
+          <p class="header-6 content__desc">
+            Not everyone likes to be round and perfect. Some prefer cute
+            corners!
+          </p>
+          <!-- Make the component wrapper in row or column accordingly -->
+          <div class="code__wrapper code__wrapper code--blue gap20">
+            <pre><code>
 <!-- Radio Input -->
 <div class="input__container">
 <input type="radio" id="radio" class="input--field--radio input--demo"
@@ -417,52 +585,68 @@ placeholder="Peter Parker" required />
 <input type="checkbox" id="checkbox" class=" input--field--checkbox input--demo"
 placeholder="Peter Parker" required />
 </div></code></pre>
-                </div>
-            </section>
-            <!-- Page Navigation -->
-            <nav class="iris__desc__wrapper page_nav">
-                <button class="btn btn--link btn--ltr">
-                    <span class="material-icons">arrow_back</span>
-                    <a href="/docs/Images.html">Images</a>
-                </button>
-                <button class="btn btn--link btn--rtl">
-                    <span class="material-icons">arrow_forward</span>
-                    <a href="/docs/Lists.html">Lists</a>
-                </button>
-            </nav>
+          </div>
+        </section>
+        <!-- Page Navigation -->
+        <nav class="iris__desc__wrapper page_nav">
+          <button class="btn btn--link btn--ltr">
+            <span class="material-icons">arrow_back</span>
+            <a href="/docs/Images.html">Images</a>
+          </button>
+          <button class="btn btn--link btn--rtl">
+            <span class="material-icons">arrow_forward</span>
+            <a href="/docs/Lists.html">Lists</a>
+          </button>
+        </nav>
 
-            <footer class="iris__footer flex-mid-center iris__desc__wrapper">
-                <div class="footer__content flex-mid-center text--center">
-                    <span class="material-icons md-48 icon--footer text--center">favorite</span>
-                    <p class="desc footer__desc text--center">Iridescent was made with the intention of creating a
-                        playful library
-                        which was apt for formal purposes too. We hope you liked it. Feel free to connect and provide
-                        suggestions from the below means. </p>
-                    <div class="nav__links__container">
-                        <ul class="nav__links__ul">
-                            <a href="https://www.twitter.com/srejitk" target="__blank"
-                                class="footer nav__links nav__links--footer">Twitter</a>
-                            <a href="https://www.github.com/srejitk" target="__blank"
-                                class="footer nav__links nav__links--footer">Github</a>
-                            <a href="https://www.linkedin.com/srejitk" target="__blank"
-                                class="footer nav__links nav__links--footer">LinkedIn</a>
-                        </ul>
-                    </div>
-                </div>
-
-            </footer>
-        </div>
+        <footer class="iris__footer flex-mid-center iris__desc__wrapper">
+          <div class="footer__content flex-mid-center text--center">
+            <span class="material-icons md-48 icon--footer text--center"
+              >favorite</span
+            >
+            <p class="desc footer__desc text--center">
+              Iridescent was made with the intention of creating a playful
+              library which was apt for formal purposes too. We hope you liked
+              it. Feel free to connect and provide suggestions from the below
+              means.
+            </p>
+            <div class="nav__links__container">
+              <ul class="nav__links__ul">
+                <a
+                  href="https://www.twitter.com/srejitk"
+                  target="__blank"
+                  class="footer nav__links nav__links--footer"
+                  >Twitter</a
+                >
+                <a
+                  href="https://www.github.com/srejitk"
+                  target="__blank"
+                  class="footer nav__links nav__links--footer"
+                  >Github</a
+                >
+                <a
+                  href="https://www.linkedin.com/srejitk"
+                  target="__blank"
+                  class="footer nav__links nav__links--footer"
+                  >LinkedIn</a
+                >
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </div>
     </div>
 
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
-        integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
+      integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script>
-        hljs.highlightAll();
+      hljs.highlightAll();
     </script>
     <script src="/js/codeblocks.js"></script>
     <script src="/js/app.js"></script>
-</body>
-
+  </body>
 </html>
